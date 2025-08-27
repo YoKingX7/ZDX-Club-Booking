@@ -1,0 +1,12 @@
+@media (max-width:768px){
+  .nav,.footer{
+    .logo-mb{
+      width: 160px;
+    }
+    &-collapse{
+      top: 85px;
+      z-index: 100;
+    }
+  }
+  
+}

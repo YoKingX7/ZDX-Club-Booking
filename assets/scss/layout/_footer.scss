@@ -1,4 +1,39 @@
 .footer{
-  background: #69F0AE;
-  font-size: 64px;
+  &-item{
+    width: 141px;
+  }
+  &-center{
+    width: 414px;
+  }
+  &-icon{
+    width: 40px;
+    height: 40px;
+    border:rgb(135, 103, 85,0.4) solid;
+  }
+  &-deco{
+    width: 12px;
+  }
+  &-border-up-1{
+    width: 306px;
+    border-width: 0.5px !important;
+    height: 1px;
+  }
+  &-border-up-2{
+    width: 478px;
+    border-width: 0.5px !important;
+    height: 1px;
+  }
+  &-logo{
+    width: 416px;
+  }
+  
+  .ic-mail{
+    width: 24px;
+    object-fit: cover;
+    height: 24px;
+  }
+  .input-email::placeholder{
+    color: $primary;
+    opacity: 50%  ;
+  }
 }
