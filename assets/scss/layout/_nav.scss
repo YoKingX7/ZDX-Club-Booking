@@ -1,12 +1,15 @@
-@media (max-width:768px){
-  .nav,.footer{
-    .logo-mb{
+.member-menu {
+  width: 166px;
+}
+@media (max-width: 768px) {
+  .nav,
+  .footer {
+    .logo-mb {
       width: 160px;
     }
-    &-collapse{
+    &-collapse {
       top: 85px;
       z-index: 100;
     }
   }
-  
 }
