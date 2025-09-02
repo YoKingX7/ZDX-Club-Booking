@@ -6,6 +6,7 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>index</title>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
 </head>
 
 <body style="background-image: url(../assets/images/index/nav-bg.png);">
@@ -13,16 +14,18 @@
 
   <%- include("./layout/nav",{login:false}) %>
 
-    <header class="header py-160 position-relative" style="background-image: url(../assets/images/index/header.png);">
+    <header class="header py-md-160 py-80 position-relative"
+      style="background-image: url(../assets/images/index/header.png);">
       <div class="filter position-absolute top-0 start-0 end-0 bottom-0
             ">
       </div>
       <div class="container text-center position-relative">
-        <h1 class="fs-40 text-netral-50 fw-normal mb-48">
+        <h1 class="fs-md-40 fs-3  text-netral-50 fw-normal mb-md-48 mb-4">
           二十四節氣中<br>
           看見你的節奏與命運
         </h1>
-        <p class="fs-5 text-netral-50 mb-48">用東方智慧解讀時機，結合命理協助你的人生選擇</p>
+        <p class="fs-md-5 fs-6 text-netral-50 mb-md-48 mb-4 text-center">用東方智慧解讀時機，<br class="d-block d-md-none ">
+          結合命理協助你的人生選擇</p>
 
         <button type="button" class="btn bg-netral-50 rounded-0  fs-5 py-0">
           <div class="btn-inside-border py-3">
@@ -34,33 +37,44 @@
 
     </header>
 
-    <section class="py-80 service">
+    <section class="py-md-80 py-40 service">
       <div class="container">
-        <div class="d-flex align-items-end position-relative mb-40">
-          <img class="position-absolute" src="../assets/images/index/title-deco.png" alt="round-deco ">
-          <h2 class="ps-32 mb-0 me-12">熱門服務項目</h2>
-          <p class="mb-0">命理不神秘，熱門服務助你一步步了解自己！</p>
+        <div class="d-flex   mb-md-40 mb-4 justify-content-between">
+          <div class="d-flex align-items-md-end align-items-start position-relative pt-30
+          flex-md-row flex-column
+          ">
+            <img class="position-absolute top-0" src="../assets/images/index/title-deco.png" alt="round-deco ">
+            <h2 class="ps-md-32 mb-md-0 mb-12 me-12 fs-md-2 fs-4">熱門服務項目</h2>
+            <p class=" mb-0">命理不神秘，熱門服務助你一步步了解自己！</p>
+          </div>
+
+          <ul class="my-indicators list-unstyled mb-0 d-md-flex d-none align-items-end ">
+            <li>
+              <div class="my-indicator service-item w-120 me-12 "></div>
+            </li>
+            <li>
+              <div class="my-indicator service-item w-120 me-12"></div>
+            </li>
+            <li>
+              <div class="my-indicator service-item w-120 "></div>
+            </li>
+          </ul>
         </div>
 
 
-        <div class="carousel-indicators">
-          <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active"
-            aria-current="true" aria-label="Slide 1"></button>
-          <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1"
-            aria-label="Slide 2"></button>
-          <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2"
-            aria-label="Slide 3"></button>
-        </div>
-        <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
+
+        <div id="service-carousel" class="carousel slide mb-4 mb-md-0" data-bs-ride="carousel">
           <div class="carousel-inner">
-            <div class="carousel-item active" style="background-image: url(../assets/images/index/banner-1.png);">
+            <div class="carousel-item active bg-position-left"
+              style="background-image: url(../assets/images/index/banner-1.png);">
               <div class=" d-flex align-items-center h-100">
                 <div>
-                  <h4 class="mb-4">紫微命盤精解</h4>
+                  <h4 class="fs-5 fs-md-4 mb-4">紫微命盤精解</h4>
                   <p class="mb-4">
-                    透過專業紫微斗數排盤，解析個人命格結構，了解內在性格與人生方向，幫助你在迷惘中找到清晰定位。
+                    透過專業紫微斗數排盤，解析個人命格結構，了解內在性<br class="d-none d-md-block">
+                    格與人生方向，幫助你在迷惘中找到清晰定位。
                   </p>
-                  <button type="button" class="btn  rounded-0  fs-5 py-0 px-12 border-green-200">
+                  <button type="button" class="btn  rounded-0  fs-md-5 fs-6 py-0 px-12 border-green-200">
                     <div class="btn-inside-border py-2 px-3 text-white  border-green-200">
                       立即預約
                     </div>
@@ -68,30 +82,33 @@
                 </div>
               </div>
             </div>
-            <div class="carousel-item  " style="background-image: url(../assets/images/index/banner-2.png);">
-              <div class="d-flex align-items-center h-100">
+            <div class="carousel-item " style="background-image: url(../assets/images/index/banner-2.png);">
+              <div class=" d-flex align-items-center h-100">
                 <div>
-                  <h4 class="mb-4">擇日開運指南</h4>
-                  <p class="mb-4">
-                    無論是結婚、搬家、開業，擇日都是開啟好運的第一步。根據你的八字量身規劃黃道吉日，讓每一個開始都更順利。
-                  </p>
-                  <button type="button" class="btn  rounded-0  fs-5 py-0 px-12 border-green-200">
-                    <div class="btn-inside-border py-2 px-3 text-white  border-green-200">
-                      立即預約
-                    </div>
-                  </button>
-                </div>
-              </div>
-            </div>
-            <div class="carousel-item  " style="background-image: url(../assets/images/index/banner-3.png);">
-              <div class="d-flex align-items-center h-100">
-                <div>
-                  <h4 class="mb-4">流年運勢分析</h4>
+                  <h4 class="fs-5 fs-md-4 mb-4">流年運勢分析</h4>
                   <p class="mb-4">
                     結合八字與流年運勢，深入剖析財運、
-                    感情、事業等關鍵面向，掌握最佳行動時機，趨吉避凶，為人生提前佈局。
+                    感情、事業等關鍵<br class="d-none d-md-block">
+                    面向，掌握最佳行動時機，趨吉避凶，為人生提前佈局。
                   </p>
-                  <button type="button" class="btn  rounded-0  fs-5 py-0 px-12 border-green-200">
+                  <button type="button" class="btn  rounded-0  fs-md-5 fs-6 py-0 px-12 border-green-200">
+                    <div class="btn-inside-border py-2 px-3 text-white  border-green-200">
+                      立即預約
+                    </div>
+                  </button>
+                </div>
+              </div>
+            </div>
+            <div class="carousel-item " style="background-image: url(../assets/images/index/banner-3.png);">
+              <div class=" d-flex align-items-center h-100">
+                <div>
+                  <h4 class="fs-5 fs-md-4 mb-4">擇日開運指南</h4>
+                  <p class="mb-4">
+                    無論是結婚、搬家、開業，擇日都是開啟好運的第一步。<br class="d-none d-md-block">
+                    根據你的八字量身規劃黃道吉日，讓每一個開始都更順<br class="d-none d-md-block">
+                    利。
+                  </p>
+                  <button type="button" class="btn  rounded-0  fs-md-5 fs-6 py-0 px-12 border-green-200">
                     <div class="btn-inside-border py-2 px-3 text-white  border-green-200">
                       立即預約
                     </div>
@@ -102,16 +119,262 @@
           </div>
         </div>
 
+        <ul class="my-indicators list-unstyled mb-0 d-flex d-md-none  align-items-end row ">
+          <li class="col">
+            <div class="my-indicator service-item "></div>
+          </li>
+          <li class="col">
+            <div class="my-indicator service-item"></div>
+          </li>
+          <li class="col">
+            <div class="my-indicator service-item"></div>
+          </li>
+        </ul>
+
       </div>
 
     </section>
+
+    <section class="comment py-md-80 py-40 ">
+      <div class="container position-relative">
+        <div class="d-md-flex d-block align-items-end position-relative mb-md-40 mb-4">
+          <img class="position-absolute" src="../assets/images/index/title-deco.png" alt="round-deco ">
+          <h2 class="ps-md-32 pt-30 pt-md-0 mb-0 me-12 fs-md-2 fs-4">有緣人評價</h2>
+          <p class="mb-0">來自四面八方的肯定，是我們前進的動力</p>
+        </div>
+
+        <div class="swiper mySwiper d-none d-md-block" navigation="true">
+          <!-- Additional required wrapper -->
+          <div class="swiper-wrapper  ">
+            <!-- Slides -->
+            <div class="swiper-slide">
+              <div class="card bg-transparent border-0">
+                <img src="../assets/images/index/comment-4.png" alt="women take coffee">
+                <div class="pt-4 text-center">
+                  <img class="mb-4" src="../assets/images/index/star4.png" alt="4-stars">
+                  <div class="card-title fw-bold mb-4">
+                    芷涵(新婚人妻，27歲)
+                  </div>
+                  <p class="mb-4 mb-md-0 fs-7 fs-md-6 ">
+                    幫我和另一半擇日登記結婚的服務超貼心<br>
+                    ，老師不只提供好日子，還附上注意事項<br>
+                    與祝福話語，感覺特別溫暖。
+                  </p>
+
+                </div>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="card bg-transparent border-0">
+                <img src="../assets/images/index/comment-1.png" alt="women take coffee">
+                <div class="pt-4 text-center">
+                  <img class="mb-4" src="../assets/images/index/star4.png" alt="4-stars">
+                  <div class="card-title fw-bold mb-4">
+                    Ken(設計師，33歲)
+                  </div>
+                  <p class="mb-4 mb-md-0 fs-7 fs-md-6 ">
+                    第一次接觸紫微命盤，本來只是好奇，沒<br>
+                    想到看完解析後對自己的個性和人際盲點<br>
+                    突然豁然開朗，真的蠻有幫助！
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="card bg-transparent border-0 ">
+
+                <img src="../assets/images/index/comment-2.png" alt="women take coffee">
+                <div class="pt-4 text-center">
+                  <img class="mb-4" src="../assets/images/index/full-stars.png" alt="4-stars">
+                  <div class="card-title fw-bold mb-4">
+                    芷涵(新婚人妻，27歲)
+                  </div>
+                  <p class="mb-4 mb-md-0 fs-7 fs-md-6 ">
+                    幫我和另一半擇日登記結婚的服務超貼心<br>
+                    ，老師不只提供好日子，還附上注意事項<br>
+                    與祝福話語，感覺特別溫暖。
+                  </p>
+
+                </div>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="card bg-transparent border-0">
+                <img src="../assets/images/index/comment-3.png" alt="women take coffee">
+                <div class="pt-4 text-center">
+                  <img class="mb-4" src="../assets/images/index/full-stars.png" alt="4-stars">
+                  <div class="card-title fw-bold mb-4">
+                    Eric(科技業，35歲)
+                  </div>
+                  <p class="mb-4 mb-md-0 fs-7 fs-md-6 ">
+                    命理服務完全不像我以前想像的老派，介<br>
+                    面乾淨簡單，說明也清楚易懂，非常適合<br>
+                    現代人使用！
+                  </p>
+
+                </div>
+              </div>
+            </div>
+
+          </div>
+
+          <!-- If we need navigation buttons -->
+        </div>
+        <div class="swiper-button-prev opacity-100 position-absolute
+        d-none d-md-block">
+          <img src="../assets/images/index/angle-small-left.png" alt="angle-small-left">
+        </div>
+        <div class="swiper-button-next opacity-100 position-absolute d-none d-md-block   ">
+          <img src="../assets/images/index/angle-small-right.png" alt="angle-small-right">
+        </div>
+
+
+        <div id="comment-carousel" class="carousel slide mb-4 mb-md-0 d-md-none d-block" data-bs-ride="carousel">
+          <div class="carousel-inner">
+            <div class="carousel-item  ps-0 active swiper-slide">
+              <div class="card bg-transparent border-0">
+                <img src="../assets/images/index/comment-4.png" alt="women take coffee">
+                <div class="pt-4 text-center">
+                  <img class="mb-4" src="../assets/images/index/star4.png" alt="4-stars">
+                  <div class="card-title fw-bold mb-4">
+                    芷涵(新婚人妻，27歲)
+                  </div>
+                  <p class="mb-4 mb-md-0 fs-7 fs-md-6 ">
+                    幫我和另一半擇日登記結婚的服務超貼心<br>
+                    ，老師不只提供好日子，還附上注意事項<br>
+                    與祝福話語，感覺特別溫暖。
+                  </p>
+
+                </div>
+              </div>
+            </div>
+            <div class="carousel-item  ps-0 swiper-slide">
+              <div class="card bg-transparent border-0">
+                <img src="../assets/images/index/comment-1.png" alt="women take coffee">
+                <div class="pt-4 text-center">
+                  <img class="mb-4" src="../assets/images/index/star4.png" alt="4-stars">
+                  <div class="card-title fw-bold mb-4">
+                    Ken(設計師，33歲)
+                  </div>
+                  <p class="mb-4 mb-md-0 fs-7 fs-md-6 ">
+                    第一次接觸紫微命盤，本來只是好奇，沒<br>
+                    想到看完解析後對自己的個性和人際盲點<br>
+                    突然豁然開朗，真的蠻有幫助！
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="carousel-item  ps-0 swiper-slide">
+              <div class="card bg-transparent border-0 ">
+
+                <img src="../assets/images/index/comment-2.png" alt="women take coffee">
+                <div class="pt-4 text-center">
+                  <img class="mb-4" src="../assets/images/index/full-stars.png" alt="4-stars">
+                  <div class="card-title fw-bold mb-4">
+                    芷涵(新婚人妻，27歲)
+                  </div>
+                  <p class="mb-4 mb-md-0 fs-7 fs-md-6 ">
+                    幫我和另一半擇日登記結婚的服務超貼心<br>
+                    ，老師不只提供好日子，還附上注意事項<br>
+                    與祝福話語，感覺特別溫暖。
+                  </p>
+
+                </div>
+              </div>
+            </div>
+            <div class="carousel-item  ps-0 swiper-slide">
+              <div class="card bg-transparent border-0">
+                <img src="../assets/images/index/comment-3.png" alt="women take coffee">
+                <div class="pt-4 text-center">
+                  <img class="mb-4" src="../assets/images/index/full-stars.png" alt="4-stars">
+                  <div class="card-title fw-bold mb-4">
+                    Eric(科技業，35歲)
+                  </div>
+                  <p class="mb-4 mb-md-0 fs-7 fs-md-6 ">
+                    命理服務完全不像我以前想像的老派，介<br>
+                    面乾淨簡單，說明也清楚易懂，非常適合<br>
+                    現代人使用！
+                  </p>
+
+                </div>
+              </div>
+            </div>
+          </div>
+
+
+        </div>
+
+        <ul class="my-indicators list-unstyled mb-0 d-flex d-md-none  align-items-end row ">
+          <li class="col">
+            <div class="my-indicator  comment-item "></div>
+          </li>
+          <li class="col">
+            <div class="my-indicator  comment-item"></div>
+          </li>
+          <li class="col">
+            <div class="my-indicator  comment-item"></div>
+          </li>
+          <li class="col">
+            <div class="my-indicator  comment-item"></div>
+          </li>
+        </ul>
+      </div>
+
+    </section>
+
+
 
     <%- include("./layout/footer") %>
 
 
 
 
+      <script>
+        const serviceCarousel = document.getElementById('service-carousel');
+        const serviceIndicators = document.querySelectorAll('.service-item');
 
+        [0, 3].forEach(i => serviceIndicators[i].classList.add('border-dark'));
+        //初始化 
+        serviceCarousel.addEventListener('slide.bs.carousel', function (e) {
+          serviceIndicators.forEach(el => el.classList.remove("border-dark"));
+          [e.to, e.to + 3].forEach(i => serviceIndicators[i].classList.add('border-dark'));
+        })
+      </script>
+      <script>
+        const commentCarousel = document.getElementById('comment-carousel');
+        const commentIndicators = document.querySelectorAll('.comment-item');
+        commentIndicators[0].classList.add('border-dark');//初始化
+        commentCarousel.addEventListener('slide.bs.carousel', function (e) {
+          commentIndicators.forEach(el => el.classList.remove('border-dark'));
+          commentIndicators[e.to].classList.add('border-dark');
+        })
+
+      </script>
+
+
+      <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+      <script>
+        const swiper = new Swiper(".mySwiper", {
+          slidesPerView: 1,
+          spaceBetween: 16,
+          // (手機板排版設定),
+          breakpoints: {
+            768: {
+              slidesPerView: 3,
+              spaceBetween: 24,
+            }
+            // (RWD設定部分)
+          },
+
+          // Navigation arrows
+          navigation: {
+            nextEl: '.swiper-button-next',
+            prevEl: '.swiper-button-prev',
+          },
+
+        });
+      </script>
       <script type="module" src="../main.js"></script>
 </body>
 
