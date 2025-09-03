@@ -221,10 +221,11 @@
           <!-- If we need navigation buttons -->
         </div>
         <div class="swiper-button-prev opacity-100 position-absolute
-        d-none d-md-block">
+        d-none d-md-flex  justify-content-center align-items-center">
           <img src="../assets/images/index/angle-small-left.png" alt="angle-small-left">
         </div>
-        <div class="swiper-button-next opacity-100 position-absolute d-none d-md-block   ">
+        <div
+          class="swiper-button-next opacity-100 position-absolute d-none d-md-flex  justify-content-center align-items-center   ">
           <img src="../assets/images/index/angle-small-right.png" alt="angle-small-right">
         </div>
 
@@ -322,7 +323,107 @@
 
     </section>
 
+    <section class="py-80">
+      <div class="container">
+        <div class="d-md-flex d-block align-items-end position-relative mb-md-40 mb-4">
+          <img class="position-absolute" src="../assets/images/index/title-deco.png" alt="round-deco ">
+          <h2 class="ps-md-32 pt-30 pt-md-0 mb-0 me-12 fs-md-2 fs-4">預約服務流程</h2>
+          <p class="mb-0">快速預約，一點就通，開始屬於你的探索</p>
+        </div>
 
+        <ul class="step card-list list-unstyled row mb-md-40">
+          <li class="col-3">
+            <div class="card bg-transparent border-0 ">
+              <h1 class="fs-40 text-primary text-center mb-3">1</h1>
+              <div class="card-title step-item py-80 text-center mb-0"
+                style="background-image: url(../assets/images/index/step-1.png);">
+                <img class="mb-4" src="../assets/images/index/step-1-icon.png" alt="step-1-icon">
+                <h2 class="text-white mb-0">登入 or Mail</h2>
+              </div>
+              <div class="card-body">
+                <div class="d-flex justify-content-center mb-3">
+                  <div class="card-deco border border-primary"></div>
+                </div>
+                <p class="px-48 text-center mb-0 fs-7">
+                  想更快速管理預約紀錄？建議註冊會員帳號；若使用 Email預約，無需註冊也能完成，但請記得查收確認信。
+                </p>
+              </div>
+            </div>
+          </li>
+          <li class="col-3">
+            <div class="card bg-transparent border-0 ">
+              <h1 class="fs-40 text-primary text-center mb-3">1</h1>
+              <div class="card-title step-item py-80 text-center mb-0"
+                style="background-image: url(../assets/images/index/step-2.png);">
+                <img class="mb-4" src="../assets/images/index/step-2-icon.png" alt="step-1-icon">
+                <h2 class="text-white mb-0">選擇命理師</h2>
+              </div>
+              <div class="card-body">
+                <div class="d-flex justify-content-center mb-3">
+                  <div class="card-deco border border-primary"></div>
+                </div>
+                <p class="px-48 text-center mb-0 fs-7">
+                  依照你的需求挑選最適合的老師，展開你的命理旅程
+                </p>
+              </div>
+            </div>
+          </li>
+          <li class="col-3">
+            <div class="card bg-transparent border-0 ">
+              <h1 class="fs-40 text-primary text-center mb-3">1</h1>
+              <div class="card-title step-item py-80 text-center mb-0"
+                style="background-image: url(../assets/images/index/step-3.png);">
+                <img class="mb-4" src="../assets/images/index/step-3-icon.png" alt="step-3-icon">
+                <h2 class="text-white mb-0">選擇服務/時段</h2>
+              </div>
+              <div class="card-body">
+                <div class="d-flex justify-content-center mb-3">
+                  <div class="card-deco border border-primary"></div>
+                </div>
+                <p class="px-48 text-center mb-0 fs-7">
+                  挑選你需要的命理服務項目，再選擇老師開放的時間段，安排最方便的預約時程。
+                </p>
+              </div>
+            </div>
+          </li>
+          <li class="col-3">
+            <div class="card bg-transparent border-0 ">
+              <h1 class="fs-40 text-primary text-center mb-3">1</h1>
+              <div class="card-title step-item py-80 text-center mb-0"
+                style="background-image: url(../assets/images/index/step-4.png);">
+                <img class="mb-4" src="../assets/images/index/step-4-icon.png" alt="step-4-icon">
+                <h2 class="text-white mb-0">完成預約</h2>
+              </div>
+              <div class="card-body">
+                <div class="d-flex justify-content-center mb-3">
+                  <div class="card-deco border border-primary"></div>
+                </div>
+                <p class="px-48 text-center mb-0 fs-7">
+                  確認服務與時段後，點撃送出即可完成預約。預約成功後，我們將寄出通知信至你的Email，請留意查收。
+                </p>
+              </div>
+            </div>
+          </li>
+        </ul>
+
+        <div class="warning">
+          <div class="warning-bg py-98  position-relative ">
+            <img class="position-absolute warning-bg-img z-1 opacity-50 start-0" src="../assets/images/index/warning-bg.png"
+              alt="warning-bg">
+            <div class="position-relative z-2">
+              <p class="mb-3">預約注意事項：</p>
+              <p class="mb-3">1. 請確認填寫的 Email 正確,預約完成後將寄送確認信至您的信箱。</p>
+              <p class="mb-3">2. 若使用 Email 預約(免註冊),務必點擊信件中的連結完成確認。</p>
+              <p>3. 命理師每次服務名額有限,請準時參與,避免影響他人權益。</p>
+            </div>
+
+          </div>
+
+
+        </div>
+      </div>
+
+    </section>
 
     <%- include("./layout/footer") %>
 
