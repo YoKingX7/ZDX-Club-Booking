@@ -43,12 +43,13 @@
 
     /* 自訂日曆大小 */
     .calendar {
-      width: 526px;
+      max-width: 526px;
       margin: 0 auto;
       padding: 36px;
       background: rgba(255, 255, 255, 0.7);
     }
-    .calendar a{
+
+    .calendar a {
       text-decoration: none;
     }
 
@@ -83,6 +84,7 @@
     /* 農民曆文字樣式、位置 */
     .lunar-text,
     .jieqi-text {
+      text-align: center;
       font-size: 0.75rem;
       /* 調整字體大小 */
       color: var(--black-800);
@@ -145,6 +147,58 @@
       font-size: 0.75rem;
       border: none;
     }
+
+    @media (max-width:768px) {
+      .calendar {
+        width: 100%;
+        padding: 24px 12px;
+        margin-bottom: 24px;
+      }
+
+      .fc .fc-col-header-cell-cushion {
+        font-size: 12px;
+        padding: 0;
+      }
+
+      /* 自訂日曆格子樣式 */
+      .fc .fc-daygrid-day-number {
+        padding-top: 8px;
+        margin-bottom: 0px;
+        font-size: 14px;
+      }
+
+      .lunar-text,
+      .jieqi-text {
+        margin-bottom: 8px;
+        font-size: 12px;
+        /* 調整字體大小 */
+        color: var(--black-800);
+        /*調整顏色*/
+        font-weight: 700;
+        /* 加粗 */
+        position: static;
+        transform: translateX(0);
+      }
+
+      .fc-daygrid-day-events {
+        display: none;
+      }
+
+      /* 頁腳設定 */
+      .fc .fc-toolbar.fc-footer-toolbar {
+        margin-top: 0px;
+        padding: 0;
+      }
+
+      .fc .fc-button {
+        width: 101px;
+        padding-top: 16px;
+        padding-bottom: 16px;
+        font-size: 12px;
+        border: none;
+      }
+
+    }
   </style>
 </head>
 
@@ -167,13 +221,13 @@
         dayHeaders: true, // 顯示星期標題
         dayHeaderContent: function (arg) {
           const days = [
-            "星期日",
-            "星期一",
-            "星期二",
-            "星期三",
-            "星期四",
-            "星期五",
-            "星期六",
+            "日",
+            "一",
+            "二",
+            "三",
+            "四",
+            "五",
+            "六",
           ];
           return days[arg.date.getDay()];
         },

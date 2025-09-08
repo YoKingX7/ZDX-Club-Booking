@@ -92,7 +92,7 @@
     background-repeat: no-repeat;
     padding-left: 109px;
     &-img {
-      width: 856px;
+      width: 100%;
       top: 25px;
     }
   }
@@ -103,15 +103,15 @@
 .tree-deco {
   width: 800px;
   right: -240px;
-  top:-120px;
+  top: -120px;
 }
 .lunar-calendar {
-  margin-left: 312px;
+  margin-left: 16.25%;
   .solar-term {
-    &-title{
-      padding: 24px;
-      width: 208px;
+    max-width: 100%;
+    &-title {
       background: rgba(250, 250, 250, 0.8);
+      width: 21.35225%;
     }
     & ::before {
       content: "";
@@ -124,28 +124,32 @@
       z-index: -1;
     }
   }
-  .detail{
-    margin-right: 312px;
+  .detail {
+    max-width: 65.94911%;
+    &-up {
+      width: 100px;
+    }
   }
 }
-.QA{
-  .waves-bg{
-    width: 1080px;
+.QA {
+  .waves-bg {
+    width: 56.19146%;
     height: 400px;
     bottom: 80px;
     left: -282px;
   }
-  &-title{
+  &-title {
     padding-left: 220px;
   }
-  &-content{
+  &-content {
     padding-left: 42.43827%;
   }
-  .A-icon{
+  .Q-icon,
+  .A-icon {
     height: 23px;
   }
 }
-.overflow-x-clip{
+.overflow-x-clip {
   overflow-x: clip;
 }
 
@@ -159,6 +163,41 @@
       &-item {
         padding: 80px 36px;
       }
+    }
+  }
+  .step {
+    .card-title {
+      height: 164px;
+      &-icon {
+        width: 24px;
+      }
+    }
+  }
+  .warning {
+    padding-left: 0;
+    padding-right: 0;
+    &-bg {
+      padding-left: 0;
+      padding-right: 0;
+    }
+  }
+  .lunar-calendar {
+    margin-left: 0;
+    .detail {
+      width: 100%;
+      margin-right: 0;
+    }
+  }
+  .QA {
+    &-title {
+      padding-left: 0;
+    }
+    &-content {
+      padding-left: 0;
+    }
+    .Q-icon,
+    .A-icon {
+      height: 20px;
     }
   }
 }
