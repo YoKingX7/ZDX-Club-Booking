@@ -1,4 +1,6 @@
 顏色設定
+
+```scss
 "primary":      $primary,         #866654
 "primary-500":  $primary,         #866654
 "primary-200":  $primary-200,     #ddbea9;
@@ -6,7 +8,7 @@
 "secondary-200": $secondary-200,  #b7b7a4;
 "black-950":  $black-950,         #0a0a0a
 "black-800":  $black-800,         #262626
-"black-400":  $black-400,         #A3A3A3 
+"black-400":  $black-400,         #A3A3A3
 "black-300":  $black-300,         gba(198, 198, 198, 1)
 "black-50":   $black-50,          #FAFAFA
 "neutral-950":  $neutral-950,     #0a0a0a
@@ -17,9 +19,11 @@
 "neutral-100":  $neutral-100,     #f0f0f0
 "neutral-50":   $neutral-50,      #FAFAFA
 "background-beige": $background -beige, #f6f3e6
+```
 
+spacer 為 16px 計算
 
-spacer 為16px 計算
+```scss
   0   : 0px,
   1   : 4px,        // 16 * 0.25
   2   : 8px,        // 16 * 0.5
@@ -42,3 +46,4 @@ spacer 為16px 計算
   100 : 100px,
   106 : 106.5px,
   160 : 160px,      // 16 * 10
+```
