@@ -7,17 +7,16 @@
   </head>
   <body>
     <%- include("./layout/nav",{login:false}) %>
-    <header class="py-80">
-      <header
-        class="header-img"
-        style="background-image: url(../assets/images/index/header.png)"
-      ></header>
-      <div class="container">
-        <h1 class="h1 fw-bold mb-4">命理知識</h1>
+    <header
+      class="km-header-bg py-80"
+      style="background-image: url(../assets/images/index/header.png)"
+    >
+      <div class="container text-black-800">
+        <h1 class="fw-bold mb-5 lh-sm">命理知識</h1>
 
-        <p>節氣循環，不只影響四季。</p>
-        <p>天時流轉，也牽動命運節奏。</p>
-        <p>一年24刻，寫下你的命理故事。</p>
+        <p class="fs-5 mb-3">節氣循環，不只影響四季。</p>
+        <p class="fs-5 mb-3">天時流轉，也牽動命運節奏。</p>
+        <p class="fs-5">一年24刻，寫下你的命理故事。</p>
       </div>
     </header>
     <%- include("./layout/footer") %>

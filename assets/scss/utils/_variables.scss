@@ -299,10 +299,10 @@ $cyans: (
 
 // scss-docs-start theme-color-variables
 $primary: #866654; //$blue !default; //primary-500
-$primary-200: #ddbea9;
+$primary-200: #ddbea9 !default;
 $secondary: $gray-600 !default;
-$secondary-400: #353f1e;
-$secondary-200: #b7b7a4;
+$secondary-400: #353f1e !default;
+$secondary-200: #b7b7a4 !default;
 $success: $green !default;
 $info: $cyan !default;
 $warning: $yellow !default;
@@ -311,17 +311,18 @@ $light: $gray-100 !default;
 $dark: $gray-900 !default;
 $black-950: #0a0a0a !default;
 $black-800: #262626 !default;
+$black-600: #525252 !default;
 $black-400: #a3a3a3 !default;
 $black-300: rgba(198, 198, 198, 1) !default;
 $black-50: #fafafa !default;
-$neutral-950: #0a0a0a;
-$neutral-800: #262626;
-$neutral-600: #525252;
-$neutral-400: #a3a3a3;
-$neutral-200: #e5e5e5;
-$neutral-100: #f0f0f0;
+$neutral-950: #0a0a0a !default;
+$neutral-800: #262626 !default;
+$neutral-600: #525252 !default;
+$neutral-400: #a3a3a3 !default;
+$neutral-200: #e5e5e5 !default;
+$neutral-100: #f0f0f0 !default;
 $neutral-50: #fafafa !default;
-$background-beige: #f6f3e6;
+$background-beige: #f6f3e6 !default;
 // $green-400:     #353F1E !default;
 // scss-docs-end theme-color-variables
 
@@ -340,7 +341,8 @@ $theme-colors: (
   "light": $light,
   "dark": $dark,
   "black-950": $black-950,
-  "black-800": $black-800,
+  "black-800": $black-600,
+  "black-600": $black-800,
   "black-400": $black-400,
   "black-300": $black-300,
   "black-50": $black-50,
@@ -656,7 +658,7 @@ $aspect-ratios: (
 
 // scss-docs-start font-variables
 // stylelint-disable value-keyword-case
-$font-family-sans-serif: system-ui, -apple-system, "Segoe UI", Roboto,
+$font-family-sans-serif: "Noto Serif TC", system-ui, -apple-system, "Segoe UI", Roboto,
   "Helvetica Neue", "Noto Sans", "Liberation Sans", Arial, sans-serif,
   "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji" !default;
 $font-family-monospace: SFMono-Regular, Menlo, Monaco, Consolas,
