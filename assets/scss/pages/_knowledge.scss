@@ -1,11 +1,111 @@
+.chk {
+  border: 1px solid red;
+}
+
 body {
   font-weight: 400;
   line-height: 1.5;
+  color: $black-950;
+}
+
+.km-h1,
+.km-h2,
+.km-h3,
+.km-display-1 {
+  font-weight: 700;
+  line-height: 1.2;
+  color: $black-800;
+}
+
+.km-h1 {
+  font-size: 48px;
+}
+.km-h2 {
+  font-size: 32px;
+}
+
+.km-h3 {
+  font-size: 28px;
+  color: $black-950;
+}
+.km-h5 {
+  font-size: 24px;
+}
+
+.km-h6 {
+  font-size: 20px;
+}
+
+.km-display-1 {
+  font-size: 80px;
 }
 
 .km-header-bg {
-  // background-image: url('../images/knowledge-bg.jpg');
+  background: radial-gradient(
+      33.98% 177.3% at 23.59% 50%,
+      #f8f5ec 0%,
+      rgba(248, 245, 236, 0) 100%
+    ),
+    url("../../images/index/header.png");
   background-size: cover;
   background-position: 50% 33.333%;
   background-repeat: no-repeat;
+}
+
+.km-section-title {
+  position: relative;
+}
+.km-section-title::before {
+  content: "";
+  position: absolute;
+  top: 8px;
+  left: 8px;
+  width: 56px;
+  height: 56px;
+  border-radius: 50%;
+  background: rgba($primary-500, 0.2); // 透明度 20%
+  z-index: 1;
+}
+
+.km-solar-terms {
+  .content {
+    padding: 117.5px 64px;
+    background-color: rgba(255, 255, 255, 0.7);
+    background-blend-mode: lighten;
+    background-size: cover;
+    background-position: center;
+  }
+
+  .selections {
+    .sel-title {
+      font-size: 48px;
+      font-weight: 400;
+      color: #afa16b;
+    }
+    li {
+      list-style: none;
+      padding-left: 0;
+      border: none;
+      background: none;
+    }
+    .sel-item:hover {
+      background-color: $neutral-100 !important;
+      font-weight: 600;
+    }
+    .sel-item.active {
+      background-color: #f4d0c7 !important;
+    }
+    .bg-sp {
+      background: rgba(234, 214, 209, 0.5);
+    }
+    .bg-su {
+      background: rgba(244, 208, 199, 0.5);
+    }
+    .bg-fa {
+      background: rgba(235, 217, 189, 0.5);
+    }
+    .bg-wi {
+      background: rgba(215, 227, 228, 0.5);
+    }
+  }
 }

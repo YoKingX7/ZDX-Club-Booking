@@ -2,7 +2,10 @@
   <meta charset="UTF-8" />
   <title>農曆日曆範例</title>
   <!-- FullCalendar CSS -->
-  <link href="https://cdn.jsdelivr.net/npm/fullcalendar@6.1.8/index.global.min.css" rel="stylesheet" />
+  <link
+    href="https://cdn.jsdelivr.net/npm/fullcalendar@6.1.8/index.global.min.css"
+    rel="stylesheet"
+  />
   <style>
     :root {
       /* 自訂顏色 */
@@ -32,9 +35,10 @@
       --fc-button-active-bg-color: var(--dark-beige-40);
     }
 
-    body {
+    /* 改用 bootstrap 設定字體 */
+    /*body {
       font-family: "Microsoft JhengHei", Arial, sans-serif;
-    }
+    } */
 
     .fc-daygrid-day {
       background-color: var(--fc-page-bg-color);
@@ -107,21 +111,21 @@
 
     /* 星期日樣式 */
     .fc-day.fc-day-sun .fc-daygrid-day-number,
-    .fc-day.fc-day-sun>.lunar-text,
-    .fc-day.fc-day-sun>.jieqi-text {
+    .fc-day.fc-day-sun > .lunar-text,
+    .fc-day.fc-day-sun > .jieqi-text {
       color: var(--dark-red);
     }
 
     /* 星期六樣式 */
     .fc-day.fc-day-sat .fc-daygrid-day-number,
-    .fc-day.fc-day-sat>.lunar-text,
-    .fc-day.fc-day-sat>.jieqi-text {
+    .fc-day.fc-day-sat > .lunar-text,
+    .fc-day.fc-day-sat > .jieqi-text {
       color: var(--steel-blue);
     }
 
     /* 過去日期樣式 */
     .fc .fc-day-past .fc-daygrid-day-number,
-    .fc .fc-daygrid-day.fc-day-past>.lunar-text {
+    .fc .fc-daygrid-day.fc-day-past > .lunar-text {
       color: var(--medium-gray);
     }
 
@@ -148,7 +152,7 @@
       border: none;
     }
 
-    @media (max-width:768px) {
+    @media (max-width: 768px) {
       .calendar {
         width: 100%;
         padding: 24px 12px;
@@ -197,13 +201,12 @@
         font-size: 12px;
         border: none;
       }
-
     }
   </style>
 </head>
 
 <body>
-  <div class="calendar " id="calendar"></div>
+  <div class="calendar" id="calendar"></div>
 
   <!-- FullCalendar JS -->
   <script src="https://cdn.jsdelivr.net/npm/fullcalendar@6.1.8/index.global.min.js"></script>
@@ -220,15 +223,7 @@
         firstDay: 0, // 星期日為第一天
         dayHeaders: true, // 顯示星期標題
         dayHeaderContent: function (arg) {
-          const days = [
-            "日",
-            "一",
-            "二",
-            "三",
-            "四",
-            "五",
-            "六",
-          ];
+          const days = ["日", "一", "二", "三", "四", "五", "六"];
           return days[arg.date.getDay()];
         },
         headerToolbar: false, // 隱藏標題工具列

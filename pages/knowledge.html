@@ -5,21 +5,86 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>命理知識</title>
   </head>
-  <body>
+  <body style="background-image: url(../assets/images/index/nav-bg.png)">
     <%- include("./layout/nav",{login:false}) %>
     <header
       class="km-header-bg py-80"
       style="background-image: url(../assets/images/index/header.png)"
     >
       <div class="container text-black-800">
-        <h1 class="fw-bold mb-5 lh-sm">命理知識</h1>
+        <h1 class="km-h1 mb-5">命理知識</h1>
 
-        <p class="fs-5 mb-3">節氣循環，不只影響四季。</p>
-        <p class="fs-5 mb-3">天時流轉，也牽動命運節奏。</p>
-        <p class="fs-5">一年24刻，寫下你的命理故事。</p>
+        <p class="km-h6">
+          節氣循環，不只影響四季。<br />
+          天時流轉，也牽動命運節奏。<br />
+          一年24節氣，寫下你的命理故事。
+        </p>
       </div>
     </header>
+    <section class="py-80">
+      <div class="container">
+        <div class="km-section-title pt-32 ps-32 mb-40">
+          <p class="km-h3 text-black-950">
+            跟著豬大仙，<br />探索節氣與命理的神秘連結
+          </p>
+        </div>
+        <div class="km-solar-terms row align-items-center">
+          <div
+            class="col-5 content"
+            style="
+              background-image: url('../assets/images/knowledge/season-1.png');
+            "
+          >
+            <p class="km-display-1 mb-32">立春</p>
+            <p class="km-h5">
+              一年開始，五行屬木，適合立下新計劃，命理上為陽氣漸升，萬物生發之始。
+            </p>
+          </div>
+          <div class="col-7 selections">
+            <ul class="d-flex align-items-center gap-3 py-3 mb-32 bg-sp">
+              <li class="sel-title px-4 py-3 lh-1">春</li>
+              <li type="button" class="km-h5 sel-item p-3 bg-white active">
+                立春
+              </li>
+              <li type="button" class="km-h5 sel-item p-3 bg-white">雨水</li>
+              <li type="button" class="km-h5 sel-item p-3 bg-white">驚蟄</li>
+              <li type="button" class="km-h5 sel-item p-3 bg-white">春分</li>
+              <li type="button" class="km-h5 sel-item p-3 bg-white">清明</li>
+              <li type="button" class="km-h5 sel-item p-3 bg-white">穀雨</li>
+            </ul>
+            <ul class="d-flex align-items-center gap-3 py-3 mb-32 bg-su">
+              <li class="sel-title px-4 py-3 lh-1">夏</li>
+              <li type="button" class="km-h5 sel-item p-3 bg-white">立夏</li>
+              <li type="button" class="km-h5 sel-item p-3 bg-white">小滿</li>
+              <li type="button" class="km-h5 sel-item p-3 bg-white">芒種</li>
+              <li type="button" class="km-h5 sel-item p-3 bg-white">夏至</li>
+              <li type="button" class="km-h5 sel-item p-3 bg-white">小暑</li>
+              <li type="button" class="km-h5 sel-item p-3 bg-white">大暑</li>
+            </ul>
+            <ul class="d-flex align-items-center gap-3 py-3 mb-32 bg-fa">
+              <li class="sel-title px-4 py-3 lh-1">秋</li>
+              <li type="button" class="km-h5 sel-item p-3 bg-white">立秋</li>
+              <li type="button" class="km-h5 sel-item p-3 bg-white">處暑</li>
+              <li type="button" class="km-h5 sel-item p-3 bg-white">白露</li>
+              <li type="button" class="km-h5 sel-item p-3 bg-white">秋分</li>
+              <li type="button" class="km-h5 sel-item p-3 bg-white">寒露</li>
+              <li type="button" class="km-h5 sel-item p-3 bg-white">霜降</li>
+            </ul>
+            <ul class="d-flex align-items-center gap-3 py-3 mb-32 bg-wi">
+              <li class="sel-title px-4 py-3 lh-1">冬</li>
+              <li type="button" class="km-h5 sel-item p-3 bg-white">立冬</li>
+              <li type="button" class="km-h5 sel-item p-3 bg-white">小雪</li>
+              <li type="button" class="km-h5 sel-item p-3 bg-white">大雪</li>
+              <li type="button" class="km-h5 sel-item p-3 bg-white">冬至</li>
+              <li type="button" class="km-h5 sel-item p-3 bg-white">小寒</li>
+              <li type="button" class="km-h5 sel-item p-3 bg-white">大寒</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
     <%- include("./layout/footer") %>
     <script type="module" src="../main.js"></script>
+    <script type="module" src="../assets/js/solarTermsData.js"></script>
   </body>
 </html>
