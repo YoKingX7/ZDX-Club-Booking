@@ -19,7 +19,7 @@
 "neutral-200":  $neutral-200,     #e5e5e5
 "neutral-100":  $neutral-100,     #f0f0f0
 "neutral-50":   $neutral-50,      #FAFAFA
-"background-beige": $background -beige, #f6f3e6
+"background-beige": $background-beige, #f6f3e6
 ```
 
 2. spacer 為 16px 計算
