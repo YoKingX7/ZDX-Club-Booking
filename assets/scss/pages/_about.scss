@@ -1,0 +1,168 @@
+.hero {
+  &-image {
+    img {
+      max-width: 100%;
+      height: auto;
+    }
+  }
+  &-content {
+    .hero-title {
+      color: #2c3e50;
+    }
+    .hero-features {
+      list-style-position: inside;
+      .hero-feature-item {
+        text-indent: 36px;
+        &::marker {
+          color: #866654;
+        }
+      }
+    }
+  }
+  &-btn {
+    background: rgba(53, 63, 30, 0.8);
+    margin-left: 52px;
+    border: #0a0a0a solid;
+    border-width: 1px 4px;
+    padding-right: 10px;
+    padding-left: 10px;
+    color: white;
+    &:hover {
+      background: rgba(53, 63, 30, 1);
+      color: white;
+    }
+    .btn-inside-border {
+      border-left: #0a0a0a solid 1px;
+      border-right: #0a0a0a solid 1px;
+      padding-left: 22px;
+      padding-right: 22px;
+    }
+  }
+}
+
+// Services Section
+.services {
+  .service-card {
+    .service-image {
+      width: 320px;
+      img {
+        width: 100%;
+        height: auto;
+      }
+    }
+    .service-content {
+      flex: 1;
+      .service-title {
+        color: #2c3e50;
+      }
+      .service-desc {
+        color: #666;
+      }
+    }
+  }
+}
+
+// Testimonials Section
+.testimonials {
+  // 複用首頁的指示器樣式（全域使用）
+  .my-indicator {
+    border: 4px solid rgba(198, 198, 198, 1);
+  }
+
+  &-grid {
+    // 控制卡片間距
+    .row {
+      --bs-gutter-x: 36px; // 左右間距 36px
+      margin-left: -18px;
+      margin-right: -18px;
+      > [class*='col-'] {
+        padding-left: 18px;
+        padding-right: 18px;
+        margin-bottom: 36px;
+        &:nth-last-child(-n + 2) {
+          margin-bottom: 0; // 最後一排不需要下方間距
+        }
+      }
+    }
+    .testimonial-card {
+      height: 100%;
+      border: 1px solid #c6c6c6;
+      .testimonial-avatar {
+        width: 60px;
+        height: 60px;
+        border-radius: 50%;
+        object-fit: cover;
+      }
+      .testimonial-header {
+        .testimonial-name {
+        }
+        .testimonial-info {
+        }
+      }
+      .testimonial-content {
+      }
+      .testimonial-footer {
+        .testimonial-date {
+        }
+        .testimonial-rating {
+        }
+      }
+    }
+  }
+
+  // 手機版 Bootstrap Carousel 樣式
+  #testimonials-carousel {
+    .testimonial-card {
+      border: 1px solid #e0e0e0;
+      .testimonial-avatar {
+        width: 50px;
+        height: 50px;
+        object-fit: cover;
+      }
+    }
+  }
+}
+
+// 手機版樣式
+@media (max-width: 768px) {
+  .hero {
+    &-content {
+      .hero-features {
+        padding-left: 0;
+        text-align: left;
+        display: inline-block;
+        .hero-feature-item {
+          text-indent: 0px;
+        }
+      }
+    }
+    &-btn {
+      margin: 0 auto;
+      width: 100%;
+      .btn-inside-border {
+        width: 100%;
+      }
+    }
+  }
+
+  .services {
+    .service-card {
+      flex-direction: column;
+      overflow: hidden;
+      .service-image {
+        width: 100%;
+      }
+    }
+  }
+}
+
+// 平板版樣式
+@media (min-width: 769px) and (max-width: 1024px) {
+  .services {
+    .service-card {
+      .service-image {
+        width: 160px;
+      }
+    }
+  }
+}
