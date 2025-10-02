@@ -1,0 +1,1248 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>index</title>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+  <script type="module" crossorigin src="/ZDX-Club-Booking/assets/main-Co4KaKCF.js"></script>
+  <link rel="stylesheet" crossorigin href="/ZDX-Club-Booking/assets/main-C3O6O0dG.css">
+</head>
+
+<body style="background-image: url(/ZDX-Club-Booking/assets/nav-bg-CDBBRjb5.png);">
+
+
+  <nav class="nav navbar position-relative py-0">
+  <div class="container border-bottom border-black-400 py-md-40 py-3">
+    <div class="d-flex d-md-none justify-content-between px-12 w-100">
+      <img
+        class="logo-mb d-block"
+        src="/ZDX-Club-Booking/assets/logo-mb-crvVyaac.png"
+        alt="pig logo"
+      />
+      <button
+        class="border-0 p-2"
+        type="button"
+        data-bs-toggle="collapse"
+        href="#collapseExample"
+        role="button"
+        aria-expanded="false"
+        aria-controls="collapseExample"
+        style="background-image: url(/ZDX-Club-Booking/assets/nav-bg-CDBBRjb5.png)"
+        id="nav-toggle"
+        onclick="switchBtn('show')"
+      >
+        <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAACXBIWXMAAAsTAAALEwEAmpwYAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAA5SURBVHgB7dIxEQAgEAPBgBKo3r+dNOAkDAUKoOEnW52AAyy9ciIihqSGNybJvqPC0vNFds8X2QcWBOkYCmEMl4sAAAAASUVORK5CYII=" alt="menu button" />
+      </button>
+      <button
+        class="border-0 p-2"
+        type="button"
+        data-bs-toggle="collapse"
+        href="#collapseExample"
+        role="button"
+        aria-expanded="false"
+        aria-controls="collapseExample"
+        style="background-image: url(/ZDX-Club-Booking/assets/nav-bg-CDBBRjb5.png)"
+        id="nav-close"
+        onclick="switchBtn('close')"
+      >
+        <img
+          src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAACLSURBVHgBrVPJEcAgCAQq8adtWLlt+AuVaMRJPiYKGbMzfoBdLkHv/VFrBSKKOWcGA0IIrnFS5102V0pJ4vhA7rGEiLE9togMZJaqceYY25nFoBag+VDLIvZVdaj12eYDq9YeAi8iMCMLCDZBSnbWVvzfELfWuPWRLOSVCFnJgp5xuJ17C2w950EETp0EDLQAbp7jAAAAAElFTkSuQmCC"
+          alt="menu button"
+        />
+      </button>
+    </div>
+
+    <ul
+      class="list-unstyled d-md-flex d-none px-106 align-items-center justify-content-between w-100"
+    >
+      <li class="py-3 px-4">
+        <a href="knowledge.html" class="text-dark text-decoration-none">
+          命理知識
+        </a>
+      </li>
+      <li class="py-3 px-4">
+        <a href="about.html" class="text-dark text-decoration-none">
+          命理師介紹
+        </a>
+      </li>
+      <li>
+        <a href="index.html">
+          <img src="/ZDX-Club-Booking/assets/logo-Mj0upPJP.png" alt="pig logo" />
+        </a>
+      </li>
+      <li class="py-3 px-4">
+        <a href="#" class="text-dark text-decoration-none"> 立即預約 </a>
+      </li>
+      <li class="py-3 px-4 d-block">
+        <a href="#" class="text-dark text-decoration-none"> 登入/註冊 </a>
+      </li>
+      <li class="dropdown d-none">
+        <button
+          type="button"
+          class="py-3 px-4 border-0 bg-transparent text-decoration-none"
+          id="dropdownMenuButton1"
+          data-bs-toggle="dropdown"
+          aria-expanded="false"
+        >
+          <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAADuSURBVHgBxVLBDYJAELwDC7gSfAEJH0uwBDogVqBUYqjAWAFSgSXgk5+WcA0AzhA05FhziT6cZAO3uzc7u7daCUiSZD0Mwwm2wdForS+wom3bh5sbSJf7vm/GYBAUvIjfDX2MKR+iKKpgd9cfx/GV5lUAZKhauk74zlNLXgILudZ14rLBx3gJUOmG3nO1xB6x2nWuBIIdB8Y5sBWYRfWcCkB8WOQLlV7PeIRlbImqSCw948/QbuWu69irkZKhyIZhWM6VvIeYpum4LOgzUx/AGHOYuwhiaA0WpVIeuAs1f0YqqH0E00JtJYKv8H+CJ18TZuVeExFmAAAAAElFTkSuQmCC" alt="icon-user" />
+          <span>使用者姓名</span>
+          <img
+            src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAB9SURBVHgB7ZDRCYAgFEWNRhBHUPxsBDfLNnGTcgz9agBdQXtCwSMqDPz0wAXxeq+PR0inPVJK9ccb7w9SSiullMQYLfaEEHPO2TDGbAhhfywoBoQHOGpcUsLlDrQ458zrBAUIbbgEpK6w916TWuBXDcqn6oMYzvn0tdROIw4ahi85C4ZPTgAAAABJRU5ErkJggg=="
+            alt="angle-small-down"
+          />
+        </button>
+        <ul
+          class="dropdown-menu member-menu mt-0 py-0 border-0"
+          aria-labelledby="dropdownMenuButton1"
+        >
+          <li>
+            <a class="dropdown-item py-3 text-center" href="#">預約查詢</a>
+          </li>
+          <li>
+            <a class="dropdown-item py-3 text-center" href="#">會員中心</a>
+          </li>
+          <li>
+            <a class="dropdown-item py-3 text-center" href="#">修改密碼</a>
+          </li>
+        </ul>
+      </li>
+    </ul>
+  </div>
+  <div
+    class="nav-collapse collapse w-100 py-4 shadow position-absolute left-0"
+    id="collapseExample"
+    style="background-image: url(/ZDX-Club-Booking/assets/nav-bg-CDBBRjb5.png)"
+  >
+    <div
+      class="card card-body p-0 border-0"
+      style="background-image: url(/ZDX-Club-Booking/assets/nav-bg-CDBBRjb5.png)"
+    >
+      <ul class="list-unstyled text-center">
+        <li class="py-3">
+          <a href="#" class="text-dark text-decoration-none"> 命理知識 </a>
+        </li>
+        <li class="py-3">
+          <a href="#" class="text-dark text-decoration-none"> 命理師介紹 </a>
+        </li>
+        <li class="py-3">
+          <a href="#" class="text-dark text-decoration-none"> 立即預約 </a>
+        </li>
+        <li class="py-3 d-block">
+          <a href="#" class="text-dark text-decoration-none"> 登入/註冊 </a>
+        </li>
+        <li class="dropdown d-none">
+          <button
+            type="button"
+            class="py-3 px-4 border-0 bg-transparent text-decoration-none"
+            id="dropdownMenuButton1"
+            data-bs-toggle="dropdown"
+            aria-expanded="false"
+          >
+            <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAADuSURBVHgBxVLBDYJAELwDC7gSfAEJH0uwBDogVqBUYqjAWAFSgSXgk5+WcA0AzhA05FhziT6cZAO3uzc7u7daCUiSZD0Mwwm2wdForS+wom3bh5sbSJf7vm/GYBAUvIjfDX2MKR+iKKpgd9cfx/GV5lUAZKhauk74zlNLXgILudZ14rLBx3gJUOmG3nO1xB6x2nWuBIIdB8Y5sBWYRfWcCkB8WOQLlV7PeIRlbImqSCw948/QbuWu69irkZKhyIZhWM6VvIeYpum4LOgzUx/AGHOYuwhiaA0WpVIeuAs1f0YqqH0E00JtJYKv8H+CJ18TZuVeExFmAAAAAElFTkSuQmCC" alt="icon-user" />
+            <span>使用者姓名</span>
+            <img
+              src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAB9SURBVHgB7ZDRCYAgFEWNRhBHUPxsBDfLNnGTcgz9agBdQXtCwSMqDPz0wAXxeq+PR0inPVJK9ccb7w9SSiullMQYLfaEEHPO2TDGbAhhfywoBoQHOGpcUsLlDrQ458zrBAUIbbgEpK6w916TWuBXDcqn6oMYzvn0tdROIw4ahi85C4ZPTgAAAABJRU5ErkJggg=="
+              alt="angle-small-down"
+            />
+          </button>
+          <ul
+            class="dropdown-menu member-menu mt-0 py-0 border-0 w-100 px-4"
+            style="background-image: url('/ZDX-Club-Booking/assets/nav-bg-CDBBRjb5.png')"
+            aria-labelledby="dropdownMenuButton1"
+          >
+            <li class="border-top border-1 border-black-400">
+              <a class="dropdown-item py-3 text-center" href="#">預約查詢</a>
+            </li>
+            <li>
+              <a class="dropdown-item py-3 text-center" href="#">會員中心</a>
+            </li>
+            <li>
+              <a class="dropdown-item py-3 text-center" href="#">修改密碼</a>
+            </li>
+          </ul>
+        </li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+<script>
+  const navToggle = document.getElementById('nav-toggle')
+  const closeBtn = document.getElementById('nav-close')
+  closeBtn.style.display = 'none'
+  function switchBtn(item) {
+    if (item === 'show') {
+      navToggle.style.display = 'none'
+      closeBtn.style.display = 'block'
+    } else {
+      navToggle.style.display = 'block'
+      closeBtn.style.display = 'none'
+    }
+  }
+</script>
+
+
+    <header class="header py-md-160 py-80 position-relative "
+      style="background-image: url(/ZDX-Club-Booking/assets/header-9rkTl3x-.png);">
+      <div class="filter position-absolute top-0 start-0 end-0 bottom-0
+            ">
+      </div>
+      <div class="container text-center position-relative">
+        <h1 class="fs-md-40 fs-3  text-neutral-50 fw-normal mb-md-48 mb-4">
+          二十四節氣中<br>
+          看見你的節奏與命運
+        </h1>
+        <p class="fs-md-5 fs-6 text-neutral-50 mb-md-48 mb-4 text-center">用東方智慧解讀時機，<br class="d-block d-md-none ">
+          結合命理協助你的人生選擇</p>
+
+        <button type="button" class="btn bg-neutral-50 rounded-0  fs-5 py-0">
+          <div class="btn-inside-border py-3">
+            立即探索您專屬的服務
+          </div>
+        </button>
+      </div>
+
+
+    </header>
+
+    <section class="py-md-80 py-40 service">
+      <div class="container">
+        <div class="d-flex   mb-md-40 mb-4 justify-content-between">
+          <div class="d-flex align-items-md-end align-items-start position-relative pt-30
+          flex-md-row flex-column
+          ">
+            <img class="position-absolute top-0" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADgAAAA4CAYAAACohjseAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAUiSURBVHgB3ZpPaFxFHMd/8+fN27fZbbZNTU1Qwcb20JOgJykiIkUPFiIkeCo1hyqIgqeABdmLxSL+QVGwSE4epAH/VFARhNxF8CRSKVZLG2uTbZLNvrfvz8w4v5fustlsks3uJtn3Pnt4b2dnl/fd38zvz8wQ6DHF4lPc+eeoI1SJLRcKIELFsN2SZaYCm9f6SUf42g/N+woIPqhVYHnTMzNl6DEEegCKEnceGhSluyQ4dFDjg2thXpEWlIJDI2W3+p7i1CcSAmURz/EAAg0MMgCaiXKO3ll9/eMffOiSrgR+9NpzdonZzkA1L1QQcsl0jmiVhy7QhJYJI4GWWuB1wFqe70ZoRwLRYoPXC7nlghl6bs6xtH9E4r/fQwg1ltXUZ+Z3FSdep0J3LPDCq2eG4rlDGd0NYa1AsXiVYC+cv/TF/I6+227HNedx/zA6Bxp6o1qBgD2EEZARUBfvc5mVv9u1ZlsCi+eezwqLOzokgio2CvtIPHSN2JxYvdaOyG2H14Uz40MCnJy0hMMifQT2GzMlmAQ/1GL45GNjq3O/Xg236r6lwLfPvTCiM7YNRA7SUA1Cn6AJCHxwRnhhO5GbCnz3lfFhTWyHKJkzscqBPkMDULQmBX7oycfHVjYTSVs14pwLNT8sGdX9KK4RakRaOnMcY3LLz5sbsKPQ2QcIYS7zw8OQAFCk6+eOX748sWFEbhBYCQdHMHWCSA5BgsCwdXVuo4dfJ/CDs2cLeOWRLEACYYEcxunV2LZOYMC9EbzudRDvJTi9Gt/XBWIKhjlf0oZmM5jsX5yaqif8dYFx+mUyeEgBklVGavexwItTp/PU5HmUtK7bkgZaseZRY4FKZIcCbmqwBM+9Zv78icchLhaIQ5OGuq8D+k4hZC21JJ8Zt1qiA8NJdy6tGDsFv9FF66AjqaklU8hfP+az3HaDODAGu16X7wdunkamePR5uuZfDWWcJg0zwDRLj/dsRNsyS0ngBputWyYdrDIoV9lUzj4E4zqFlJN+gRF1UxkDEVxepMQuRJBScLF4Ldk2uzyQQmIL4r6dpcCDFCLN5g0ly5FiIQkghYiIeDSfB9dLZaIG4B2ouvTlS9+5VjWd1cSJJ6xy7GS8AxkXd1YhRVAFq5OTs2te1FkpyXixN0VIJ1rAayxweuZK2Va+j3EDUgDuIb75ydeLeF9P1YJIEhaxRUgByopu1e7rAo8t2wtY/Cbdio3WQ+oCJ2dnpXTMME24FatQvdb4fl01gcqVbfm1Uw1Jgyo2XzRhb11bc6eKWlolkZ84KzJKl6ZnvrzV3L5BIP4D0mE+8OQMVbOm5Lmj6karz1ouV/z8yx/e048etTkVSmudgT4G91T8gWC++M5Xldafb8L5z6/cNtWipPcO3/Qja4eDvFLxw2+WNuuz5ZLF2KK8Ie3+DB34TKH259EQW/XbUiCGjuA+dV2buqqfclUcVe2IQ7ZdMpyb+12ePH1ihZVJgRPN9T4vVGEIqw4EN9/69Nu2nOCOThu+99KLD1a5HKJ7cMKwGVx+sMwoQm9ZLM62Hac7OE45PkRDvmenDXGuoTip/P/aGZLNdHggdkLY/7LR3dxTjFfEIgh85i8eO2UvYG0HHdDVkeb335hwggo80ktrEiNKZqjmgVd6+Fn7dqfC6r8HPQAPMeA+/04tig6DcLODF5rNHzO/dIRFt1vG+hR6RE8E1sCTDTe/D/OVbCavqzJrcRCN1q3NJ01ZGU/WY1sQ3vVOPJPxu7XUZvwPulpGkJDXl1cAAAAASUVORK5CYII=" alt="round-deco ">
+            <h2 class="ps-md-32 mb-md-0 mb-12 me-12 fs-md-2 fs-4">熱門服務項目</h2>
+            <p class=" mb-0">命理不神秘，熱門服務助你一步步了解自己！</p>
+          </div>
+
+          <ul class="my-indicators list-unstyled mb-0 d-md-flex d-none align-items-end ">
+            <li>
+              <div class="my-indicator service-item w-120 me-12 "></div>
+            </li>
+            <li>
+              <div class="my-indicator service-item w-120 me-12"></div>
+            </li>
+            <li>
+              <div class="my-indicator service-item w-120 "></div>
+            </li>
+          </ul>
+        </div>
+
+
+
+        <div id="service-carousel" class="carousel slide mb-4 mb-md-0" data-bs-ride="carousel">
+          <div class="carousel-inner">
+            <div class="carousel-item active bg-position-left"
+              style="background-image: url(/ZDX-Club-Booking/assets/banner-1-CMYaEcic.png);">
+              <div class=" d-flex align-items-center h-100">
+                <div>
+                  <h4 class="fs-5 fs-md-4 mb-4">紫微命盤精解</h4>
+                  <p class="mb-4">
+                    透過專業紫微斗數排盤，解析個人命格結構，了解內在性<br class="d-none d-md-block">
+                    格與人生方向，幫助你在迷惘中找到清晰定位。
+                  </p>
+                  <button type="button" class="btn  rounded-0  fs-md-5 fs-6 py-0 px-12 border-green-200">
+                    <div class="btn-inside-border py-2 px-3 text-white  border-green-200">
+                      立即預約
+                    </div>
+                  </button>
+                </div>
+              </div>
+            </div>
+            <div class="carousel-item " style="background-image: url(/ZDX-Club-Booking/assets/banner-2-sY4yZRpe.png);">
+              <div class=" d-flex align-items-center h-100">
+                <div>
+                  <h4 class="fs-5 fs-md-4 mb-4">流年運勢分析</h4>
+                  <p class="mb-4">
+                    結合八字與流年運勢，深入剖析財運、
+                    感情、事業等關鍵<br class="d-none d-md-block">
+                    面向，掌握最佳行動時機，趨吉避凶，為人生提前佈局。
+                  </p>
+                  <button type="button" class="btn  rounded-0  fs-md-5 fs-6 py-0 px-12 border-green-200">
+                    <div class="btn-inside-border py-2 px-3 text-white  border-green-200">
+                      立即預約
+                    </div>
+                  </button>
+                </div>
+              </div>
+            </div>
+            <div class="carousel-item " style="background-image: url(/ZDX-Club-Booking/assets/banner-3-DGq_g8WB.png);">
+              <div class=" d-flex align-items-center h-100">
+                <div>
+                  <h4 class="fs-5 fs-md-4 mb-4">擇日開運指南</h4>
+                  <p class="mb-4">
+                    無論是結婚、搬家、開業，擇日都是開啟好運的第一步。<br class="d-none d-md-block">
+                    根據你的八字量身規劃黃道吉日，讓每一個開始都更順<br class="d-none d-md-block">
+                    利。
+                  </p>
+                  <button type="button" class="btn  rounded-0  fs-md-5 fs-6 py-0 px-12 border-green-200">
+                    <div class="btn-inside-border py-2 px-3 text-white  border-green-200">
+                      立即預約
+                    </div>
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <ul class="my-indicators list-unstyled mb-0 d-flex d-md-none  align-items-end row ">
+          <li class="col">
+            <div class="my-indicator service-item "></div>
+          </li>
+          <li class="col">
+            <div class="my-indicator service-item"></div>
+          </li>
+          <li class="col">
+            <div class="my-indicator service-item"></div>
+          </li>
+        </ul>
+
+      </div>
+
+    </section>
+
+    <section class="comment py-md-80 py-40 position-relative  ">
+      <div class="container position-relative">
+        <div class="d-md-flex d-block align-items-end position-relative mb-md-40 mb-4">
+          <img class="position-absolute" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADgAAAA4CAYAAACohjseAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAUiSURBVHgB3ZpPaFxFHMd/8+fN27fZbbZNTU1Qwcb20JOgJykiIkUPFiIkeCo1hyqIgqeABdmLxSL+QVGwSE4epAH/VFARhNxF8CRSKVZLG2uTbZLNvrfvz8w4v5fustlsks3uJtn3Pnt4b2dnl/fd38zvz8wQ6DHF4lPc+eeoI1SJLRcKIELFsN2SZaYCm9f6SUf42g/N+woIPqhVYHnTMzNl6DEEegCKEnceGhSluyQ4dFDjg2thXpEWlIJDI2W3+p7i1CcSAmURz/EAAg0MMgCaiXKO3ll9/eMffOiSrgR+9NpzdonZzkA1L1QQcsl0jmiVhy7QhJYJI4GWWuB1wFqe70ZoRwLRYoPXC7nlghl6bs6xtH9E4r/fQwg1ltXUZ+Z3FSdep0J3LPDCq2eG4rlDGd0NYa1AsXiVYC+cv/TF/I6+227HNedx/zA6Bxp6o1qBgD2EEZARUBfvc5mVv9u1ZlsCi+eezwqLOzokgio2CvtIPHSN2JxYvdaOyG2H14Uz40MCnJy0hMMifQT2GzMlmAQ/1GL45GNjq3O/Xg236r6lwLfPvTCiM7YNRA7SUA1Cn6AJCHxwRnhhO5GbCnz3lfFhTWyHKJkzscqBPkMDULQmBX7oycfHVjYTSVs14pwLNT8sGdX9KK4RakRaOnMcY3LLz5sbsKPQ2QcIYS7zw8OQAFCk6+eOX748sWFEbhBYCQdHMHWCSA5BgsCwdXVuo4dfJ/CDs2cLeOWRLEACYYEcxunV2LZOYMC9EbzudRDvJTi9Gt/XBWIKhjlf0oZmM5jsX5yaqif8dYFx+mUyeEgBklVGavexwItTp/PU5HmUtK7bkgZaseZRY4FKZIcCbmqwBM+9Zv78icchLhaIQ5OGuq8D+k4hZC21JJ8Zt1qiA8NJdy6tGDsFv9FF66AjqaklU8hfP+az3HaDODAGu16X7wdunkamePR5uuZfDWWcJg0zwDRLj/dsRNsyS0ngBputWyYdrDIoV9lUzj4E4zqFlJN+gRF1UxkDEVxepMQuRJBScLF4Ldk2uzyQQmIL4r6dpcCDFCLN5g0ly5FiIQkghYiIeDSfB9dLZaIG4B2ouvTlS9+5VjWd1cSJJ6xy7GS8AxkXd1YhRVAFq5OTs2te1FkpyXixN0VIJ1rAayxweuZK2Va+j3EDUgDuIb75ydeLeF9P1YJIEhaxRUgByopu1e7rAo8t2wtY/Cbdio3WQ+oCJ2dnpXTMME24FatQvdb4fl01gcqVbfm1Uw1Jgyo2XzRhb11bc6eKWlolkZ84KzJKl6ZnvrzV3L5BIP4D0mE+8OQMVbOm5Lmj6karz1ouV/z8yx/e048etTkVSmudgT4G91T8gWC++M5Xldafb8L5z6/cNtWipPcO3/Qja4eDvFLxw2+WNuuz5ZLF2KK8Ie3+DB34TKH259EQW/XbUiCGjuA+dV2buqqfclUcVe2IQ7ZdMpyb+12ePH1ihZVJgRPN9T4vVGEIqw4EN9/69Nu2nOCOThu+99KLD1a5HKJ7cMKwGVx+sMwoQm9ZLM62Hac7OE45PkRDvmenDXGuoTip/P/aGZLNdHggdkLY/7LR3dxTjFfEIgh85i8eO2UvYG0HHdDVkeb335hwggo80ktrEiNKZqjmgVd6+Fn7dqfC6r8HPQAPMeA+/04tig6DcLODF5rNHzO/dIRFt1vG+hR6RE8E1sCTDTe/D/OVbCavqzJrcRCN1q3NJ01ZGU/WY1sQ3vVOPJPxu7XUZvwPulpGkJDXl1cAAAAASUVORK5CYII=" alt="round-deco ">
+          <h2 class="ps-md-32 pt-30 pt-md-0 mb-0 me-12 fs-md-2 fs-4">有緣人評價</h2>
+          <p class="mb-0">來自四面八方的肯定，是我們前進的動力</p>
+        </div>
+
+        <div class="swiper mySwiper d-none d-md-block" navigation="true">
+          <!-- Additional required wrapper -->
+          <div class="swiper-wrapper  ">
+            <!-- Slides -->
+            <div class="swiper-slide">
+              <div class="card bg-transparent border-0">
+                <img src="/ZDX-Club-Booking/assets/comment-4-CjuL7JMo.png" alt="women take coffee">
+                <div class="pt-4 text-center">
+                  <img class="mb-4" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAGAAAAAQCAYAAADpunr5AAAACXBIWXMAAAsTAAALEwEAmpwYAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAKESURBVHgB7ZhBbtpQEIZnHg40XfkI5ATJDeqcoFQyVXcFqVB2IZtKkAWwCK66SbKpKBtgVwkqkRNATxBuEI5AN7SlxtN5JDjG2DEhy8cvge3xvE+GeTNvnhFC9CWXPpoLuiACHYBq5eaPPjxDO14wD4OM1UxKT8T3bggoeW+azF7aB9XL/gS2kKo8/neHyAFwgIwwnggCxOMxw/MwUnp8GjNgSynLw1jtz+xf9jFeYAAQxetNbJtKRR7y7C81vo+r7f5EnofxsFrkdJlqJzwquTQSUYoPus+XQejWMY7wZLZv1/xptePd8Ujg6Vmj25bX9Q9mkad6JYinvZjutbhGpXgUREhncMZrSPzWjvhw7LUpyjMQaLS08YwfIcSGy+uZbbcTCY0z4KHMIWBS8rTFw2wp/g2G36Yijwiz5ebdbA+SLEPgC5yVS2cIoSVkfYItFTRWRR5/KlbhXRI2lFUwDU6BihwrALUsfz2555WD/+7bb9ZvqMiDETn2rZU3K1Gcz7n0CTkwAKSx5Ln7gPO8WeWLSMC9TsvN3uVjDgrzOuybCfKp580LPhS9PLcNPWv2GIBjiNYk6mEU543CfHjZ/+XnuQGQdcm3GQmTvqhhEVKVp2k4DPMRYrGGrPDcADjzzbsDh6J9leQhjj997S4yQC7KXHJu6vn07XKBLjV6Q5klXp4bACHwcI0q+1lcT1NexA4hQiryeA0YyvN6/u17mtvyXZBcvIGc+eCc2055j1vPkZfnBoB73GsvkJCueKd2XPrWPeANydXKPZ9vkFTkyY2bnPWcD20S1HngOdeI1LI+mgOQu2QPb+VtqFXgKBG84hapI9Ml6J6D8HO5xY7SjhfN+w8jrp5Tr8iPRgAAAABJRU5ErkJggg==" alt="4-stars">
+                  <div class="card-title fw-bold mb-4">
+                    芷涵(新婚人妻，27歲)
+                  </div>
+                  <p class="mb-4 mb-md-0 fs-7 fs-md-6 ">
+                    幫我和另一半擇日登記結婚的服務超貼心<br>
+                    ，老師不只提供好日子，還附上注意事項<br>
+                    與祝福話語，感覺特別溫暖。
+                  </p>
+
+                </div>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="card bg-transparent border-0">
+                <img src="/ZDX-Club-Booking/assets/comment-1-CqrOaJKE.png" alt="women take coffee">
+                <div class="pt-4 text-center">
+                  <img class="mb-4" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAGAAAAAQCAYAAADpunr5AAAACXBIWXMAAAsTAAALEwEAmpwYAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAKESURBVHgB7ZhBbtpQEIZnHg40XfkI5ATJDeqcoFQyVXcFqVB2IZtKkAWwCK66SbKpKBtgVwkqkRNATxBuEI5AN7SlxtN5JDjG2DEhy8cvge3xvE+GeTNvnhFC9CWXPpoLuiACHYBq5eaPPjxDO14wD4OM1UxKT8T3bggoeW+azF7aB9XL/gS2kKo8/neHyAFwgIwwnggCxOMxw/MwUnp8GjNgSynLw1jtz+xf9jFeYAAQxetNbJtKRR7y7C81vo+r7f5EnofxsFrkdJlqJzwquTQSUYoPus+XQejWMY7wZLZv1/xptePd8Ujg6Vmj25bX9Q9mkad6JYinvZjutbhGpXgUREhncMZrSPzWjvhw7LUpyjMQaLS08YwfIcSGy+uZbbcTCY0z4KHMIWBS8rTFw2wp/g2G36Yijwiz5ebdbA+SLEPgC5yVS2cIoSVkfYItFTRWRR5/KlbhXRI2lFUwDU6BihwrALUsfz2555WD/+7bb9ZvqMiDETn2rZU3K1Gcz7n0CTkwAKSx5Ln7gPO8WeWLSMC9TsvN3uVjDgrzOuybCfKp580LPhS9PLcNPWv2GIBjiNYk6mEU543CfHjZ/+XnuQGQdcm3GQmTvqhhEVKVp2k4DPMRYrGGrPDcADjzzbsDh6J9leQhjj997S4yQC7KXHJu6vn07XKBLjV6Q5klXp4bACHwcI0q+1lcT1NexA4hQiryeA0YyvN6/u17mtvyXZBcvIGc+eCc2055j1vPkZfnBoB73GsvkJCueKd2XPrWPeANydXKPZ9vkFTkyY2bnPWcD20S1HngOdeI1LI+mgOQu2QPb+VtqFXgKBG84hapI9Ml6J6D8HO5xY7SjhfN+w8jrp5Tr8iPRgAAAABJRU5ErkJggg==" alt="4-stars">
+                  <div class="card-title fw-bold mb-4">
+                    Ken(設計師，33歲)
+                  </div>
+                  <p class="mb-4 mb-md-0 fs-7 fs-md-6 ">
+                    第一次接觸紫微命盤，本來只是好奇，沒<br>
+                    想到看完解析後對自己的個性和人際盲點<br>
+                    突然豁然開朗，真的蠻有幫助！
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="card bg-transparent border-0 ">
+
+                <img src="/ZDX-Club-Booking/assets/comment-2-BZNX5hyE.png" alt="women take coffee">
+                <div class="pt-4 text-center">
+                  <img class="mb-4" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAGAAAAAQCAYAAADpunr5AAAACXBIWXMAAAsTAAALEwEAmpwYAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAGYSURBVHgB7ZcxUsJQEIZ3nyGIVbwBnABuYDiBOAM9FjJ0agkWhsJhxkbokEatwRm8AZ5Ab6BHSIUjA3luHM2E8GJeYrt/kTfZ9++XYudl3yLE6PqkUVkLeSMlWACy1x0/zuAfYp6ah6qg06xZeTP3IkEWf0Lucm9VcgYzFzKIefE8oQKY5o4dSvZlmYsdGzKKefE8ZQEQxaFOTFfMi+ehc0bHZWGckqP4G5RS1mixIl4XEYP/GFXYXRZWveixYl46nrG7yN15QAnULRJkEbgZDuQ/jAot1XCMeel44js5o+ibdjTGvHQ8gQhzyChVLvPS8QSgcUyP1HdeP/mzsDra3mBeGl4wB1y16g69XGrmn3fH08FfBubp8TYGsX6r8Ra5v6rkUvI+aIh5ybxgDui367ZGsi/L9yaZmKfHCwrgrfW7uSeTvczT4wUFEALLW06EVxoe3qNhajplSBDz9HhBAehO+hQ2SZRDmtSqndtJiQaI4cZexKsS8/R4m0243WjSjHwAKB86o+lctechPF+MJvegIeYl874ALbpFyEgajH0AAAAASUVORK5CYII=" alt="4-stars">
+                  <div class="card-title fw-bold mb-4">
+                    芷涵(新婚人妻，27歲)
+                  </div>
+                  <p class="mb-4 mb-md-0 fs-7 fs-md-6 ">
+                    幫我和另一半擇日登記結婚的服務超貼心<br>
+                    ，老師不只提供好日子，還附上注意事項<br>
+                    與祝福話語，感覺特別溫暖。
+                  </p>
+
+                </div>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="card bg-transparent border-0">
+                <img src="/ZDX-Club-Booking/assets/comment-3-ZsnJ9ygh.png" alt="women take coffee">
+                <div class="pt-4 text-center">
+                  <img class="mb-4" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAGAAAAAQCAYAAADpunr5AAAACXBIWXMAAAsTAAALEwEAmpwYAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAGYSURBVHgB7ZcxUsJQEIZ3nyGIVbwBnABuYDiBOAM9FjJ0agkWhsJhxkbokEatwRm8AZ5Ab6BHSIUjA3luHM2E8GJeYrt/kTfZ9++XYudl3yLE6PqkUVkLeSMlWACy1x0/zuAfYp6ah6qg06xZeTP3IkEWf0Lucm9VcgYzFzKIefE8oQKY5o4dSvZlmYsdGzKKefE8ZQEQxaFOTFfMi+ehc0bHZWGckqP4G5RS1mixIl4XEYP/GFXYXRZWveixYl46nrG7yN15QAnULRJkEbgZDuQ/jAot1XCMeel44js5o+ibdjTGvHQ8gQhzyChVLvPS8QSgcUyP1HdeP/mzsDra3mBeGl4wB1y16g69XGrmn3fH08FfBubp8TYGsX6r8Ra5v6rkUvI+aIh5ybxgDui367ZGsi/L9yaZmKfHCwrgrfW7uSeTvczT4wUFEALLW06EVxoe3qNhajplSBDz9HhBAehO+hQ2SZRDmtSqndtJiQaI4cZexKsS8/R4m0243WjSjHwAKB86o+lctechPF+MJvegIeYl874ALbpFyEgajH0AAAAASUVORK5CYII=" alt="4-stars">
+                  <div class="card-title fw-bold mb-4">
+                    Eric(科技業，35歲)
+                  </div>
+                  <p class="mb-4 mb-md-0 fs-7 fs-md-6 ">
+                    命理服務完全不像我以前想像的老派，介<br>
+                    面乾淨簡單，說明也清楚易懂，非常適合<br>
+                    現代人使用！
+                  </p>
+
+                </div>
+              </div>
+            </div>
+
+          </div>
+
+          <!-- If we need navigation buttons -->
+        </div>
+        <div class="swiper-button-prev opacity-100 position-absolute
+        d-none d-md-flex  justify-content-center align-items-center">
+          <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAACXBIWXMAAAsTAAALEwEAmpwYAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAC7SURBVHgB7ZTBDQIhEEUHLcAD4e6JUIJHStlOhE4sxW0DLhYAiQ0ADgkmHjYCu+tJXjLhH4b/E4YMwGCwBOf8ipWEELLWe4BOsjkeKusQwrnW3xXwaY5oa+0N9uL9LKUU7MlPzXGQ0xbz6gxijLJIbYxR0EnzkAkhJ1jBsdbAGHumlCaUF0opeO9n6KAa4Jx7oDFBKXP1hlQDMmh4XxvSFLAlpDlgKQTnM+cn/HanexeVr6qzbtlFgz/gBfXhUiMveq0KAAAAAElFTkSuQmCC" alt="angle-small-left">
+        </div>
+        <div
+          class="swiper-button-next opacity-100 position-absolute d-none d-md-flex  justify-content-center align-items-center   ">
+          <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAACXBIWXMAAAsTAAALEwEAmpwYAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAC6SURBVHgB7ZJBCsMgEEXVRdx6BLsRwU2O0ByhJ8xRcoUuxdUcoVsFpeOiEEJJRumitHkQJpBxHvkjYyc/D6c0GWNmLFchxOS9B9aAoDRxzjUWXUpZrLWaNUASxBhvWO49ElJEFa21GoZhwdcRH6DGRRb0SkgRvQCAR0ppYqu4js40CdYSXDxUiXNu/KhgS85Z7X1v2kFlu4cQwmWvv+kP3i356Mx3XNPe4RVSRFLKuWc4WYConuEnf8ITrh5StI6FDpsAAAAASUVORK5CYII=" alt="angle-small-right">
+        </div>
+
+
+        <div id="comment-carousel" class="carousel slide mb-4 mb-md-0 d-md-none d-block" data-bs-ride="carousel">
+          <div class="carousel-inner">
+            <div class="carousel-item  ps-0 active swiper-slide">
+              <div class="card bg-transparent border-0">
+                <img src="/ZDX-Club-Booking/assets/comment-4-CjuL7JMo.png" alt="women take coffee">
+                <div class="pt-4 text-center">
+                  <img class="mb-4" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAGAAAAAQCAYAAADpunr5AAAACXBIWXMAAAsTAAALEwEAmpwYAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAKESURBVHgB7ZhBbtpQEIZnHg40XfkI5ATJDeqcoFQyVXcFqVB2IZtKkAWwCK66SbKpKBtgVwkqkRNATxBuEI5AN7SlxtN5JDjG2DEhy8cvge3xvE+GeTNvnhFC9CWXPpoLuiACHYBq5eaPPjxDO14wD4OM1UxKT8T3bggoeW+azF7aB9XL/gS2kKo8/neHyAFwgIwwnggCxOMxw/MwUnp8GjNgSynLw1jtz+xf9jFeYAAQxetNbJtKRR7y7C81vo+r7f5EnofxsFrkdJlqJzwquTQSUYoPus+XQejWMY7wZLZv1/xptePd8Ujg6Vmj25bX9Q9mkad6JYinvZjutbhGpXgUREhncMZrSPzWjvhw7LUpyjMQaLS08YwfIcSGy+uZbbcTCY0z4KHMIWBS8rTFw2wp/g2G36Yijwiz5ebdbA+SLEPgC5yVS2cIoSVkfYItFTRWRR5/KlbhXRI2lFUwDU6BihwrALUsfz2555WD/+7bb9ZvqMiDETn2rZU3K1Gcz7n0CTkwAKSx5Ln7gPO8WeWLSMC9TsvN3uVjDgrzOuybCfKp580LPhS9PLcNPWv2GIBjiNYk6mEU543CfHjZ/+XnuQGQdcm3GQmTvqhhEVKVp2k4DPMRYrGGrPDcADjzzbsDh6J9leQhjj997S4yQC7KXHJu6vn07XKBLjV6Q5klXp4bACHwcI0q+1lcT1NexA4hQiryeA0YyvN6/u17mtvyXZBcvIGc+eCc2055j1vPkZfnBoB73GsvkJCueKd2XPrWPeANydXKPZ9vkFTkyY2bnPWcD20S1HngOdeI1LI+mgOQu2QPb+VtqFXgKBG84hapI9Ml6J6D8HO5xY7SjhfN+w8jrp5Tr8iPRgAAAABJRU5ErkJggg==" alt="4-stars">
+                  <div class="card-title fw-bold mb-4">
+                    芷涵(新婚人妻，27歲)
+                  </div>
+                  <p class="mb-4 mb-md-0 fs-7 fs-md-6 ">
+                    幫我和另一半擇日登記結婚的服務超貼心<br>
+                    ，老師不只提供好日子，還附上注意事項<br>
+                    與祝福話語，感覺特別溫暖。
+                  </p>
+
+                </div>
+              </div>
+            </div>
+            <div class="carousel-item  ps-0 swiper-slide">
+              <div class="card bg-transparent border-0">
+                <img src="/ZDX-Club-Booking/assets/comment-1-CqrOaJKE.png" alt="women take coffee">
+                <div class="pt-4 text-center">
+                  <img class="mb-4" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAGAAAAAQCAYAAADpunr5AAAACXBIWXMAAAsTAAALEwEAmpwYAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAKESURBVHgB7ZhBbtpQEIZnHg40XfkI5ATJDeqcoFQyVXcFqVB2IZtKkAWwCK66SbKpKBtgVwkqkRNATxBuEI5AN7SlxtN5JDjG2DEhy8cvge3xvE+GeTNvnhFC9CWXPpoLuiACHYBq5eaPPjxDO14wD4OM1UxKT8T3bggoeW+azF7aB9XL/gS2kKo8/neHyAFwgIwwnggCxOMxw/MwUnp8GjNgSynLw1jtz+xf9jFeYAAQxetNbJtKRR7y7C81vo+r7f5EnofxsFrkdJlqJzwquTQSUYoPus+XQejWMY7wZLZv1/xptePd8Ujg6Vmj25bX9Q9mkad6JYinvZjutbhGpXgUREhncMZrSPzWjvhw7LUpyjMQaLS08YwfIcSGy+uZbbcTCY0z4KHMIWBS8rTFw2wp/g2G36Yijwiz5ebdbA+SLEPgC5yVS2cIoSVkfYItFTRWRR5/KlbhXRI2lFUwDU6BihwrALUsfz2555WD/+7bb9ZvqMiDETn2rZU3K1Gcz7n0CTkwAKSx5Ln7gPO8WeWLSMC9TsvN3uVjDgrzOuybCfKp580LPhS9PLcNPWv2GIBjiNYk6mEU543CfHjZ/+XnuQGQdcm3GQmTvqhhEVKVp2k4DPMRYrGGrPDcADjzzbsDh6J9leQhjj997S4yQC7KXHJu6vn07XKBLjV6Q5klXp4bACHwcI0q+1lcT1NexA4hQiryeA0YyvN6/u17mtvyXZBcvIGc+eCc2055j1vPkZfnBoB73GsvkJCueKd2XPrWPeANydXKPZ9vkFTkyY2bnPWcD20S1HngOdeI1LI+mgOQu2QPb+VtqFXgKBG84hapI9Ml6J6D8HO5xY7SjhfN+w8jrp5Tr8iPRgAAAABJRU5ErkJggg==" alt="4-stars">
+                  <div class="card-title fw-bold mb-4">
+                    Ken(設計師，33歲)
+                  </div>
+                  <p class="mb-4 mb-md-0 fs-7 fs-md-6 ">
+                    第一次接觸紫微命盤，本來只是好奇，沒<br>
+                    想到看完解析後對自己的個性和人際盲點<br>
+                    突然豁然開朗，真的蠻有幫助！
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="carousel-item  ps-0 swiper-slide">
+              <div class="card bg-transparent border-0 ">
+
+                <img src="/ZDX-Club-Booking/assets/comment-2-BZNX5hyE.png" alt="women take coffee">
+                <div class="pt-4 text-center">
+                  <img class="mb-4" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAGAAAAAQCAYAAADpunr5AAAACXBIWXMAAAsTAAALEwEAmpwYAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAGYSURBVHgB7ZcxUsJQEIZ3nyGIVbwBnABuYDiBOAM9FjJ0agkWhsJhxkbokEatwRm8AZ5Ab6BHSIUjA3luHM2E8GJeYrt/kTfZ9++XYudl3yLE6PqkUVkLeSMlWACy1x0/zuAfYp6ah6qg06xZeTP3IkEWf0Lucm9VcgYzFzKIefE8oQKY5o4dSvZlmYsdGzKKefE8ZQEQxaFOTFfMi+ehc0bHZWGckqP4G5RS1mixIl4XEYP/GFXYXRZWveixYl46nrG7yN15QAnULRJkEbgZDuQ/jAot1XCMeel44js5o+ibdjTGvHQ8gQhzyChVLvPS8QSgcUyP1HdeP/mzsDra3mBeGl4wB1y16g69XGrmn3fH08FfBubp8TYGsX6r8Ra5v6rkUvI+aIh5ybxgDui367ZGsi/L9yaZmKfHCwrgrfW7uSeTvczT4wUFEALLW06EVxoe3qNhajplSBDz9HhBAehO+hQ2SZRDmtSqndtJiQaI4cZexKsS8/R4m0243WjSjHwAKB86o+lctechPF+MJvegIeYl874ALbpFyEgajH0AAAAASUVORK5CYII=" alt="4-stars">
+                  <div class="card-title fw-bold mb-4">
+                    芷涵(新婚人妻，27歲)
+                  </div>
+                  <p class="mb-4 mb-md-0 fs-7 fs-md-6 ">
+                    幫我和另一半擇日登記結婚的服務超貼心<br>
+                    ，老師不只提供好日子，還附上注意事項<br>
+                    與祝福話語，感覺特別溫暖。
+                  </p>
+
+                </div>
+              </div>
+            </div>
+            <div class="carousel-item  ps-0 swiper-slide">
+              <div class="card bg-transparent border-0">
+                <img src="/ZDX-Club-Booking/assets/comment-3-ZsnJ9ygh.png" alt="women take coffee">
+                <div class="pt-4 text-center">
+                  <img class="mb-4" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAGAAAAAQCAYAAADpunr5AAAACXBIWXMAAAsTAAALEwEAmpwYAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAGYSURBVHgB7ZcxUsJQEIZ3nyGIVbwBnABuYDiBOAM9FjJ0agkWhsJhxkbokEatwRm8AZ5Ab6BHSIUjA3luHM2E8GJeYrt/kTfZ9++XYudl3yLE6PqkUVkLeSMlWACy1x0/zuAfYp6ah6qg06xZeTP3IkEWf0Lucm9VcgYzFzKIefE8oQKY5o4dSvZlmYsdGzKKefE8ZQEQxaFOTFfMi+ehc0bHZWGckqP4G5RS1mixIl4XEYP/GFXYXRZWveixYl46nrG7yN15QAnULRJkEbgZDuQ/jAot1XCMeel44js5o+ibdjTGvHQ8gQhzyChVLvPS8QSgcUyP1HdeP/mzsDra3mBeGl4wB1y16g69XGrmn3fH08FfBubp8TYGsX6r8Ra5v6rkUvI+aIh5ybxgDui367ZGsi/L9yaZmKfHCwrgrfW7uSeTvczT4wUFEALLW06EVxoe3qNhajplSBDz9HhBAehO+hQ2SZRDmtSqndtJiQaI4cZexKsS8/R4m0243WjSjHwAKB86o+lctechPF+MJvegIeYl874ALbpFyEgajH0AAAAASUVORK5CYII=" alt="4-stars">
+                  <div class="card-title fw-bold mb-4">
+                    Eric(科技業，35歲)
+                  </div>
+                  <p class="mb-4 mb-md-0 fs-7 fs-md-6 ">
+                    命理服務完全不像我以前想像的老派，介<br>
+                    面乾淨簡單，說明也清楚易懂，非常適合<br>
+                    現代人使用！
+                  </p>
+
+                </div>
+              </div>
+            </div>
+          </div>
+
+
+        </div>
+
+        <ul class="my-indicators list-unstyled mb-0 d-flex d-md-none  align-items-end row ">
+          <li class="col">
+            <div class="my-indicator  comment-item "></div>
+          </li>
+          <li class="col">
+            <div class="my-indicator  comment-item"></div>
+          </li>
+          <li class="col">
+            <div class="my-indicator  comment-item"></div>
+          </li>
+          <li class="col">
+            <div class="my-indicator  comment-item"></div>
+          </li>
+        </ul>
+      </div>
+
+    </section>
+
+    <section class="py-md-80 py-40   position-relative overflow-x-clip ">
+      <!-- overflow-x-hidden會連y軸部分都隱藏 clip不會 -->
+      <img class="tree-deco opacity-50 position-absolute d-none d-md-block" src="/ZDX-Club-Booking/assets/tree-bg-BvfPEHpy.png"
+        alt="tree">
+      <div class="container">
+        <div class="d-md-flex d-block align-items-end position-relative mb-md-40 mb-4">
+          <img class="position-absolute" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADgAAAA4CAYAAACohjseAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAUiSURBVHgB3ZpPaFxFHMd/8+fN27fZbbZNTU1Qwcb20JOgJykiIkUPFiIkeCo1hyqIgqeABdmLxSL+QVGwSE4epAH/VFARhNxF8CRSKVZLG2uTbZLNvrfvz8w4v5fustlsks3uJtn3Pnt4b2dnl/fd38zvz8wQ6DHF4lPc+eeoI1SJLRcKIELFsN2SZaYCm9f6SUf42g/N+woIPqhVYHnTMzNl6DEEegCKEnceGhSluyQ4dFDjg2thXpEWlIJDI2W3+p7i1CcSAmURz/EAAg0MMgCaiXKO3ll9/eMffOiSrgR+9NpzdonZzkA1L1QQcsl0jmiVhy7QhJYJI4GWWuB1wFqe70ZoRwLRYoPXC7nlghl6bs6xtH9E4r/fQwg1ltXUZ+Z3FSdep0J3LPDCq2eG4rlDGd0NYa1AsXiVYC+cv/TF/I6+227HNedx/zA6Bxp6o1qBgD2EEZARUBfvc5mVv9u1ZlsCi+eezwqLOzokgio2CvtIPHSN2JxYvdaOyG2H14Uz40MCnJy0hMMifQT2GzMlmAQ/1GL45GNjq3O/Xg236r6lwLfPvTCiM7YNRA7SUA1Cn6AJCHxwRnhhO5GbCnz3lfFhTWyHKJkzscqBPkMDULQmBX7oycfHVjYTSVs14pwLNT8sGdX9KK4RakRaOnMcY3LLz5sbsKPQ2QcIYS7zw8OQAFCk6+eOX748sWFEbhBYCQdHMHWCSA5BgsCwdXVuo4dfJ/CDs2cLeOWRLEACYYEcxunV2LZOYMC9EbzudRDvJTi9Gt/XBWIKhjlf0oZmM5jsX5yaqif8dYFx+mUyeEgBklVGavexwItTp/PU5HmUtK7bkgZaseZRY4FKZIcCbmqwBM+9Zv78icchLhaIQ5OGuq8D+k4hZC21JJ8Zt1qiA8NJdy6tGDsFv9FF66AjqaklU8hfP+az3HaDODAGu16X7wdunkamePR5uuZfDWWcJg0zwDRLj/dsRNsyS0ngBputWyYdrDIoV9lUzj4E4zqFlJN+gRF1UxkDEVxepMQuRJBScLF4Ldk2uzyQQmIL4r6dpcCDFCLN5g0ly5FiIQkghYiIeDSfB9dLZaIG4B2ouvTlS9+5VjWd1cSJJ6xy7GS8AxkXd1YhRVAFq5OTs2te1FkpyXixN0VIJ1rAayxweuZK2Va+j3EDUgDuIb75ydeLeF9P1YJIEhaxRUgByopu1e7rAo8t2wtY/Cbdio3WQ+oCJ2dnpXTMME24FatQvdb4fl01gcqVbfm1Uw1Jgyo2XzRhb11bc6eKWlolkZ84KzJKl6ZnvrzV3L5BIP4D0mE+8OQMVbOm5Lmj6karz1ouV/z8yx/e048etTkVSmudgT4G91T8gWC++M5Xldafb8L5z6/cNtWipPcO3/Qja4eDvFLxw2+WNuuz5ZLF2KK8Ie3+DB34TKH259EQW/XbUiCGjuA+dV2buqqfclUcVe2IQ7ZdMpyb+12ePH1ihZVJgRPN9T4vVGEIqw4EN9/69Nu2nOCOThu+99KLD1a5HKJ7cMKwGVx+sMwoQm9ZLM62Hac7OE45PkRDvmenDXGuoTip/P/aGZLNdHggdkLY/7LR3dxTjFfEIgh85i8eO2UvYG0HHdDVkeb335hwggo80ktrEiNKZqjmgVd6+Fn7dqfC6r8HPQAPMeA+/04tig6DcLODF5rNHzO/dIRFt1vG+hR6RE8E1sCTDTe/D/OVbCavqzJrcRCN1q3NJ01ZGU/WY1sQ3vVOPJPxu7XUZvwPulpGkJDXl1cAAAAASUVORK5CYII=" alt="round-deco ">
+          <h2 class="ps-md-32 pt-30 pt-md-0 mb-0 me-12 fs-md-2 fs-4">預約服務流程</h2>
+          <p class="mb-0">快速預約，一點就通，開始屬於你的探索</p>
+        </div>
+
+        <ul class="step card-list list-unstyled row mb-md-40 mb-4 g-4">
+          <li class="col-md-3 col-6">
+            <div class="card bg-transparent border-0 ">
+              <h1 class="fs-md-40 fs-4 text-primary text-center mb-md-3 mb-1">1</h1>
+              <div class="card-title step-item py-md-80 text-center mb-0
+              rounded-circle d-flex flex-column justify-content-center align-items-center"
+                style="background-image: url(/ZDX-Club-Booking/assets/step-1-DaFUOp4M.png);">
+                <img class="mb-md-4 mb-12 card-title-icon" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACgAAAAwCAYAAABjezibAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAIlSURBVHgB7ZnbbcJAEEXHRiDxRzowHdBBoIIkFYQS6CChAkQF0EGgApIKQgdxKoj/eApyx6wtv23w2t4oPtIKhNfiMg/PzEJ0I4fDob/f71dYP1hn8X5IKgBxL0JUaPE1qhK2Upw4j8g+SUKn63lO23A+n6VZUaMrYQtl2Ga1Wq07ksAtFsxChyRRlEBp1ALzUgvMSy0wL7XAvPxfgehoJtzVoHHIVfaKahaCrDVNe8f6aDQa/GplvbEsgUHWvHRdX0IwizfjNiYK3Gw2RrvdNkm+wCAseIoWbR68ECuQYwcx9Imbut7PCxLoYDabzYHXorFJwkGOF4PKxcD3rmAcw/kgUqAYfIZUDY5IO/tDAuHCHi6+UrUYznToi0FOCmTVijyuRQz69hQcgz4Qj12fBSFuRuXHXSw84roChUn7pBDI5nvbfaIkraI2VeliYNkWhLgZqUlHPx6Pj6RQ3AXRT6fTAykMu7hHCvMnBCoNCzSTNng7Yq40VDI6HobrpA3c1XB3wUJRaUo/PdW22+0Ine2EFEUTjekXSTzTkwm72MKzcEyK4tbZ3W43h9jU8+eSWbuPGTQFI7oML8oAz367AtnVPLCQQiKRvIvQVCeShluvqiuMyRNlqJIoZEk7cSNLXdUi4cWxM8RrKRvZ3W9U7igwFQlrk9gssCWxecC/iFJqtgQsfM+TV5ytIevdYiTt0+W/Ok4gGZXHhCg+PFoipBZRp16/ykI2SymqizoAAAAASUVORK5CYII="
+                  alt="step-1-icon">
+                <h2 class="text-white mb-0 fs-md-2 fs-5">登入 or Mail</h2>
+              </div>
+              <div class="card-body d-none d-md-block">
+                <div class="d-flex justify-content-center mb-3">
+                  <div class="card-deco border border-primary"></div>
+                </div>
+                <p class="px-48 text-center mb-0 fs-7">
+                  想更快速管理預約紀錄？建議註冊會員帳號；若使用 Email預約，無需註冊也能完成，但請記得查收確認信。
+                </p>
+              </div>
+            </div>
+          </li>
+          <li class="col-md-3 col-6">
+            <div class="card bg-transparent border-0 ">
+              <h1 class="fs-md-40 fs-4 text-primary text-center mb-md-3 mb-1">2</h1>
+              <div class="card-title step-item py-md-80 text-center mb-0
+              rounded-circle d-flex flex-column justify-content-center align-items-center"
+                style="background-image: url(/ZDX-Club-Booking/assets/step-2-BZMkfQ4S.png);">
+                <img class="mb-md-4 mb-12 card-title-icon" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADAAAAAwCAYAAABXAvmHAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAL+SURBVHgB1ZntddMwFIZfu+TrX7qBOwFhAtwJYIO2ExQmaDIBbJAyAXQCwgTNBvUG5F8+T8J7gwJpiGzJvmrMc46Ok3Mk+17dD11JEUqw2Wy6q9Xqls+UfxPThAnbeL1eP7RarW9RFGWoE9PpNFksFt/ZNo5tSCUTBCR27Uhhbs/Ozh75M4U718vl8nE2m31AICKXThTijjPZRwXoTv1GozGAMoUKyMzz8RkKMDY+ttttlXftyFVAfN64TRc6TGiFN5rBnRsDFP4OesILXbrjEIpYLWBm/wkBoBXOaYUJFLBagB94j0AwrtSyklWBOI7fIRCcnLdQIi8GeghHAiWsMSArKQLSbDad1qAinFfiupKnQIZwqGQg4VQKjKGEVQHWPj8QCCm3oYRVAQaZas2yj+wVivpwv3HFRPKT7Ul+2/rlZgKp/eFXPrtwz8m5KeokgmNvo8Qx58f61baYO0zjtrSbm0Y7nU5Gf1Wr4eVd2tvMwnVA6ncGdGUl5B3aewHBaSFj0PVlM4Jy+XsiY+UdCIDXci4xwSKvTze4chwyos/f5LmNZBgqKJbxjbNsKwtKIIpIuW0q1t7exzNpsoZIGnap+Q+yjS8TlYKqCpLrUT7LZXUo5iS2Mvgj1h2c3AI2VNaB/4FX8ESOCufzuQTwa/wuM7r468NiVgnijAH8wAw0Cn0+6uxCNOk1H5I+U/gxYvtCF7j3GOPsQoUK8Bwn5YzKWU6CamRsA1dFDrJTxnEXx/rl7QfkEOoTn1KRJqhOwjakYPJOl7S5y07bbGPrdNQCpgr9inAnExnj41IjPv5RwAivNet5qCjxTAHjNlL/J3gZxkaJ0pv8ZzHAwkoOcxO8HD25e0AF/ljApEnVk2NnIaLoUtYMlGBfgSpVYVWsabKIrQuZ2U9wOhIjgze7GHDdoISklAxRyIsMXxgHF75pNabwKWqCFInwJKbGwS4yfDEVrt+Y0DfpnqTwRII4QX3w3hvH0L1GrUopBdQuGxTI4IkoUPZUQJvcut/GL6S9Z6FQpyU1AAAAAElFTkSuQmCC"
+                  alt="step-2-icon">
+                <h2 class="text-white mb-0 fs-md-2 fs-5">選擇命理師</h2>
+              </div>
+              <div class="card-body d-none d-md-block">
+                <div class="d-flex justify-content-center mb-3">
+                  <div class="card-deco border border-primary"></div>
+                </div>
+                <p class="px-48 text-center mb-0 fs-7">
+                  想更快速管理預約紀錄？建議註冊會員帳號；若使用 Email預約，無需註冊也能完成，但請記得查收確認信。
+                </p>
+              </div>
+            </div>
+          </li>
+          <li class="col-md-3 col-6">
+            <div class="card bg-transparent border-0 ">
+              <h1 class="fs-md-40 fs-4 text-primary text-center mb-md-3 mb-1">3</h1>
+              <div class="card-title step-item py-md-80 text-center mb-0
+              rounded-circle d-flex flex-column justify-content-center align-items-center"
+                style="background-image: url(/ZDX-Club-Booking/assets/step-3-XHPiRPVY.png);">
+                <img class="mb-md-4 mb-12 card-title-icon" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADAAAAAwCAYAAABXAvmHAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAO2SURBVHgB1VnbVdtAFLwSBg5/pANRAVBB5ArAFWBXAKkgpoIcKoBUQKgAqCBOBSgVoD/edmaUlZFlPXalKyfMOTqyrJV2Z/fu3Ic8ccRsNtt+enoa+r5/gMvAHESEexPP867W19dvcI7kfwIH/vLy8vX5+fkex6zmuGNbWQE8m0YPDw/B2tratbzPti0irEa/y9WoJdBi8Ck6JVFJwJjNT2k++BSTjY2NfekAftXN19dX2nEg7bGHjT+WDlC6AsZ07kQPMUxpB6YUiyJKVwAdHYouaI7a7ywnYHReG59FGVV7YE/0EYoyqghsiz7U3+nLB0cVAVW1MIhEGVUEJqKM6XT6W5RRSgBe+Fa0O/P9H6KMUkdmwoh70QNjov1VOjJ2dCZKwIR81x48sapgLkIwtyMdoFJGOWNvb299aaceSTgtHaHWD2xtbUUtSEz+eUKTwpjTGD+PLZrHaH+2ubk5LrqJ94Q4HaANz4G8e2juEebVlPAkt5YaWBNIYcLsED+P5G+8lHaeJPWUXwz8omjDIlce4uSSY0Q4TrF/LsoaOBNoAkP6UpoHiKVpaeexELK6IwyeStYmug2ohnjXUj7R6QogjTzErF2KIuDNB71eb+7ROyNgzIYzrx1Cx8ajR7xwNiGqETcjjnMWsEyh6zzfzpRiagdPD40BfYJU7/C31INqOO/PSUZhg8c4n+QHhtnoZyXPqM25zXtNoh+lfTjEXyOqkxUBDIjaP5biGV0KE7gyYimVeNbLPTsTOyT99qpamBnhJgwrmt1kL+ik8Fwg3YPKFJYS4CZEg9qSIgZ7lbtWL51U9H1YuIld6qEFzmVXVofdJQKuxVxswij3VxflmDIESwRcK9EFMU8r3beU0hSLBMxHiUBWCApF9hqB4NCFxJwATQcPjsUR+QGIYzkGk/Yt/58DiXhOAKbT9JNQnkAkbhgWeXJLEpOEAGefL5IGMMlJFk3KMYUk4KhOap77lRBoMfvEgupgUzet/SyReHx8rBQE9pW4cQZk0lw9WoUSBbiANJ/iHJv9MZSKfj3j+q+lBdoEcy2QBHM+6pWhtAQm4Ch7bXJY9dpqBlGaJ/uYPY2vJsN8AIf4fiDdVLjjbJ2Jm1glY8omGQTrSTh9EWVgokbZ+IsEAtFBCNVYkL3ERpHDis5K8B0j+IcFlfMcEgjbTvoY+IL9K3ztZ4VvUFZW0bRTmuNlfj/QnIzUjsTNU7Mt1Wa/rDzpNaiW2XY8yK9ECiPdTHyYO2Sre7F59pZOyqa0+AfKQv3LsCRouwAAAABJRU5ErkJggg=="
+                  alt="step-3-icon">
+                <h2 class="text-white mb-0 fs-md-2 fs-5">選擇服務/時段</h2>
+              </div>
+              <div class="card-body d-none d-md-block">
+                <div class="d-flex justify-content-center mb-3">
+                  <div class="card-deco border border-primary"></div>
+                </div>
+                <p class="px-48 text-center mb-0 fs-7">
+                  想更快速管理預約紀錄？建議註冊會員帳號；若使用 Email預約，無需註冊也能完成，但請記得查收確認信。
+                </p>
+              </div>
+            </div>
+          </li>
+          <li class="col-md-3 col-6">
+            <div class="card bg-transparent border-0 ">
+              <h1 class="fs-md-40 fs-4 text-primary text-center mb-md-3 mb-1">4</h1>
+              <div class="card-title step-item py-md-80 text-center mb-0
+              rounded-circle d-flex flex-column justify-content-center align-items-center"
+                style="background-image: url(/ZDX-Club-Booking/assets/step-4-CoDZPlo7.png);">
+                <img class="mb-md-4 mb-12 card-title-icon" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADAAAAAwCAYAAABXAvmHAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAIaSURBVHgB7ZntbcIwEIYv5usv3SCdALoBTABsQDdgA2AC2gloJyhM0HSC0glwN0h/AhLpazdBSQpSPg4SS3kkywk4yr32+c52LLoinue1UaniWpblkikcDofefr9/R/FCZYsyprID46cxw+Pl0x8ZFixixO/hZYKmTrPZ7BMD3AK2qOwkbTEn+o1Gw6GcCGLC7307aXu40ZAYYBMAppSODjHAIiBt73PCNQJpe1/xRQzkFpC194/HoyQGOEYgS+9TrVbbEAO5w6hKTpQBhNA7juXFWQEqUyKjDlEP8JIuhVwECSjyTFYBCdnABgkb1njvy7kG/wTsdrshHlDZ9Gy6v7GAMBJlHhcSmQPo9QWMf6MLxheMjbJUa63wjycB6g8M14RKDmycYdQXwb12hxSLsCJdKIIQYlSv11eBgMSLsLIIAC4i2b0ochmQkzYCzlhg0g7IXHoCk8ImQ8E86FhpfbhEc0DDuR8oBNMFuKYL2JguQBotABH0u3KhIkESNtuFsBYyWoA+8TZZgD4UMFYAjmV+VK0ESDIQuM/fCAQXpoGVqKNrJIM1mYcMjuYFLlaozfl+RToDvwbXQociIR7JHCT2JE/BjY5CaneP6pnKj/KUUfhI8hRGoWqCoZlTeVFG92FnJOhE8kCr1ZqhUu4kqVw4mKsPceMVF0+n1XGLf7hr47Yb/H6jPbHqbYnygfevOD4GVlRUVFyHXyZj/k7NfS2iAAAAAElFTkSuQmCC"
+                  alt="step-4-icon">
+                <h2 class="text-white mb-0 fs-md-2 fs-5">登入 or Mail</h2>
+              </div>
+              <div class="card-body d-none d-md-block">
+                <div class="d-flex justify-content-center mb-3">
+                  <div class="card-deco border border-primary"></div>
+                </div>
+                <p class="px-48 text-center mb-0 fs-7">
+                  想更快速管理預約紀錄？建議註冊會員帳號；若使用 Email預約，無需註冊也能完成，但請記得查收確認信。
+                </p>
+              </div>
+            </div>
+          </li>
+        </ul>
+
+        <div class="warning">
+          <div class="warning-bg py-md-98 py-3  position-relative ">
+            <img class="position-absolute warning-bg-img z-1 opacity-50 start-0 d-none d-md-block"
+              src="/ZDX-Club-Booking/assets/warning-bg-DDs7hHF3.png" alt="warning-bg">
+            <div class="position-relative z-2">
+              <p class="mb-md-3 mb-0 fs-7 fs-md-6 ">預約注意事項：</p>
+              <p class="mb-md-3 mb-0 fs-7 fs-md-6 ">1. 請確認填寫的 Email 正確,預約完成後將寄送確認信至您的信箱。</p>
+              <p class="mb-md-3 mb-0 fs-7 fs-md-6 ">2. 若使用 Email 預約(免註冊),務必點擊信件中的連結完成確認。</p>
+              <p>3. 命理師每次服務名額有限,請準時參與,避免影響他人權益。</p>
+            </div>
+
+          </div>
+
+
+        </div>
+      </div>
+
+    </section>
+
+    <section class="lunar-calendar bg-transparent">
+      <div class="d-block d-md-flex ">
+        <div class="me-md-60">
+          <div class="d-md-flex d-block align-items-end position-relative mb-md-40 mb-4 ps-12 ps-md-0">
+            <img class="position-absolute" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADgAAAA4CAYAAACohjseAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAUiSURBVHgB3ZpPaFxFHMd/8+fN27fZbbZNTU1Qwcb20JOgJykiIkUPFiIkeCo1hyqIgqeABdmLxSL+QVGwSE4epAH/VFARhNxF8CRSKVZLG2uTbZLNvrfvz8w4v5fustlsks3uJtn3Pnt4b2dnl/fd38zvz8wQ6DHF4lPc+eeoI1SJLRcKIELFsN2SZaYCm9f6SUf42g/N+woIPqhVYHnTMzNl6DEEegCKEnceGhSluyQ4dFDjg2thXpEWlIJDI2W3+p7i1CcSAmURz/EAAg0MMgCaiXKO3ll9/eMffOiSrgR+9NpzdonZzkA1L1QQcsl0jmiVhy7QhJYJI4GWWuB1wFqe70ZoRwLRYoPXC7nlghl6bs6xtH9E4r/fQwg1ltXUZ+Z3FSdep0J3LPDCq2eG4rlDGd0NYa1AsXiVYC+cv/TF/I6+227HNedx/zA6Bxp6o1qBgD2EEZARUBfvc5mVv9u1ZlsCi+eezwqLOzokgio2CvtIPHSN2JxYvdaOyG2H14Uz40MCnJy0hMMifQT2GzMlmAQ/1GL45GNjq3O/Xg236r6lwLfPvTCiM7YNRA7SUA1Cn6AJCHxwRnhhO5GbCnz3lfFhTWyHKJkzscqBPkMDULQmBX7oycfHVjYTSVs14pwLNT8sGdX9KK4RakRaOnMcY3LLz5sbsKPQ2QcIYS7zw8OQAFCk6+eOX748sWFEbhBYCQdHMHWCSA5BgsCwdXVuo4dfJ/CDs2cLeOWRLEACYYEcxunV2LZOYMC9EbzudRDvJTi9Gt/XBWIKhjlf0oZmM5jsX5yaqif8dYFx+mUyeEgBklVGavexwItTp/PU5HmUtK7bkgZaseZRY4FKZIcCbmqwBM+9Zv78icchLhaIQ5OGuq8D+k4hZC21JJ8Zt1qiA8NJdy6tGDsFv9FF66AjqaklU8hfP+az3HaDODAGu16X7wdunkamePR5uuZfDWWcJg0zwDRLj/dsRNsyS0ngBputWyYdrDIoV9lUzj4E4zqFlJN+gRF1UxkDEVxepMQuRJBScLF4Ldk2uzyQQmIL4r6dpcCDFCLN5g0ly5FiIQkghYiIeDSfB9dLZaIG4B2ouvTlS9+5VjWd1cSJJ6xy7GS8AxkXd1YhRVAFq5OTs2te1FkpyXixN0VIJ1rAayxweuZK2Va+j3EDUgDuIb75ydeLeF9P1YJIEhaxRUgByopu1e7rAo8t2wtY/Cbdio3WQ+oCJ2dnpXTMME24FatQvdb4fl01gcqVbfm1Uw1Jgyo2XzRhb11bc6eKWlolkZ84KzJKl6ZnvrzV3L5BIP4D0mE+8OQMVbOm5Lmj6karz1ouV/z8yx/e048etTkVSmudgT4G91T8gWC++M5Xldafb8L5z6/cNtWipPcO3/Qja4eDvFLxw2+WNuuz5ZLF2KK8Ie3+DB34TKH259EQW/XbUiCGjuA+dV2buqqfclUcVe2IQ7ZdMpyb+12ePH1ihZVJgRPN9T4vVGEIqw4EN9/69Nu2nOCOThu+99KLD1a5HKJ7cMKwGVx+sMwoQm9ZLM62Hac7OE45PkRDvmenDXGuoTip/P/aGZLNdHggdkLY/7LR3dxTjFfEIgh85i8eO2UvYG0HHdDVkeb335hwggo80ktrEiNKZqjmgVd6+Fn7dqfC6r8HPQAPMeA+/04tig6DcLODF5rNHzO/dIRFt1vG+hR6RE8E1sCTDTe/D/OVbCavqzJrcRCN1q3NJ01ZGU/WY1sQ3vVOPJPxu7XUZvwPulpGkJDXl1cAAAAASUVORK5CYII=" alt="round-deco ">
+            <h2 class="ps-md-32 pt-30 pt-md-0 mb-0 me-12 fs-md-2 fs-4">農民曆</h2>
+            <p class="mb-0">掌握節氣脈動。每日行事宜忌一覧</p>
+          </div>
+          <head>
+  <meta charset="UTF-8" />
+  <title>農曆日曆範例</title>
+  <!-- FullCalendar CSS -->
+  <link
+    href="https://cdn.jsdelivr.net/npm/fullcalendar@6.1.8/index.global.min.css"
+    rel="stylesheet"
+  />
+  <style>
+    :root {
+      /* 自訂顏色 */
+      --black-800: #262626;
+      --dark-red: #c24747;
+      --steel-blue: #4786c2;
+      --medium-gray: #a3a3a3;
+      --dark-beige-10: #8668541a;
+      --dark-beige-30: #86685433;
+      --dark-beige-40: #8668544d;
+
+      --fc-page-bg-color: rgba(255, 255, 255, 0.7);
+      /* 設定全局背景色 */
+
+      --fc-today-bg-color: #8666541a;
+      /* 設定今天背景色 */
+
+      /* --fc-button-text-color: #fff; */
+      --fc-button-text-color: #262626;
+      /* button 文字顏色 */
+      /* --fc-button-bg-color: #2c3e50; */
+      --fc-button-bg-color: var(--dark-beige-10);
+      /* button 背景色*/
+      /* --fc-button-hover-bg-color: #1e2b37; */
+      --fc-button-hover-bg-color: var(--dark-beige-30);
+      /* --fc-button-active-bg-color: #1a252f; */
+      --fc-button-active-bg-color: var(--dark-beige-40);
+    }
+
+    /* 改用 bootstrap 設定字體 */
+    /*body {
+      font-family: "Microsoft JhengHei", Arial, sans-serif;
+    } */
+
+    .fc-daygrid-day {
+      background-color: var(--fc-page-bg-color);
+      /* 設定日期格子的背景色 */
+    }
+
+    /* 自訂日曆大小 */
+    .calendar {
+      max-width: 526px;
+      margin: 0 auto;
+      padding: 36px;
+      background: rgba(255, 255, 255, 0.7);
+    }
+
+    .calendar a {
+      text-decoration: none;
+    }
+
+    .fc-scrollgrid {
+      border: none !important;
+    }
+
+    /* 星期樣式 */
+    .fc-scrollgrid-sync-inner {
+      font-size: 0.875rem;
+    }
+
+    .fc .fc-col-header-cell-cushion {
+      padding: 16px 0;
+      margin-bottom: 8px;
+    }
+
+    /* 自訂日曆格子樣式 */
+    .fc .fc-daygrid-day-number {
+      padding: 12px 0 0 0;
+      margin-bottom: 8px;
+    }
+
+    /* 自訂日曆數字樣式 */
+    .fc-daygrid-day-number {
+      font-size: 1rem;
+      font-weight: 700;
+      margin: 0 auto;
+      color: var(--black-800);
+    }
+
+    /* 農民曆文字樣式、位置 */
+    .lunar-text,
+    .jieqi-text {
+      text-align: center;
+      font-size: 0.75rem;
+      /* 調整字體大小 */
+      color: var(--black-800);
+      /*調整顏色*/
+      font-weight: 700;
+      /* 加粗 */
+      position: absolute;
+      /* 絕對定位 */
+      top: 36px;
+      /* 距離格子底部 16px */
+      left: 50%;
+      /* 水平居中 */
+      transform: translateX(-50%);
+      /* 調整位置使其居中 */
+    }
+
+    .fc-scrollgrid-sync-inner .fc-col-header-cell-cushion {
+      color: var(--black-800);
+    }
+
+    /* 星期日樣式 */
+    .fc-day.fc-day-sun .fc-daygrid-day-number,
+    .fc-day.fc-day-sun > .lunar-text,
+    .fc-day.fc-day-sun > .jieqi-text {
+      color: var(--dark-red);
+    }
+
+    /* 星期六樣式 */
+    .fc-day.fc-day-sat .fc-daygrid-day-number,
+    .fc-day.fc-day-sat > .lunar-text,
+    .fc-day.fc-day-sat > .jieqi-text {
+      color: var(--steel-blue);
+    }
+
+    /* 過去日期樣式 */
+    .fc .fc-day-past .fc-daygrid-day-number,
+    .fc .fc-daygrid-day.fc-day-past > .lunar-text {
+      color: var(--medium-gray);
+    }
+
+    .fc .fc-daygrid-body-natural .fc-daygrid-day-events {
+      margin: 0;
+    }
+
+    .fc-theme-standard td,
+    .fc-theme-standard th {
+      border: none;
+    }
+
+    /* 頁腳設定 */
+    .fc .fc-toolbar.fc-footer-toolbar {
+      margin-top: 8px;
+      padding: 16px 0;
+    }
+
+    .fc .fc-button {
+      width: 98px;
+      padding-top: 16px;
+      padding-bottom: 16px;
+      font-size: 0.75rem;
+      border: none;
+    }
+
+    @media (max-width: 768px) {
+      .calendar {
+        width: 100%;
+        padding: 24px 12px;
+        margin-bottom: 24px;
+      }
+
+      .fc .fc-col-header-cell-cushion {
+        font-size: 12px;
+        padding: 0;
+      }
+
+      /* 自訂日曆格子樣式 */
+      .fc .fc-daygrid-day-number {
+        padding-top: 8px;
+        margin-bottom: 0px;
+        font-size: 14px;
+      }
+
+      .lunar-text,
+      .jieqi-text {
+        margin-bottom: 8px;
+        font-size: 12px;
+        /* 調整字體大小 */
+        color: var(--black-800);
+        /*調整顏色*/
+        font-weight: 700;
+        /* 加粗 */
+        position: static;
+        transform: translateX(0);
+      }
+
+      .fc-daygrid-day-events {
+        display: none;
+      }
+
+      /* 頁腳設定 */
+      .fc .fc-toolbar.fc-footer-toolbar {
+        margin-top: 0px;
+        padding: 0;
+      }
+
+      .fc .fc-button {
+        width: 101px;
+        padding-top: 16px;
+        padding-bottom: 16px;
+        font-size: 12px;
+        border: none;
+      }
+    }
+  </style>
+</head>
+
+<body>
+  <div class="calendar" id="calendar"></div>
+
+  <!-- FullCalendar JS -->
+  <script src="https://cdn.jsdelivr.net/npm/fullcalendar@6.1.8/index.global.min.js"></script>
+  <!-- lunar-javascript JS -->
+  <script src="https://cdn.jsdelivr.net/npm/lunar-javascript/lunar.js"></script>
+
+  <script>
+    document.addEventListener("DOMContentLoaded", function () {
+      var calendarEl = document.getElementById("calendar");
+
+      var calendar = new FullCalendar.Calendar(calendarEl, {
+        initialView: "dayGridMonth",
+        locale: "zh-tw",
+        firstDay: 0, // 星期日為第一天
+        dayHeaders: true, // 顯示星期標題
+        dayHeaderContent: function (arg) {
+          const days = ["日", "一", "二", "三", "四", "五", "六"];
+          return days[arg.date.getDay()];
+        },
+        headerToolbar: false, // 隱藏標題工具列
+        aspectRatio: 1.355, // 設定日曆寬高比
+        height: "auto", // 自動高度
+        footerToolbar: {
+          left: "prev",
+          center: "today",
+          right: "next",
+        },
+        buttonText: {
+          today: "今天",
+          prev: "上一月",
+          next: "下一月",
+        },
+        dayCellContent: function (arg) {
+          return { html: `<span>${arg.date.getDate()}</span>` }; // 只顯示日期數字
+        },
+        dayCellDidMount: function (info) {
+          let date = info.date;
+          let lunar = Lunar.fromDate(date);
+
+          // 設置父元素的相對定位
+          info.el.style.position = "relative";
+
+          // 農曆日期
+          let lunarText = lunar.getDayInChinese();
+          if (lunar.getDay() === 1) {
+            lunarText = lunar.getMonthInChinese() + "月";
+          }
+
+          // 節氣
+          let jieqi = lunar.getJieQi();
+
+          // 創建顯示元素
+          let lunarEl = document.createElement("div");
+          lunarEl.className = jieqi ? "jieqi-text" : "lunar-text";
+          lunarEl.innerText = jieqi || lunarText;
+
+          // 添加到日期格子
+          info.el.appendChild(lunarEl);
+        },
+      });
+
+      calendar.render();
+    });
+  </script>
+</body>
+
+        </div>
+        <div class="flex-fill">
+          <div class="solar-term py-md-64 p-4 position-relative  mb-4">
+            <h2 class="fs-lg-80 fs-3 solar-term-title d-inline-block p-md-4 p-3 ">大暑</h2>
+          </div>
+          <div class="detail p-md-36 pt-36 px-12 pb-md-0 pb-40 ">
+            <div class="d-flex mb-md-40 mb-4 flex-wrap flex-lg-nowrap">
+              <div class="me-md-40 me-12">
+                <div class="py-2 year  fs-7 text-center text-primary">2025</div>
+                <div class="border border-primary py-3 px-4 text-center text-primary">
+                  <h6 class="mb-2 fs-40">3</h6>
+                  <h6 class="mb-0 fs-5">八月</h6>
+                </div>
+                <p class="text-white text-nowrap mb-0 fs-7 bg-primary text-center py-2 px-3">民國114年</p>
+              </div>
+              <ul class="list-unstyled flex-fill">
+                <li>
+                  <p class="fs-7 p-md-4 py-md-3 p-3 mb-0 border-bottom border-black-300">
+                    國曆：2025年08月03日
+                  </p>
+                </li>
+                <li>
+                  <p class="fs-7 p-md-4 py-md-3 p-3 mb-0 border-bottom border-black-300">
+                    農曆：乙巳年閏六以初十
+                  </p>
+                </li>
+                <li>
+                  <p class="fs-7 p-md-4 py-md-3 p-3 mb-0 border-bottom border-black-300">
+                    節氣：大暑 (國曆) <br class="d-md-none">
+                    2025/07/22-2025/08/06
+                  </p>
+                </li>
+              </ul>
+            </div>
+
+            <ul class="list-unstyled d-flex flex-column gap-3">
+              <li>
+                <div class="d-flex p-4 align-items-center border border-primary flex-wrap">
+                  <h5 class="fs-md-48 fs-2 mb-0 text-primary me-md-2 me-2">沖</h5>
+                  <span class=" fs-7 ps-3 py-1 me-1">屬豬(丁亥，19歲)</span>
+                  <span class=" fs-7 ps-3 py-1">屬豬(丁亥，79歲)</span>
+                </div>
+              </li>
+              <li>
+                <div class="d-flex p-4 align-items-center border border-primary">
+                  <h5 class="fs-md-48 fs-2 mb-0 text-primary me-md-2 me-3">宜</h5>
+                  <div class="d-flex flex-wrap text-nowrap ">
+                    <span class="fs-7 px-2 py-1">嫁娶</span>
+                    <span class="fs-7 px-2 py-1">納采</span>
+                    <span class="fs-7 px-2 py-1">訂盟</span>
+                    <span class="fs-7 px-2 py-1">祭祀</span>
+                    <span class="fs-7 px-2 py-1">祈福</span>
+                    <span class="fs-7 px-2 py-1">求嗣</span>
+                    <span class="fs-7 px-2 py-1">納采</span>
+                    <span class="fs-7 px-2 py-1">裁衣</span>
+                    <span class="fs-7 px-2 py-1">冠笄</span>
+                    <span class="fs-7 px-2 py-1">開光</span>
+                    <span class="fs-7 px-2 py-1">安床</span>
+                    <span class="fs-7 px-2 py-1">作樑</span>
+                    <span class="fs-7 px-2 py-1">修造</span>
+                    <span class="fs-7 px-2 py-1">動土</span>
+                    <span class="fs-7 px-2 py-1">作灶</span>
+                    <span class="fs-7 px-2 py-1">起基</span>
+                    <span class="fs-7 px-2 py-1">移徙</span>
+                    <span class="fs-7 px-2 py-1">出行</span>
+                    <span class="fs-7 px-2 py-1">破土</span>
+                    <span class="fs-7 px-2 py-1">安葬</span>
+                  </div>
+                </div>
+              </li>
+              <li>
+                <div class="d-flex p-4 align-items-center border border-primary">
+                  <h5 class="fs-md-48 fs-2 mb-0 text-primary me-md-2 me-3">煞</h5>
+                  <span class="fs-7 px-2 py-1">東方</span>
+                </div>
+              </li>
+              <li>
+                <div class="d-flex p-4 align-items-center border border-primary flex-wrap">
+                  <h5 class="fs-md-48 fs-2 mb-0 text-primary me-md-2 me-3">吉時</h5>
+                  <span class="fs-7 px-2 py-1">丑</span>
+                  <span class="fs-7 px-2 py-1">卯</span>
+                  <span class="fs-7 px-2 py-1">辰</span>
+                  <span class="fs-7 px-2 py-1">巳</span>
+                </div>
+              </li>
+            </ul>
+
+          </div>
+        </div>
+      </div>
+
+    </section>
+
+    <section class="QA py-md-80 py-40 position-relative">
+      <img class="position-absolute waves-bg d-none d-md-block" src="/ZDX-Club-Booking/assets/waves-bg-DwjZ309Y.png"
+        alt="waves-bg">
+      <div class="container">
+        <div class="QA-title d-md-flex d-block align-items-end position-relative mb-md-40 mb-4 ">
+          <img class="position-absolute" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADgAAAA4CAYAAACohjseAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAUiSURBVHgB3ZpPaFxFHMd/8+fN27fZbbZNTU1Qwcb20JOgJykiIkUPFiIkeCo1hyqIgqeABdmLxSL+QVGwSE4epAH/VFARhNxF8CRSKVZLG2uTbZLNvrfvz8w4v5fustlsks3uJtn3Pnt4b2dnl/fd38zvz8wQ6DHF4lPc+eeoI1SJLRcKIELFsN2SZaYCm9f6SUf42g/N+woIPqhVYHnTMzNl6DEEegCKEnceGhSluyQ4dFDjg2thXpEWlIJDI2W3+p7i1CcSAmURz/EAAg0MMgCaiXKO3ll9/eMffOiSrgR+9NpzdonZzkA1L1QQcsl0jmiVhy7QhJYJI4GWWuB1wFqe70ZoRwLRYoPXC7nlghl6bs6xtH9E4r/fQwg1ltXUZ+Z3FSdep0J3LPDCq2eG4rlDGd0NYa1AsXiVYC+cv/TF/I6+227HNedx/zA6Bxp6o1qBgD2EEZARUBfvc5mVv9u1ZlsCi+eezwqLOzokgio2CvtIPHSN2JxYvdaOyG2H14Uz40MCnJy0hMMifQT2GzMlmAQ/1GL45GNjq3O/Xg236r6lwLfPvTCiM7YNRA7SUA1Cn6AJCHxwRnhhO5GbCnz3lfFhTWyHKJkzscqBPkMDULQmBX7oycfHVjYTSVs14pwLNT8sGdX9KK4RakRaOnMcY3LLz5sbsKPQ2QcIYS7zw8OQAFCk6+eOX748sWFEbhBYCQdHMHWCSA5BgsCwdXVuo4dfJ/CDs2cLeOWRLEACYYEcxunV2LZOYMC9EbzudRDvJTi9Gt/XBWIKhjlf0oZmM5jsX5yaqif8dYFx+mUyeEgBklVGavexwItTp/PU5HmUtK7bkgZaseZRY4FKZIcCbmqwBM+9Zv78icchLhaIQ5OGuq8D+k4hZC21JJ8Zt1qiA8NJdy6tGDsFv9FF66AjqaklU8hfP+az3HaDODAGu16X7wdunkamePR5uuZfDWWcJg0zwDRLj/dsRNsyS0ngBputWyYdrDIoV9lUzj4E4zqFlJN+gRF1UxkDEVxepMQuRJBScLF4Ldk2uzyQQmIL4r6dpcCDFCLN5g0ly5FiIQkghYiIeDSfB9dLZaIG4B2ouvTlS9+5VjWd1cSJJ6xy7GS8AxkXd1YhRVAFq5OTs2te1FkpyXixN0VIJ1rAayxweuZK2Va+j3EDUgDuIb75ydeLeF9P1YJIEhaxRUgByopu1e7rAo8t2wtY/Cbdio3WQ+oCJ2dnpXTMME24FatQvdb4fl01gcqVbfm1Uw1Jgyo2XzRhb11bc6eKWlolkZ84KzJKl6ZnvrzV3L5BIP4D0mE+8OQMVbOm5Lmj6karz1ouV/z8yx/e048etTkVSmudgT4G91T8gWC++M5Xldafb8L5z6/cNtWipPcO3/Qja4eDvFLxw2+WNuuz5ZLF2KK8Ie3+DB34TKH259EQW/XbUiCGjuA+dV2buqqfclUcVe2IQ7ZdMpyb+12ePH1ihZVJgRPN9T4vVGEIqw4EN9/69Nu2nOCOThu+99KLD1a5HKJ7cMKwGVx+sMwoQm9ZLM62Hac7OE45PkRDvmenDXGuoTip/P/aGZLNdHggdkLY/7LR3dxTjFfEIgh85i8eO2UvYG0HHdDVkeb335hwggo80ktrEiNKZqjmgVd6+Fn7dqfC6r8HPQAPMeA+/04tig6DcLODF5rNHzO/dIRFt1vG+hR6RE8E1sCTDTe/D/OVbCavqzJrcRCN1q3NJ01ZGU/WY1sQ3vVOPJPxu7XUZvwPulpGkJDXl1cAAAAASUVORK5CYII=" alt="round-deco ">
+          <h2 class="ps-md-32 pt-30 pt-md-0 mb-0 me-12 fs-md-2 fs-4">常見問答集</h2>
+        </div>
+
+        <div class="QA-content">
+          <ul class="list-unstyled">
+            <li>
+              <div class="py-md-48 py-4 border-bottom border-black-300">
+                <div class="d-flex justify-content-between mb-md-36 mb-4">
+                  <div class="d-flex align-items-center">
+                    <img class="Q-icon me-md-4 me-3" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAgCAYAAAAIXrg4AAAACXBIWXMAAAsTAAALEwEAmpwYAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAK2SURBVHgBvVZNchJREO4egkZWc4TxBMETCCcgVmGVO3UhlaVZJiwYFurSuENcBHdWBavICeAIcIO5gaxigJlpu+f3vYHBR1X0q6Koea+7v37v9R/CX/DprN0ggpYF6BCQLWsIuAyIFpYFs4vBeLZPH0sNv3v5hnd7bNThzyUiToiNJtt1/r1OTHjsQL/77WZkROC+P7WP76rXIdBpLIEeYqV5MfjhaQ6cvXKAgimTOrEYjlZPNufu1WRZSiDGH90dTRMPS42XkTDm65rfVEksVeHx7+rnzDiDEPplxgXRHssoS/XExvYJ5M4J6TrfQe/y681TMMDHTvsX/9mZqgXN9PEthaqnKhGEt2AIvqLv+kJuKyKIQhGye4w3OGrAEFZFl+WoaojNjCAMkohRsDr252CI1f22bEixzYjAsvCksL8shts+uKNIVpPnxDyJ/yE6Ur2g48GBkOxWv1Ob6SPbmjCCsfe5EnmFFVsl+Gf4bwTF+7PhgZASePoyHk5A6BRW5irBoiDtSOGDQ+wXEpWra06AhLOiQm1ddcAQadZqhBSXmohgtdlIqmvv4PvUAEOQX8gjKZTDn5OMQDKRAL7oMtACQ2BFl1WLXxamm7V/xffm5UJ5wdoHaToiq3jmdYdjd4sgqifcvUC9KtJL+E6Qr/UQjG3AFoFAOhRaR8/Sk0Sn6LRLSWQv8551jkJ4UeyAO6eK6Nih70I2OUhMUx+talKWfUdOlxrnyjm5r23e7qrApWOLSsQneq409kQRvRDDW2lM+2ajvQQ5EXe8EKbq2uVwbKRrVOx2daxoZHkoAokwzouZuhYGQcNE17xc6/OPJGLPpF4ZE8hDcrYrJOTIFLjrqlRio4dS8aHTdlmpmBtzabNRHyFwqILn3UE8DB9MIIi9DhoYQounwcRbmbJpwbPpSM2HP1cEO24+sp7eAAAAAElFTkSuQmCC" alt="Q-icon">
+                    <p class="mb-0">不想註冊帳號，可以直接預約嗎？</p>
+                  </div>
+                  <button type="button" class="border-0 bg-transparent" data-bs-toggle="collapse" data-bs-target="#QA1"
+                    aria-expanded="true" aria-controls="QA1">
+                    <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACgAAAAoCAYAAACM/rhtAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAB9SURBVHgB7dlBDYAwEETRXYIQ0ESwUDSAgWoAC4gCJyVI2P7LHubdN/mZpKd63ZZimWUO/NsGS06BlAIpBVIKpBRIKZBSIKVAarSgWtanWZusi7/Hdc+Ri/iCbv06bsML7mdsAUqPhFIgpUBKgZQCKQVSCqQUSKUP9OzfEB8ULQ/NSIrDVQAAAABJRU5ErkJggg==" alt="btn-close">
+                  </button>
+                </div>
+                <div id="QA1" class="accordion-collapse collapse show" aria-labelledby="headingOne"
+                  data-bs-parent="#accordionExample">
+                  <div class="d-flex">
+                    <img class="A-icon me-md-4 me-3" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAACXBIWXMAAAsTAAALEwEAmpwYAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAIBSURBVHgBnZXRUeMwEIb/VXJ3PKaBm/N1kBdm7u1MBYQKQgeBCkwJUAGhAkgFiBeGgZeU4KECv8ADYC0rOwZZlmPBziSxdlf6o0+7MiHSdtPfh2DK7DMRLu7140nMPIVYY1rId2I/zFjETosS+JcmifxMHddEfGnM3CiBEmXa9ZkZIiwOEas5hHvbh3nM1EGBGg+nknoqx1s4oShMgwIVHiL9oPO1VI9ux4YxDSMSPAq8qh5hVu0Y5tM0meC7Ag2eEZS241eMrnxMO+3q+pqAxUOg/Fbw2PFa53bxtZvDbObfFrB4mLiFxR8bYLYNU6+Ag+fK9b9BLb3UrZh6BRo8dzrXrr/GRC3fNkz9iCwesA6GvoApKPCBh9RFKB7C9ANlsCfGIWd99xBK5mz3/5+skyDXadenLKal7yYETBa9liUK6eAz9Jg03Uy1r+3ildTfTSn378DiKdmkitTBvXfAXl4uV4Ur0GBaunmdM2iu5hegd3FrUl25X00bTNgqYJPkUlv5Ww2ZVNON55n61dQSaKqHvebqs3Ggmn7BHPYKNHhGA3gaqzEhd32Gad8dUypbEt7JG0p5matMymoCMscKo2LHNm4Ald2p/LPJZs6ifiF9mvTPnsSLnyI+foY5krLO6oqV3rUZTJdSIXii6hD3fAHpj/OyWrSe042b67IiguU75i3dTaIMCGgAAAAASUVORK5CYII=" alt="A-icon">
+                    <p class="mb-0">可以的！<br>
+                      我們提供「Email 預約」功能，只需填寫基本資料與信箱，即可完成預約並收到確認信。建議留意信件並點擊確認連結，預約才會成立喔！
+                    </p>
+                  </div>
+                </div>
+
+              </div>
+            </li>
+            <li>
+              <div class="py-md-48 py-4 border-bottom border-black-300">
+                <div class="d-flex justify-content-between mb-md-36 mb-4">
+                  <div class="d-flex align-items-center">
+                    <img class="Q-icon me-md-4 me-3" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAgCAYAAAAIXrg4AAAACXBIWXMAAAsTAAALEwEAmpwYAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAK2SURBVHgBvVZNchJREO4egkZWc4TxBMETCCcgVmGVO3UhlaVZJiwYFurSuENcBHdWBavICeAIcIO5gaxigJlpu+f3vYHBR1X0q6Koea+7v37v9R/CX/DprN0ggpYF6BCQLWsIuAyIFpYFs4vBeLZPH0sNv3v5hnd7bNThzyUiToiNJtt1/r1OTHjsQL/77WZkROC+P7WP76rXIdBpLIEeYqV5MfjhaQ6cvXKAgimTOrEYjlZPNufu1WRZSiDGH90dTRMPS42XkTDm65rfVEksVeHx7+rnzDiDEPplxgXRHssoS/XExvYJ5M4J6TrfQe/y681TMMDHTvsX/9mZqgXN9PEthaqnKhGEt2AIvqLv+kJuKyKIQhGye4w3OGrAEFZFl+WoaojNjCAMkohRsDr252CI1f22bEixzYjAsvCksL8shts+uKNIVpPnxDyJ/yE6Ur2g48GBkOxWv1Ob6SPbmjCCsfe5EnmFFVsl+Gf4bwTF+7PhgZASePoyHk5A6BRW5irBoiDtSOGDQ+wXEpWra06AhLOiQm1ddcAQadZqhBSXmohgtdlIqmvv4PvUAEOQX8gjKZTDn5OMQDKRAL7oMtACQ2BFl1WLXxamm7V/xffm5UJ5wdoHaToiq3jmdYdjd4sgqifcvUC9KtJL+E6Qr/UQjG3AFoFAOhRaR8/Sk0Sn6LRLSWQv8551jkJ4UeyAO6eK6Nih70I2OUhMUx+talKWfUdOlxrnyjm5r23e7qrApWOLSsQneq409kQRvRDDW2lM+2ajvQQ5EXe8EKbq2uVwbKRrVOx2daxoZHkoAokwzouZuhYGQcNE17xc6/OPJGLPpF4ZE8hDcrYrJOTIFLjrqlRio4dS8aHTdlmpmBtzabNRHyFwqILn3UE8DB9MIIi9DhoYQounwcRbmbJpwbPpSM2HP1cEO24+sp7eAAAAAElFTkSuQmCC" alt="Q-icon">
+                    <p class="mb-0">沒有收到預約確認信怎麼辦？</p>
+                  </div>
+                  <button type="button" class="border-0 bg-transparent" data-bs-toggle="collapse" data-bs-target="#QA2"
+                    aria-expanded="true" aria-controls="QA2">
+                    <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACgAAAAoCAYAAACM/rhtAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAB9SURBVHgB7dlBDYAwEETRXYIQ0ESwUDSAgWoAC4gCJyVI2P7LHubdN/mZpKd63ZZimWUO/NsGS06BlAIpBVIKpBRIKZBSIKVAarSgWtanWZusi7/Hdc+Ri/iCbv06bsML7mdsAUqPhFIgpUBKgZQCKQVSCqQUSKUP9OzfEB8ULQ/NSIrDVQAAAABJRU5ErkJggg==" alt="btn-close">
+                  </button>
+                </div>
+                <div id="QA2" class="accordion-collapse collapse show" aria-labelledby="headingOne"
+                  data-bs-parent="#accordionExample">
+                  <div class="d-flex">
+                    <img class="A-icon me-md-4 me-3" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAACXBIWXMAAAsTAAALEwEAmpwYAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAIBSURBVHgBnZXRUeMwEIb/VXJ3PKaBm/N1kBdm7u1MBYQKQgeBCkwJUAGhAkgFiBeGgZeU4KECv8ADYC0rOwZZlmPBziSxdlf6o0+7MiHSdtPfh2DK7DMRLu7140nMPIVYY1rId2I/zFjETosS+JcmifxMHddEfGnM3CiBEmXa9ZkZIiwOEas5hHvbh3nM1EGBGg+nknoqx1s4oShMgwIVHiL9oPO1VI9ux4YxDSMSPAq8qh5hVu0Y5tM0meC7Ag2eEZS241eMrnxMO+3q+pqAxUOg/Fbw2PFa53bxtZvDbObfFrB4mLiFxR8bYLYNU6+Ag+fK9b9BLb3UrZh6BRo8dzrXrr/GRC3fNkz9iCwesA6GvoApKPCBh9RFKB7C9ANlsCfGIWd99xBK5mz3/5+skyDXadenLKal7yYETBa9liUK6eAz9Jg03Uy1r+3ildTfTSn378DiKdmkitTBvXfAXl4uV4Ur0GBaunmdM2iu5hegd3FrUl25X00bTNgqYJPkUlv5Ww2ZVNON55n61dQSaKqHvebqs3Ggmn7BHPYKNHhGA3gaqzEhd32Gad8dUypbEt7JG0p5matMymoCMscKo2LHNm4Ald2p/LPJZs6ifiF9mvTPnsSLnyI+foY5krLO6oqV3rUZTJdSIXii6hD3fAHpj/OyWrSe042b67IiguU75i3dTaIMCGgAAAAASUVORK5CYII=" alt="A-icon">
+                    <p class="mb-0">請先檢查垃圾郵件或廣告信件匣。<br>
+                      若仍未收到，可能是信箱填寫錯誤，
+                      建議重新預約或聯繫我們的客服信箱協助處理。
+                    </p>
+                  </div>
+                </div>
+
+              </div>
+            </li>
+            <li>
+              <div class="py-md-48 py-4 border-bottom border-black-300">
+                <div class="d-flex justify-content-between mb-md-36 mb-4">
+                  <div class="d-flex align-items-center">
+                    <img class="Q-icon me-md-4 me-3" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAgCAYAAAAIXrg4AAAACXBIWXMAAAsTAAALEwEAmpwYAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAK2SURBVHgBvVZNchJREO4egkZWc4TxBMETCCcgVmGVO3UhlaVZJiwYFurSuENcBHdWBavICeAIcIO5gaxigJlpu+f3vYHBR1X0q6Koea+7v37v9R/CX/DprN0ggpYF6BCQLWsIuAyIFpYFs4vBeLZPH0sNv3v5hnd7bNThzyUiToiNJtt1/r1OTHjsQL/77WZkROC+P7WP76rXIdBpLIEeYqV5MfjhaQ6cvXKAgimTOrEYjlZPNufu1WRZSiDGH90dTRMPS42XkTDm65rfVEksVeHx7+rnzDiDEPplxgXRHssoS/XExvYJ5M4J6TrfQe/y681TMMDHTvsX/9mZqgXN9PEthaqnKhGEt2AIvqLv+kJuKyKIQhGye4w3OGrAEFZFl+WoaojNjCAMkohRsDr252CI1f22bEixzYjAsvCksL8shts+uKNIVpPnxDyJ/yE6Ur2g48GBkOxWv1Ob6SPbmjCCsfe5EnmFFVsl+Gf4bwTF+7PhgZASePoyHk5A6BRW5irBoiDtSOGDQ+wXEpWra06AhLOiQm1ddcAQadZqhBSXmohgtdlIqmvv4PvUAEOQX8gjKZTDn5OMQDKRAL7oMtACQ2BFl1WLXxamm7V/xffm5UJ5wdoHaToiq3jmdYdjd4sgqifcvUC9KtJL+E6Qr/UQjG3AFoFAOhRaR8/Sk0Sn6LRLSWQv8551jkJ4UeyAO6eK6Nih70I2OUhMUx+talKWfUdOlxrnyjm5r23e7qrApWOLSsQneq409kQRvRDDW2lM+2ajvQQ5EXe8EKbq2uVwbKRrVOx2daxoZHkoAokwzouZuhYGQcNE17xc6/OPJGLPpF4ZE8hDcrYrJOTIFLjrqlRio4dS8aHTdlmpmBtzabNRHyFwqILn3UE8DB9MIIi9DhoYQounwcRbmbJpwbPpSM2HP1cEO24+sp7eAAAAAElFTkSuQmCC" alt="Q-icon">
+                    <p class="mb-0">預約後可以修改時間或更換命理師嗎？</p>
+                  </div>
+                  <button type="button" class="border-0 bg-transparent" data-bs-toggle="collapse" data-bs-target="#QA3"
+                    aria-expanded="true" aria-controls="QA3">
+                    <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACgAAAAoCAYAAACM/rhtAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAB9SURBVHgB7dlBDYAwEETRXYIQ0ESwUDSAgWoAC4gCJyVI2P7LHubdN/mZpKd63ZZimWUO/NsGS06BlAIpBVIKpBRIKZBSIKVAarSgWtanWZusi7/Hdc+Ri/iCbv06bsML7mdsAUqPhFIgpUBKgZQCKQVSCqQUSKUP9OzfEB8ULQ/NSIrDVQAAAABJRU5ErkJggg==" alt="btn-close">
+                  </button>
+                </div>
+                <div id="QA3" class="accordion-collapse collapse show" aria-labelledby="headingOne"
+                  data-bs-parent="#accordionExample">
+                  <div class="d-flex">
+                    <img class="A-icon me-md-4 me-3" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAACXBIWXMAAAsTAAALEwEAmpwYAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAIBSURBVHgBnZXRUeMwEIb/VXJ3PKaBm/N1kBdm7u1MBYQKQgeBCkwJUAGhAkgFiBeGgZeU4KECv8ADYC0rOwZZlmPBziSxdlf6o0+7MiHSdtPfh2DK7DMRLu7140nMPIVYY1rId2I/zFjETosS+JcmifxMHddEfGnM3CiBEmXa9ZkZIiwOEas5hHvbh3nM1EGBGg+nknoqx1s4oShMgwIVHiL9oPO1VI9ux4YxDSMSPAq8qh5hVu0Y5tM0meC7Ag2eEZS241eMrnxMO+3q+pqAxUOg/Fbw2PFa53bxtZvDbObfFrB4mLiFxR8bYLYNU6+Ag+fK9b9BLb3UrZh6BRo8dzrXrr/GRC3fNkz9iCwesA6GvoApKPCBh9RFKB7C9ANlsCfGIWd99xBK5mz3/5+skyDXadenLKal7yYETBa9liUK6eAz9Jg03Uy1r+3ildTfTSn378DiKdmkitTBvXfAXl4uV4Ur0GBaunmdM2iu5hegd3FrUl25X00bTNgqYJPkUlv5Ww2ZVNON55n61dQSaKqHvebqs3Ggmn7BHPYKNHhGA3gaqzEhd32Gad8dUypbEt7JG0p5matMymoCMscKo2LHNm4Ald2p/LPJZs6ifiF9mvTPnsSLnyI+foY5krLO6oqV3rUZTJdSIXii6hD3fAHpj/OyWrSe042b67IiguU75i3dTaIMCGgAAAAASUVORK5CYII=" alt="A-icon">
+                    <p class="mb-0">可以。<br>
+                      請於預約時間24小時前透過會員中心或聯絡我們，
+                      提出修改需求，我們將協助重新安排。
+                    </p>
+                  </div>
+                </div>
+
+              </div>
+            </li>
+          </ul>
+
+        </div>
+      </div>
+    </section>
+
+    <footer class="footer">
+  <div class="container px-0 px-md-12">
+    <div class="py-md-40 pt-40 pb-4 border-bottom  d-flex  align-items-center gap-4 px-md-4 border-black-400">
+      <div class="footer-border-up-1 border border-black-400 d-none d-md-block"></div>
+      <picture class="mx-auto">
+        <source class="footer-logo" class="logo-mb" srcset="/ZDX-Club-Booking/assets/logo-Mj0upPJP.png" media="(min-width: 768px)">
+        <img class="logo-mb  d-block" src="/ZDX-Club-Booking/assets/logo-mb-crvVyaac.png" alt="pig-logo">
+      </picture>
+      <div class="footer-border-up-2 border border-black-400 d-none d-md-block"></div>
+    </div>
+    <div class="d-flex flex-md-row flex-column py-md-40 pt-4 column-gap-4 ">
+      <div class="footer-item  d-flex justify-content-center mb-4">
+        <div class="w-50">
+          <h5 class="fw-bold mb-md-28 mb-3 text-center">關於我們</h5>
+          <ul class="list-unstyled mb-0">
+            <li class="text-center mb-md-20 mb-3">FAQ</li>
+            <li class="text-center mb-md-20 mb-3">顧客服務</li>
+            <li class="text-center ">聯絡我們</li>
+          </ul>
+        </div>
+        <div class="w-50">
+          <h5 class="fw-bold   mb-md-28 mb-3 text-center">其它</h5>
+          <ul class="list-unstyled mb-0">
+            <li class="text-center mb-md-20 mb-3">預約服務流程</li>
+            <li class="text-center mb-md-20 mb-3">網站地圖</li>
+            <li class="text-center ">預約查詢</li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-center">
+        <p class="text-center text-primary fw-bold mb-12">
+          尋找答案的你，值得一場溫暖的命理對話。
+        </p>
+        <p class="text-center text-primary fw-bold mb-32">立即預約，給自己新的視野。</p>
+        <p class="text-center  fs-7 mb-12">09:00~22:00 / Mon-Sun (每月15號公休)</p>
+        <p class="text-center fs-7 mb-md-32 mb-0">service@pigdaxian-service.com</p>
+        <h6 class="fs-7 mb-2 text-center fw-normal d-none d-md-block">付款方式</h6>
+        <img class="d-none d-md-block mx-auto" src="/ZDX-Club-Booking/assets/pay-Cyt9To5R.png" alt="pay">
+      </div>
+      <div class="px-36 flex-fill d-none d-md-block">
+        <p class="text-primary mb-12">訂閱電子報</p>
+        <div class="d-flex align-items-center mb-2">
+          <div class=" border-end-0 p-11 ps-2 border border-primary">
+            <img class="ic-mail" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAACXBIWXMAAAsTAAALEwEAmpwYAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAHPSURBVHgB7ZW9UsJAEMd3zzhqh2+gnVqJNpbIE8AYZiyhINoBHR8FafiwEjtMA3bOEAaeQHgBh85WHiGVhULWvQAjE0WC6Rx+M5fL3SX/u9v95wKwZgk4u6loapEI0twTAD8QWAKhmTXMjGxuyEtZU2+5yrL4NviFNQjgLHx6hE/PL31l2h13xgSc5+pmH3xQ1i4irNTh0KS4qYtpvxMWsqEnQwV/pJqMpaT4vKbifoi3p3PIIiiUaK7+OAQPVK4v94BGDZso5B4TLvkoIg755pjs0aCUjMXBw6ppPBqwQULA78owL5wgb7S7gBvygQcuAURqVK5iDWeFLvR0JFDVYh0bqSadJwC77zsfQXcOhftFGZa8YcZRYIKbFhHFyR73JsmDaUjU0Nbb5sAGkn0Wl0zWaEX1Wtdy633LwddErSavvM+h4qTRsUxeVVNrNjhmSMtsIUIfUEn8lquFE8x2w1WwpKk6267I4um54Uzu3qzBEgR4oGCYOrtq3zEAF4UwyGFcKi5RwCPT3ezDinjagR/+zwSOf3/6oFZlTsPRdJLM58+dtCF7/pXPIfADa0xqJHkaTP4H8twOnxzusg0PuOn3n2Dxgm8KRjsLa7zwCW7Rq2P2aVlQAAAAAElFTkSuQmCC" alt="icon mail">
+          </div>
+          <input class="input-email border border-start-0 border-primary w-100 bg-transparent py-12 " type="email"
+            placeholder="Enter Email">
+        </div>
+        <button type="button" class="btn btn-primary rounded-0 mb-36">
+          立即探索您專屬的服務
+        </button>
+        <ul class="list-unstyled d-flex gap-20">
+          <li class="p-2 footer-icon ">
+            <a href="#">
+              <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAUCAYAAACNiR0NAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAEiSURBVHgB7ZM9TgMxEIXf2CsSUZkbcITlBuEGkQg9FIQWSkKzNEGigRJSUSKRghuw3ABOwN6ANEgBOTt4ghyZHxE2sZQmT1rN7OzsZ489Q6f7rXtmNBBBRMhVLJhIWAqRVRnIwMn7ql3r9PokDye0EX5PUE2Hx73+RRhQpR4w7AxAoqJzdTuBZQdNUxvWDWDXMcsOCfw0ge00zcpr8sxkzfe8CmdIL96r1ZPUrWB+y4p+y1NLJqZdaC4AXfjY29A+ul1uis8lUmfO/w2E1vnR5U0RhrLru4Ezufjd9paRE/aau2QGpeE7ddst/usHmU+xJePB9WAm/tnedjpSPC5zXHJwQVNL9rOuXB/62EizcaDG54pf8xc/y0vgT6BvixgS1gdGHVMfPc976QAAAABJRU5ErkJggg==" alt="icon fb">
+            </a>
+          </li>
+          <li class="p-2 footer-icon ">
+            <a href="#">
+              <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAUCAYAAACNiR0NAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAHsSURBVHgBpVSxTgJBEJ3Z2yBq4fkH9wVKY4+JvRg1sVMbpdMWLTwbKcWOaAGliRTwAUZKCxMt7MU/2Mqox944c2rw4ACBl5CdW96+7LyZWQRGMb/lAbUrFEIGEFwYBQQGFdYBndNC+bqFkVho7wjIg4mALVTOsgKyJ5OLRVeNstRElOtHQYQmETSQ0Mh3iOQ5gIshJJ9hbkbz2uMZIV0E09b3S3WTdFBsCm1wiIgHXX+5eLa3QTExgNPjy5oP/0Axv7lDIVX+7qlxxQSF8k1Vzvzd0zF1pauynu2t5z5nbFNSlhhJuR+zQT315mQ1qVaAlEMAc3RZKwWf7VIqpSV1N3ZDKYD00c9Xbuo97YpXkU+KttNv+kT2rYIDKQznE3H9auRzIzHlQbBEyJ6sSsxRBlGtQuc2cz2CzPdiCtxTUskoBDRBYH2eCPPN5RYieu1wO30cqzIqWC6Ua00YArHiI/1uxONifiPLI3uXKPg7Ph0vhwt3j22Xh+QREyLiGGIJgr+i7Zfi/mZF0kkW4zRt+zHpDeiZlCRwwXaPr26qEjP/nJfDflxpbKncwDcQkdwf80UsM4BqNDf0E7dBFgbjnMWGgoegrgD1LgctmBSiwa+2c/vwbFaWFhpA4Txve/xLw2gwnOU9ol6TdvsCuALv5baSBdAAAAAASUVORK5CYII=" alt="icon fb">
+            </a>
+          </li>
+          <li class="p-2 footer-icon ">
+            <a href="#">
+              <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABYAAAAQCAYAAAAS7Y8mAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAFhSURBVHgBrZS9UsJAEIB37wJEq6OzxNbKGRs7f56AAnssZOyQDmxMJXbETqmkhoInUF7AGStbeQPTOBMguXMvkBnNMPmBfDO5293Z2ST7h7AG66YqSq4p/lu9ij45Q8eX3AmtM9N1LHvsRGNgKHQbtTtS6wpUBTbjgwFM2v1RK/gAfdw3aj262vQI2Jw9BXB8fnSAr++fE7Yy1iEnKAXN4LbqVVEsGt+QI/Ndr8xKppnw+zhFhpeIOIWU6MKzsNpxdJ6GL53n4T6JrTQv4MwXDDJw2x/ZgPyMxEGcny9VtsAa3bdUoK8kP0NSw6NUkIaHq4um/FGWwuS2NBhNkQIv1ql7XTtVEnoS1CGkwpgaM9d1qN1inFSFgr5BBlbpCiZP9/E2U/cXh4pcDopHGX6EnKB2HOs7yMFi7tmFAhdkPCE1ZR4jAWmQqAaD+c7CXupriK5N7vvC50osZVqbPHlt/gJ7xngW58BjpAAAAABJRU5ErkJggg==" alt="icon fb">
+            </a>
+          </li>
+          <li class="p-2 footer-icon ">
+            <a href="#">
+              <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAUCAYAAACNiR0NAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAIGSURBVHgBpVRNbtpAFH5vcFNl5yOkJyg9AeQEjVXoNnQR6K7KpirJImUDVTdpN1VIFzFrqKAngBuEG5QjeFe1jOflGxsZG2OUnydZmnk/3/vej4e/ntTLmmRKTC49SXjhOOQ5IdMYtyeCWZEDrWnqCA5FLoysuTASdwcB18mBMM2A1GlfjWa0Q3rva1U2/MGQHKX1GUBFPPnUH3q9k3rjS6s+FqEy5RkGSBqYkAfnP+Hbqk3hV00IdZs1SdAdfhUuqSwsN7RDENBRTBVjeKBKshBD0zWptQQffwznpOSYNlrAwu9wPMU3sH5KOT5QZ0rJ0WZrUoAcxOn5IGECoHZ/dEhggdvi7HrUgLojRv8By8+wv4wiU8NLM6QsM/bRIx8tuY1L4rE9A/RbNLgCKQQUMb+7zTd2gunBlO10Cb0rinOKAZVrs2FAWb0RFyXSgxkqRZV/y+UEpS8SJdP87PrXBFGVBwOKSGNvf+91uz98gZtnJ/1/Xx92m2+PrW3lFQ1y9fdsAsZKAYtEFRq/16rfMMq31+d/n10SGT8hjAVfHRPA3GJrLVUcL+keIgr7qWjOWm63METukC6itYBjtNDYr61fvDan51dDv6TpIo2RYRiXwX6pRN+jv2aHFD0OOcB1PYRHgIOtJkG/Cx5ku4c2KG9EQHp6G7btghVTrMjL7NrjJXAMeXdaK9/d6LmwzAAAAABJRU5ErkJggg==" alt="icon fb">
+            </a>
+          </li>
+
+        </ul>
+
+      </div>
+    </div>
+    <div class="p-md-4 py-4 ">
+      <div class="border border-black-400"></div>
+    </div>
+    <div
+      class="d-flex flex-md-row flex-column flex-column-reverse p-md-4 px-12 mb-40 align-items-center justify-content-between">
+      <p class="mb-0">豬大仙的命理探險家俱樂部 版權所有</p>
+
+      <div class="w-100 mb-4 d-md-none">
+        <div class="d-flex w-100 align-items-center">
+          <div class="py-3 text-center w-50 me-2">隱私權保護政策</div>
+          <div class=" border border-primary footer-deco-mb"></div>
+          <div class="ms-2 py-3 text-center w-50">免責聲明</div>
+        </div>
+        <div class="d-flex w-100 align-items-center">
+          <div class="py-3 text-center w-50 me-2">網站使用條款</div>
+          <div class=" border border-primary footer-deco-mb"></div>
+          <div class="ms-2 py-3 text-center w-50">防詐騙聲明</div>
+        </div>
+      </div>
+
+
+      <ul class="d-none mb-0 d-md-flex list-unstyled align-items-center">
+        <li class="px-2 py-1">隱私權保護政策</li>
+        <li class="d-flex px-2">
+          <div class=" border border-primary footer-deco"></div>
+        </li>
+        <li class="px-2 py-1">免責聲明</li>
+        <li class="d-flex px-2">
+          <div class=" border border-primary footer-deco"></div>
+        </li>
+        <li class="px-2 py-1">網站使用條款</li>
+        <li class="d-flex px-2">
+          <div class=" border border-primary footer-deco"></div>
+        </li>
+        <li class="px-2 py-1">防詐騙聲明</li>
+      </ul>
+
+    </div>
+  </div>
+
+</footer>
+
+
+
+
+      <script>
+        const serviceCarousel = document.getElementById('service-carousel');
+        const serviceIndicators = document.querySelectorAll('.service-item');
+
+        [0, 3].forEach(i => serviceIndicators[i].classList.add('border-dark'));
+        //初始化 
+        serviceCarousel.addEventListener('slide.bs.carousel', function (e) {
+          serviceIndicators.forEach(el => el.classList.remove("border-dark"));
+          [e.to, e.to + 3].forEach(i => serviceIndicators[i].classList.add('border-dark'));
+        })
+      </script>
+      <!-- <script>
+        const commentCarousel = document.getElementById('comment-carousel');
+        const commentIndicators = document.querySelectorAll('.comment-item');
+        commentIndicators[0].classList.add('border-dark');//初始化
+        commentCarousel.addEventListener('slide.bs.carousel', function (e) {
+          commentIndicators.forEach(el => el.classList.remove('border-dark'));
+          commentIndicators[e.to].classList.add('border-dark');
+        })
+
+      </script> -->
+
+
+      <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+      <script>
+        const swiper = new Swiper(".mySwiper", {
+          slidesPerView: 1,
+          spaceBetween: 16,
+          // (手機板排版設定),
+          breakpoints: {
+            768: {
+              slidesPerView: 3,
+              spaceBetween: 24,
+            }
+            // (RWD設定部分)
+          },
+
+          // Navigation arrows
+          navigation: {
+            nextEl: '.swiper-button-next',
+            prevEl: '.swiper-button-prev',
+          },
+
+        });
+      </script>
+      
+</body>
+
+</html>
