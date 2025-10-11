@@ -67,3 +67,33 @@ li {
     overflow: hidden;
     text-overflow: ellipsis;
 }
+
+.pt-21 {
+    padding-top: 21px;
+}
+
+.check-border-outside {
+    border: solid $primary 4px;
+}
+
+.check-border-inside {
+    border: solid $primary 1px;
+}
+
+.primary-bg-01 {
+    background-color: rgba($primary, 0.1);
+}
+
+.py-22 {
+    padding-top: 22px;
+    padding-bottom: 22px;
+}
+
+.width-726 {
+    width: 726px;
+}
+
+.btn:hover {
+    background-color: rgba($primary, 0.8);
+    color: $black-50;
+}
