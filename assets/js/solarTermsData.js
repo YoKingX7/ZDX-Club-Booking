@@ -1,17 +1,4 @@
 // 24 節氣對應資料
-document.querySelectorAll(".selections .sel-item").forEach((item) => {
-  item.addEventListener("click", function () {
-    document
-      .querySelectorAll(".selections .sel-item")
-      .forEach((i) => i.classList.remove("active"));
-    this.classList.add("active");
-  });
-});document.querySelectorAll('.selections .sel-item').forEach(item => {
-  item.addEventListener('click', function() {
-    document.querySelectorAll('.selections .sel-item').forEach(i => i.classList.remove('active'));
-    this.classList.add('active');
-  });
-});
 const solarTermsData = {
   立春: {
     text: "一年開始，五行屬木，適合立下新計劃，命理上為陽氣漸升，萬物生發之始。",
@@ -93,27 +80,57 @@ const solarTermsData = {
   },
 };
 
-// 綁定事件
-document.querySelectorAll(".sel-item").forEach((item) => {
-  item.addEventListener("click", function () {
-    // 移除同列 active
-    this.parentNode
-      .querySelectorAll(".sel-item")
-      .forEach((li) => li.classList.remove("active"));
-    this.classList.add("active");
+// 季節背景圖對應
+const seasonImages = {
+  1: "../assets/images/knowledge/season-1.png", // 春
+  2: "../assets/images/knowledge/season-2.png", // 夏
+  3: "../assets/images/knowledge/season-3.png", // 秋
+  4: "../assets/images/knowledge/season-4.png", // 冬
+};
 
-    const term = this.textContent.trim();
-    const data = solarTermsData[term];
+// 更新節氣內容的函數
+function updateTermContent(termName) {
+  const termData = solarTermsData[termName];
 
-    if (data) {
-      // 更新標題與內文
-      document.querySelector(".content .km-display-1").textContent = term;
-      document.querySelector(".content .km-h5").textContent = data.text;
-
-      // 切換背景圖
-      document.querySelector(
-        ".content"
-      ).style.backgroundImage = `url('../assets/images/knowledge/season-${data.season}.png')`;
+  if (termData) {
+    // 更新標題
+    const termTitle = document.getElementById("term-title");
+    if (termTitle) {
+      termTitle.textContent = termName;
     }
+
+    // 更新描述
+    const termDescription = document.getElementById("term-description");
+    if (termDescription) {
+      termDescription.textContent = termData.text;
+    }
+
+    // 更新背景圖
+    const contentElement = document.getElementById("solar-term-content");
+    if (contentElement) {
+      contentElement.style.backgroundImage = `url('${
+        seasonImages[termData.season]
+      }')`;
+    }
+  }
+}
+
+// 等待 DOM 載入完成
+document.addEventListener("DOMContentLoaded", function () {
+  // 綁定節氣按鈕的點擊事件
+  document.querySelectorAll(".sel-item").forEach((button) => {
+    button.addEventListener("click", function () {
+      // 移除所有 active 狀態
+      document.querySelectorAll(".sel-item").forEach((item) => {
+        item.classList.remove("active");
+      });
+
+      // 添加 active 狀態到當前按鈕
+      this.classList.add("active");
+
+      // 更新內容
+      const termName = this.textContent.trim();
+      updateTermContent(termName);
+    });
   });
 });

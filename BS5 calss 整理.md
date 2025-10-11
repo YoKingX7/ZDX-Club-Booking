@@ -19,7 +19,7 @@
 "neutral-200":  $neutral-200,     #e5e5e5
 "neutral-100":  $neutral-100,     #f0f0f0
 "neutral-50":   $neutral-50,      #FAFAFA
-"background-beige": $background-beige, #f6f3e6
+"background-beige: $background-beige, #f6f3e6
 ```
 
 2. spacer 為 16px 計算
@@ -41,7 +41,7 @@
   48  : 48px,       // 16 * 3
   5   : 48px,       // 16 * 3
   60  : 60px,       // 16 * 3.75
-  64  : 64px,       // 16 * 4
+  64"  : 64px,       // 16 * 4
   80  : 80px,       // 16 * 5
   98  : 98px,
   100 : 100px,
@@ -70,3 +70,17 @@
     lh-base :   1.5
     lh-lg   :   2
     ```
+
+  5. 字重
+   ```scss
+    fw-lighter  : lighter
+    fw-light    : 300
+    fw-normal   : 400
+    fw-medium   : 500
+    fw-semibold : 600
+    fw-bold     : 700
+    fw-bolder   : bolder
+   ```
+
+
+
