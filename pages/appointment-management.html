@@ -4,17 +4,88 @@
         <meta charset="UTF-8" />
         <meta http-equiv="X-UA-Compatible" content="IE=edge" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <title>index</title>
-        <link
-            rel="stylesheet"
-            href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
-        />
+        <title>appointment-management</title>
     </head>
 
     <!-- appointment-management.html -->
     <body style="background-image: url(../assets/images/index/nav-bg.png)">
-        <%- include("./layout/nav",{login:false}) %> <%-
-        include("./layout/footer") %>
+        <%- include("./layout/nav",{login:false}) %>
+
+        <div class="container py-80">
+            <div class="row">
+                <!-- administrator-functions -->
+                <div class="col-3">
+                    <h2 class="fs-2 fw-bold mt-32 mb-36">管理員功能</h2>
+                    <ul>
+                        <li class="mb-4">
+                            <button
+                                type="button"
+                                class="administrator-functions-border-outside btn rounded-0 fs-5 py-0"
+                            >
+                                <div
+                                    class="py-3 administrator-functions-border-inside"
+                                >
+                                    儀表版
+                                </div>
+                            </button>
+                        </li>
+                        <li class="mb-4">
+                            <button
+                                type="button"
+                                class="administrator-functions-border-outside btn rounded-0 fs-5 py-0 active"
+                            >
+                                <div
+                                    class="py-3 administrator-functions-border-inside"
+                                >
+                                    預約管理
+                                </div>
+                            </button>
+                        </li>
+                        <li class="mb-4">
+                            <button
+                                type="button"
+                                class="administrator-functions-border-outside btn rounded-0 fs-5 py-0"
+                            >
+                                <div
+                                    class="py-3 administrator-functions-border-inside"
+                                >
+                                    匯出資料
+                                </div>
+                            </button>
+                        </li>
+                        <li class="mb-4">
+                            <button
+                                type="button"
+                                class="administrator-functions-border-outside btn rounded-0 fs-5 py-0"
+                            >
+                                <div
+                                    class="py-3 administrator-functions-border-inside"
+                                >
+                                    教學說明
+                                </div>
+                            </button>
+                        </li>
+                        <li class="mb-4">
+                            <button
+                                type="button"
+                                class="administrator-functions-border-outside-signout btn rounded-0 fs-5 py-0"
+                            >
+                                <div
+                                    class="py-3 administrator-functions-border-inside-signout"
+                                >
+                                    登出
+                                </div>
+                            </button>
+                        </li>
+                    </ul>
+                </div>
+                <div class="col-9">
+                    <p>查詢預約紀錄</p>
+                </div>
+            </div>
+        </div>
+
+        <%- include("./layout/footer") %>
 
         <script type="module" src="../main.js"></script>
     </body>
