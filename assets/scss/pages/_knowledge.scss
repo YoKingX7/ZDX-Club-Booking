@@ -1,5 +1,5 @@
 .chk {
-  border: 1px solid red;
+  border: 2px solid red;
 }
 
 body {
@@ -45,6 +45,7 @@ body {
     background-blend-mode: lighten;
     background-size: contain;
     background-position: center;
+    background-repeat: no-repeat;
   }
 
   .selections {
@@ -57,7 +58,33 @@ body {
       background: none;
     }
 
+    .bg-sp,
+    .bg-su,
+    .bg-fa,
+    .bg-wi {
+      $sel-gap: 8px;
+      .sel-title {
+        width: calc((100% - #{$sel-gap}) * 0.126);
+      }
+      .sel-items {
+        padding-left: $sel-gap;
+        width: calc((100% - #{$sel-gap}) * 0.874);
+      }
+      .sel-item {
+        width: calc((100% - 2 * #{$sel-gap}) / 3);
+      }
+      @media (min-width: 767px) {
+        $sel-gap: 16px;
+        .sel-item {
+          width: calc((100% - 5 * #{$sel-gap}) / 6);
+        }
+      }
+    }
+
     .bg-sp {
+      // 春
+
+      //
       background: rgba(234, 214, 209, 0.5);
       .sel-item:hover {
         border: 2px solid #f4d0c7;
@@ -126,7 +153,6 @@ body {
 
   .timeline-img {
     max-width: 64px;
-    width: 100%;
   }
   @media (min-width: 767px) {
     .timeline-tag {
