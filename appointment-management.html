@@ -5,180 +5,215 @@
         <meta http-equiv="X-UA-Compatible" content="IE=edge" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <title>appointment-management</title>
-      <script type="module" crossorigin src="/ZDX-Club-Booking/assets/main-jArqSRxd.js"></script>
-      <link rel="stylesheet" crossorigin href="/ZDX-Club-Booking/assets/main-DO9T8ewJ.css">
+      <script type="module" crossorigin src="/ZDX-Club-Booking/assets/main-Bh02d8QB.js"></script>
+      <link rel="stylesheet" crossorigin href="/ZDX-Club-Booking/assets/main-Df9r28GG.css">
     </head>
 
     <!-- appointment-management.html -->
     <body style="background-image: url(/ZDX-Club-Booking/assets/nav-bg-CDBBRjb5.png)">
         <nav class="nav navbar position-relative py-0">
-  <div class="container border-bottom border-black-400 py-md-40 py-3">
-    <div class="d-flex d-md-none justify-content-between px-12 w-100">
-      <img
-        class="logo-mb d-block"
-        src="/ZDX-Club-Booking/assets/logo-mb-crvVyaac.png"
-        alt="pig logo"
-      />
-      <button
-        class="border-0 p-2"
-        type="button"
-        data-bs-toggle="collapse"
-        href="#collapseExample"
-        role="button"
-        aria-expanded="false"
-        aria-controls="collapseExample"
-        style="background-image: url(/ZDX-Club-Booking/assets/nav-bg-CDBBRjb5.png)"
-        id="nav-toggle"
-        onclick="switchBtn('show')"
-      >
-        <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAACXBIWXMAAAsTAAALEwEAmpwYAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAA5SURBVHgB7dIxEQAgEAPBgBKo3r+dNOAkDAUKoOEnW52AAyy9ciIihqSGNybJvqPC0vNFds8X2QcWBOkYCmEMl4sAAAAASUVORK5CYII=" alt="menu button" />
-      </button>
-      <button
-        class="border-0 p-2"
-        type="button"
-        data-bs-toggle="collapse"
-        href="#collapseExample"
-        role="button"
-        aria-expanded="false"
-        aria-controls="collapseExample"
-        style="background-image: url(/ZDX-Club-Booking/assets/nav-bg-CDBBRjb5.png)"
-        id="nav-close"
-        onclick="switchBtn('close')"
-      >
-        <img
-          src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAACLSURBVHgBrVPJEcAgCAQq8adtWLlt+AuVaMRJPiYKGbMzfoBdLkHv/VFrBSKKOWcGA0IIrnFS5102V0pJ4vhA7rGEiLE9togMZJaqceYY25nFoBag+VDLIvZVdaj12eYDq9YeAi8iMCMLCDZBSnbWVvzfELfWuPWRLOSVCFnJgp5xuJ17C2w950EETp0EDLQAbp7jAAAAAElFTkSuQmCC"
-          alt="menu button"
-        />
-      </button>
-    </div>
-
-    <ul
-      class="list-unstyled d-md-flex d-none px-106 align-items-center justify-content-between w-100"
-    >
-      <li class="py-3 px-4">
-        <a href="knowledge.html" class="text-dark text-decoration-none">
-          命理知識
-        </a>
-      </li>
-      <li class="py-3 px-4">
-        <a href="about.html" class="text-dark text-decoration-none">
-          命理師介紹
-        </a>
-      </li>
-      <li>
-        <a href="index.html">
-          <img src="/ZDX-Club-Booking/assets/logo-Mj0upPJP.png" alt="pig logo" />
-        </a>
-      </li>
-      <li class="py-3 px-4">
-        <a href="#" class="text-dark text-decoration-none"> 立即預約 </a>
-      </li>
-      <li class="py-3 px-4 d-block">
-        <a href="#" class="text-dark text-decoration-none"> 登入/註冊 </a>
-      </li>
-      <li class="dropdown d-none">
-        <button
-          type="button"
-          class="py-3 px-4 border-0 bg-transparent text-decoration-none"
-          id="dropdownMenuButton1"
-          data-bs-toggle="dropdown"
-          aria-expanded="false"
-        >
-          <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAADuSURBVHgBxVLBDYJAELwDC7gSfAEJH0uwBDogVqBUYqjAWAFSgSXgk5+WcA0AzhA05FhziT6cZAO3uzc7u7daCUiSZD0Mwwm2wdForS+wom3bh5sbSJf7vm/GYBAUvIjfDX2MKR+iKKpgd9cfx/GV5lUAZKhauk74zlNLXgILudZ14rLBx3gJUOmG3nO1xB6x2nWuBIIdB8Y5sBWYRfWcCkB8WOQLlV7PeIRlbImqSCw948/QbuWu69irkZKhyIZhWM6VvIeYpum4LOgzUx/AGHOYuwhiaA0WpVIeuAs1f0YqqH0E00JtJYKv8H+CJ18TZuVeExFmAAAAAElFTkSuQmCC" alt="icon-user" />
-          <span>使用者姓名</span>
-          <img
-            src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAB9SURBVHgB7ZDRCYAgFEWNRhBHUPxsBDfLNnGTcgz9agBdQXtCwSMqDPz0wAXxeq+PR0inPVJK9ccb7w9SSiullMQYLfaEEHPO2TDGbAhhfywoBoQHOGpcUsLlDrQ458zrBAUIbbgEpK6w916TWuBXDcqn6oMYzvn0tdROIw4ahi85C4ZPTgAAAABJRU5ErkJggg=="
-            alt="angle-small-down"
-          />
-        </button>
-        <ul
-          class="dropdown-menu member-menu mt-0 py-0 border-0"
-          aria-labelledby="dropdownMenuButton1"
-        >
-          <li>
-            <a class="dropdown-item py-3 text-center" href="#">預約查詢</a>
-          </li>
-          <li>
-            <a class="dropdown-item py-3 text-center" href="#">會員中心</a>
-          </li>
-          <li>
-            <a class="dropdown-item py-3 text-center" href="#">修改密碼</a>
-          </li>
-        </ul>
-      </li>
-    </ul>
-  </div>
-  <div
-    class="nav-collapse collapse w-100 py-4 shadow position-absolute left-0 border-top border-black-400"
-    id="collapseExample"
-    style="background-image: url(/ZDX-Club-Booking/assets/nav-bg-CDBBRjb5.png)"
-  >
-    <div
-      class="card card-body p-0 border-0"
-      style="background-image: url(/ZDX-Club-Booking/assets/nav-bg-CDBBRjb5.png)"
-    >
-      <ul class="list-unstyled text-center">
-        <li class="py-3">
-          <a href="#" class="text-dark text-decoration-none"> 命理知識 </a>
-        </li>
-        <li class="py-3">
-          <a href="#" class="text-dark text-decoration-none"> 命理師介紹 </a>
-        </li>
-        <li class="py-3">
-          <a href="#" class="text-dark text-decoration-none"> 立即預約 </a>
-        </li>
-        <li class="py-3 d-block">
-          <a href="#" class="text-dark text-decoration-none"> 登入/註冊 </a>
-        </li>
-        <li class="dropdown d-none">
-          <button
-            type="button"
-            class="py-3 px-4 border-0 bg-transparent text-decoration-none"
-            id="dropdownMenuButton1"
-            data-bs-toggle="dropdown"
-            aria-expanded="false"
-          >
-            <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAADuSURBVHgBxVLBDYJAELwDC7gSfAEJH0uwBDogVqBUYqjAWAFSgSXgk5+WcA0AzhA05FhziT6cZAO3uzc7u7daCUiSZD0Mwwm2wdForS+wom3bh5sbSJf7vm/GYBAUvIjfDX2MKR+iKKpgd9cfx/GV5lUAZKhauk74zlNLXgILudZ14rLBx3gJUOmG3nO1xB6x2nWuBIIdB8Y5sBWYRfWcCkB8WOQLlV7PeIRlbImqSCw948/QbuWu69irkZKhyIZhWM6VvIeYpum4LOgzUx/AGHOYuwhiaA0WpVIeuAs1f0YqqH0E00JtJYKv8H+CJ18TZuVeExFmAAAAAElFTkSuQmCC" alt="icon-user" />
-            <span>使用者姓名</span>
+    <div class="container border-bottom border-black-400 py-md-40 py-3">
+        <div class="d-flex d-md-none justify-content-between px-12 w-100">
             <img
-              src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAB9SURBVHgB7ZDRCYAgFEWNRhBHUPxsBDfLNnGTcgz9agBdQXtCwSMqDPz0wAXxeq+PR0inPVJK9ccb7w9SSiullMQYLfaEEHPO2TDGbAhhfywoBoQHOGpcUsLlDrQ458zrBAUIbbgEpK6w916TWuBXDcqn6oMYzvn0tdROIw4ahi85C4ZPTgAAAABJRU5ErkJggg=="
-              alt="angle-small-down"
+                class="logo-mb d-block"
+                src="/ZDX-Club-Booking/assets/logo-mb-crvVyaac.png"
+                alt="pig logo"
             />
-          </button>
-          <ul
-            class="dropdown-menu member-menu mt-0 py-0 border-0 w-100 px-4"
-            style="background-image: url('/ZDX-Club-Booking/assets/nav-bg-CDBBRjb5.png')"
-            aria-labelledby="dropdownMenuButton1"
-          >
-            <li class="border-top border-1 border-black-400">
-              <a class="dropdown-item py-3 text-center" href="#">預約查詢</a>
+            <button
+                class="border-0 p-2"
+                type="button"
+                data-bs-toggle="collapse"
+                href="#collapseExample"
+                role="button"
+                aria-expanded="false"
+                aria-controls="collapseExample"
+                style="background-image: url(/ZDX-Club-Booking/assets/nav-bg-CDBBRjb5.png)"
+                id="nav-toggle"
+                onclick="switchBtn('show')"
+            >
+                <img
+                    src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAACXBIWXMAAAsTAAALEwEAmpwYAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAA5SURBVHgB7dIxEQAgEAPBgBKo3r+dNOAkDAUKoOEnW52AAyy9ciIihqSGNybJvqPC0vNFds8X2QcWBOkYCmEMl4sAAAAASUVORK5CYII="
+                    alt="menu button"
+                />
+            </button>
+            <button
+                class="border-0 p-2"
+                type="button"
+                data-bs-toggle="collapse"
+                href="#collapseExample"
+                role="button"
+                aria-expanded="false"
+                aria-controls="collapseExample"
+                style="background-image: url(/ZDX-Club-Booking/assets/nav-bg-CDBBRjb5.png)"
+                id="nav-close"
+                onclick="switchBtn('close')"
+            >
+                <img
+                    src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAACLSURBVHgBrVPJEcAgCAQq8adtWLlt+AuVaMRJPiYKGbMzfoBdLkHv/VFrBSKKOWcGA0IIrnFS5102V0pJ4vhA7rGEiLE9togMZJaqceYY25nFoBag+VDLIvZVdaj12eYDq9YeAi8iMCMLCDZBSnbWVvzfELfWuPWRLOSVCFnJgp5xuJ17C2w950EETp0EDLQAbp7jAAAAAElFTkSuQmCC"
+                    alt="menu button"
+                />
+            </button>
+        </div>
+
+        <ul
+            class="list-unstyled d-md-flex d-none px-106 align-items-center justify-content-between w-100"
+        >
+            <li class="py-3 px-4">
+                <a href="knowledge.html" class="text-dark text-decoration-none">
+                    命理知識
+                </a>
+            </li>
+            <li class="py-3 px-4">
+                <a href="about.html" class="text-dark text-decoration-none">
+                    命理師介紹
+                </a>
             </li>
             <li>
-              <a class="dropdown-item py-3 text-center" href="#">會員中心</a>
+                <a href="index.html">
+                    <img src="/ZDX-Club-Booking/assets/logo-Mj0upPJP.png" alt="pig logo" />
+                </a>
             </li>
-            <li>
-              <a class="dropdown-item py-3 text-center" href="#">修改密碼</a>
+            <li class="py-3 px-4">
+                <a href="#" class="text-dark text-decoration-none">
+                    立即預約
+                </a>
             </li>
-          </ul>
-        </li>
-      </ul>
+            <li class="py-3 px-4 d-block">
+                <a
+                    href="appointment-management.html"
+                    class="text-dark text-decoration-none"
+                >
+                    登入/註冊
+                </a>
+            </li>
+            <li class="dropdown d-none">
+                <button
+                    type="button"
+                    class="py-3 px-4 border-0 bg-transparent text-decoration-none"
+                    id="dropdownMenuButton1"
+                    data-bs-toggle="dropdown"
+                    aria-expanded="false"
+                >
+                    <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAADuSURBVHgBxVLBDYJAELwDC7gSfAEJH0uwBDogVqBUYqjAWAFSgSXgk5+WcA0AzhA05FhziT6cZAO3uzc7u7daCUiSZD0Mwwm2wdForS+wom3bh5sbSJf7vm/GYBAUvIjfDX2MKR+iKKpgd9cfx/GV5lUAZKhauk74zlNLXgILudZ14rLBx3gJUOmG3nO1xB6x2nWuBIIdB8Y5sBWYRfWcCkB8WOQLlV7PeIRlbImqSCw948/QbuWu69irkZKhyIZhWM6VvIeYpum4LOgzUx/AGHOYuwhiaA0WpVIeuAs1f0YqqH0E00JtJYKv8H+CJ18TZuVeExFmAAAAAElFTkSuQmCC" alt="icon-user" />
+                    <span>使用者姓名</span>
+                    <img
+                        src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAB9SURBVHgB7ZDRCYAgFEWNRhBHUPxsBDfLNnGTcgz9agBdQXtCwSMqDPz0wAXxeq+PR0inPVJK9ccb7w9SSiullMQYLfaEEHPO2TDGbAhhfywoBoQHOGpcUsLlDrQ458zrBAUIbbgEpK6w916TWuBXDcqn6oMYzvn0tdROIw4ahi85C4ZPTgAAAABJRU5ErkJggg=="
+                        alt="angle-small-down"
+                    />
+                </button>
+                <ul
+                    class="dropdown-menu member-menu mt-0 py-0 border-0"
+                    aria-labelledby="dropdownMenuButton1"
+                >
+                    <li>
+                        <a class="dropdown-item py-3 text-center" href="#"
+                            >預約查詢</a
+                        >
+                    </li>
+                    <li>
+                        <a class="dropdown-item py-3 text-center" href="#"
+                            >會員中心</a
+                        >
+                    </li>
+                    <li>
+                        <a class="dropdown-item py-3 text-center" href="#"
+                            >修改密碼</a
+                        >
+                    </li>
+                </ul>
+            </li>
+        </ul>
     </div>
-  </div>
+    <div
+        class="nav-collapse collapse w-100 py-4 shadow position-absolute left-0 border-top border-black-400"
+        id="collapseExample"
+        style="background-image: url(/ZDX-Club-Booking/assets/nav-bg-CDBBRjb5.png)"
+    >
+        <div
+            class="card card-body p-0 border-0"
+            style="background-image: url(/ZDX-Club-Booking/assets/nav-bg-CDBBRjb5.png)"
+        >
+            <ul class="list-unstyled text-center">
+                <li class="py-3">
+                    <a href="#" class="text-dark text-decoration-none">
+                        命理知識
+                    </a>
+                </li>
+                <li class="py-3">
+                    <a href="#" class="text-dark text-decoration-none">
+                        命理師介紹
+                    </a>
+                </li>
+                <li class="py-3">
+                    <a href="#" class="text-dark text-decoration-none">
+                        立即預約
+                    </a>
+                </li>
+                <li class="py-3 d-block">
+                    <a href="#" class="text-dark text-decoration-none">
+                        登入/註冊
+                    </a>
+                </li>
+                <li class="dropdown d-none">
+                    <button
+                        type="button"
+                        class="py-3 px-4 border-0 bg-transparent text-decoration-none"
+                        id="dropdownMenuButton1"
+                        data-bs-toggle="dropdown"
+                        aria-expanded="false"
+                    >
+                        <img
+                            src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAADuSURBVHgBxVLBDYJAELwDC7gSfAEJH0uwBDogVqBUYqjAWAFSgSXgk5+WcA0AzhA05FhziT6cZAO3uzc7u7daCUiSZD0Mwwm2wdForS+wom3bh5sbSJf7vm/GYBAUvIjfDX2MKR+iKKpgd9cfx/GV5lUAZKhauk74zlNLXgILudZ14rLBx3gJUOmG3nO1xB6x2nWuBIIdB8Y5sBWYRfWcCkB8WOQLlV7PeIRlbImqSCw948/QbuWu69irkZKhyIZhWM6VvIeYpum4LOgzUx/AGHOYuwhiaA0WpVIeuAs1f0YqqH0E00JtJYKv8H+CJ18TZuVeExFmAAAAAElFTkSuQmCC"
+                            alt="icon-user"
+                        />
+                        <span>使用者姓名</span>
+                        <img
+                            src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAB9SURBVHgB7ZDRCYAgFEWNRhBHUPxsBDfLNnGTcgz9agBdQXtCwSMqDPz0wAXxeq+PR0inPVJK9ccb7w9SSiullMQYLfaEEHPO2TDGbAhhfywoBoQHOGpcUsLlDrQ458zrBAUIbbgEpK6w916TWuBXDcqn6oMYzvn0tdROIw4ahi85C4ZPTgAAAABJRU5ErkJggg=="
+                            alt="angle-small-down"
+                        />
+                    </button>
+                    <ul
+                        class="dropdown-menu member-menu mt-0 py-0 border-0 w-100 px-4"
+                        style="
+                            background-image: url('/ZDX-Club-Booking/assets/nav-bg-CDBBRjb5.png');
+                        "
+                        aria-labelledby="dropdownMenuButton1"
+                    >
+                        <li class="border-top border-1 border-black-400">
+                            <a class="dropdown-item py-3 text-center" href="#"
+                                >預約查詢</a
+                            >
+                        </li>
+                        <li>
+                            <a class="dropdown-item py-3 text-center" href="#"
+                                >會員中心</a
+                            >
+                        </li>
+                        <li>
+                            <a class="dropdown-item py-3 text-center" href="#"
+                                >修改密碼</a
+                            >
+                        </li>
+                    </ul>
+                </li>
+            </ul>
+        </div>
+    </div>
 </nav>
 
 <script>
-  const navToggle = document.getElementById('nav-toggle')
-  const closeBtn = document.getElementById('nav-close')
-  closeBtn.style.display = 'none'
-  function switchBtn(item) {
-    if (item === 'show') {
-      navToggle.style.display = 'none'
-      closeBtn.style.display = 'block'
-    } else {
-      navToggle.style.display = 'block'
-      closeBtn.style.display = 'none'
+    const navToggle = document.getElementById("nav-toggle");
+    const closeBtn = document.getElementById("nav-close");
+    closeBtn.style.display = "none";
+    function switchBtn(item) {
+        if (item === "show") {
+            navToggle.style.display = "none";
+            closeBtn.style.display = "block";
+        } else {
+            navToggle.style.display = "block";
+            closeBtn.style.display = "none";
+        }
     }
-  }
 </script>
 
 
@@ -191,7 +226,7 @@
                         <li class="mb-4">
                             <button
                                 type="button"
-                                class="administrator-functions-border-outside btn rounded-0 fs-5 py-0"
+                                class="administrator-functions-border-outside btn rounded-0 fs-5 py-0 p-2"
                             >
                                 <div
                                     class="py-3 administrator-functions-border-inside"
@@ -203,7 +238,7 @@
                         <li class="mb-4">
                             <button
                                 type="button"
-                                class="administrator-functions-border-outside btn rounded-0 fs-5 py-0 active"
+                                class="administrator-functions-border-outside btn rounded-0 fs-5 py-0 p-2 active"
                             >
                                 <div
                                     class="py-3 administrator-functions-border-inside"
@@ -215,7 +250,7 @@
                         <li class="mb-4">
                             <button
                                 type="button"
-                                class="administrator-functions-border-outside btn rounded-0 fs-5 py-0"
+                                class="administrator-functions-border-outside btn rounded-0 fs-5 py-0 p-2"
                             >
                                 <div
                                     class="py-3 administrator-functions-border-inside"
@@ -227,7 +262,7 @@
                         <li class="mb-4">
                             <button
                                 type="button"
-                                class="administrator-functions-border-outside btn rounded-0 fs-5 py-0"
+                                class="administrator-functions-border-outside btn rounded-0 fs-5 py-0 p-2"
                             >
                                 <div
                                     class="py-3 administrator-functions-border-inside"
@@ -239,7 +274,7 @@
                         <li class="mb-4">
                             <button
                                 type="button"
-                                class="administrator-functions-border-outside-signout btn rounded-0 fs-5 py-0"
+                                class="administrator-functions-border-outside-signout btn rounded-0 fs-5 py-0 p-2"
                             >
                                 <div
                                     class="py-3 administrator-functions-border-inside-signout"
@@ -250,8 +285,141 @@
                         </li>
                     </ul>
                 </div>
+                <!-- check-reservation-record -->
                 <div class="col-9">
-                    <p>查詢預約紀錄</p>
+                    <div class="pt-12 mb-40">
+                        <div class="position-relative pt-21">
+                            <img
+                                class="position-absolute top-0"
+                                src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADgAAAA4CAYAAACohjseAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAUiSURBVHgB3ZpPaFxFHMd/8+fN27fZbbZNTU1Qwcb20JOgJykiIkUPFiIkeCo1hyqIgqeABdmLxSL+QVGwSE4epAH/VFARhNxF8CRSKVZLG2uTbZLNvrfvz8w4v5fustlsks3uJtn3Pnt4b2dnl/fd38zvz8wQ6DHF4lPc+eeoI1SJLRcKIELFsN2SZaYCm9f6SUf42g/N+woIPqhVYHnTMzNl6DEEegCKEnceGhSluyQ4dFDjg2thXpEWlIJDI2W3+p7i1CcSAmURz/EAAg0MMgCaiXKO3ll9/eMffOiSrgR+9NpzdonZzkA1L1QQcsl0jmiVhy7QhJYJI4GWWuB1wFqe70ZoRwLRYoPXC7nlghl6bs6xtH9E4r/fQwg1ltXUZ+Z3FSdep0J3LPDCq2eG4rlDGd0NYa1AsXiVYC+cv/TF/I6+227HNedx/zA6Bxp6o1qBgD2EEZARUBfvc5mVv9u1ZlsCi+eezwqLOzokgio2CvtIPHSN2JxYvdaOyG2H14Uz40MCnJy0hMMifQT2GzMlmAQ/1GL45GNjq3O/Xg236r6lwLfPvTCiM7YNRA7SUA1Cn6AJCHxwRnhhO5GbCnz3lfFhTWyHKJkzscqBPkMDULQmBX7oycfHVjYTSVs14pwLNT8sGdX9KK4RakRaOnMcY3LLz5sbsKPQ2QcIYS7zw8OQAFCk6+eOX748sWFEbhBYCQdHMHWCSA5BgsCwdXVuo4dfJ/CDs2cLeOWRLEACYYEcxunV2LZOYMC9EbzudRDvJTi9Gt/XBWIKhjlf0oZmM5jsX5yaqif8dYFx+mUyeEgBklVGavexwItTp/PU5HmUtK7bkgZaseZRY4FKZIcCbmqwBM+9Zv78icchLhaIQ5OGuq8D+k4hZC21JJ8Zt1qiA8NJdy6tGDsFv9FF66AjqaklU8hfP+az3HaDODAGu16X7wdunkamePR5uuZfDWWcJg0zwDRLj/dsRNsyS0ngBputWyYdrDIoV9lUzj4E4zqFlJN+gRF1UxkDEVxepMQuRJBScLF4Ldk2uzyQQmIL4r6dpcCDFCLN5g0ly5FiIQkghYiIeDSfB9dLZaIG4B2ouvTlS9+5VjWd1cSJJ6xy7GS8AxkXd1YhRVAFq5OTs2te1FkpyXixN0VIJ1rAayxweuZK2Va+j3EDUgDuIb75ydeLeF9P1YJIEhaxRUgByopu1e7rAo8t2wtY/Cbdio3WQ+oCJ2dnpXTMME24FatQvdb4fl01gcqVbfm1Uw1Jgyo2XzRhb11bc6eKWlolkZ84KzJKl6ZnvrzV3L5BIP4D0mE+8OQMVbOm5Lmj6karz1ouV/z8yx/e048etTkVSmudgT4G91T8gWC++M5Xldafb8L5z6/cNtWipPcO3/Qja4eDvFLxw2+WNuuz5ZLF2KK8Ie3+DB34TKH259EQW/XbUiCGjuA+dV2buqqfclUcVe2IQ7ZdMpyb+12ePH1ihZVJgRPN9T4vVGEIqw4EN9/69Nu2nOCOThu+99KLD1a5HKJ7cMKwGVx+sMwoQm9ZLM62Hac7OE45PkRDvmenDXGuoTip/P/aGZLNdHggdkLY/7LR3dxTjFfEIgh85i8eO2UvYG0HHdDVkeb335hwggo80ktrEiNKZqjmgVd6+Fn7dqfC6r8HPQAPMeA+/04tig6DcLODF5rNHzO/dIRFt1vG+hR6RE8E1sCTDTe/D/OVbCavqzJrcRCN1q3NJ01ZGU/WY1sQ3vVOPJPxu7XUZvwPulpGkJDXl1cAAAAASUVORK5CYII="
+                                alt="round-deco"
+                            />
+                            <h2 class="fs-2 fw-bold ps-32 mb-0">
+                                查詢預約紀錄
+                            </h2>
+                        </div>
+                    </div>
+                    <div class="check-border-outside p-1">
+                        <div class="check-border-inside px-72 py-48">
+                            <div class="d-flex justify-content-between mb-4">
+                                <div class="width-726">
+                                    <form class="position-relative">
+                                        <input
+                                            type="search"
+                                            class="form-control ps-3 py-22 primary-bg-01 rounded-1"
+                                            id="moblie-search"
+                                            placeholder="年/月/日"
+                                        />
+                                        <img
+                                            src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAWCAYAAADAQbwGAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAADsSURBVHgB7ZVLEoIwDECT6sKlcgJYAD0e7tyhS1eON/AoHoPPAi7A2BNQkxlxGD62g13yZiBtSEKSTluAAXEcV1EUVWBgzm47VGitfbBgzg75RX9KSST07GEZChEfeZ4fMQzDG00ScMMFKbsXZyaECLIsq2mu+UtRFPjLs28npfTbtuV+KgGfMjkYS8qWZQ0G+nadL8caLQr1IQAL5uwEOAa7XrjCeYbfHppW1URXqfMMRwGn9qitbjLgv6DtzjCx9tBtDxUP+AiChfR8FWd4pkEKDqBr4b5pmubped6BzjdJuh0sg6u8lmV5egOAMmaT9eYIhgAAAABJRU5ErkJggg=="
+                                            alt="Vector"
+                                            class="align-bottom position-absolute top-50 end-0 translate-middle-y pe-3"
+                                        />
+                                    </form>
+                                </div>
+                                <button
+                                    type="button"
+                                    class="btn primary-bg-01 p-3 rounded-1"
+                                >
+                                    <img
+                                        src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAACXBIWXMAAAsTAAALEwEAmpwYAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAD1SURBVHgB3VVbEYNADNzpVAASTgJSkBAH4KCtgtZBcVAJSEDCSUACPYa7IUAClKM/7Mz+hGM3uUcCnB2JIzl+HK1j61n7GCECmWPDRDVaxch6ingygcqxcDTse+pFeVW3iUaIq+KNF15DwcTeawbExFNsR4phOzuTRDMIJW/JXDIJ/9eSAWE4tL0wGJ9LexUWPfAbLMYX4HCMMsb8Cp8Afy3xgmMPiNAnRjw4zdhgP+ySQR1pkkPZ1mDQPe8S8a2CNIOAksW2tIycib+kBVJTumPe73lFxptXbJ0oDuiDgbB8hQO77DNEgNCPR94hLYaRmeDU+ALQtIO5l5M4cAAAAABJRU5ErkJggg=="
+                                        alt="refresh"
+                                        class="align-bottom"
+                                    />
+                                </button>
+                            </div>
+                            <div
+                                class="d-flex justify-content-between filter-group gap-4"
+                            >
+                                <div class="dropdown flex-fill">
+                                    <a
+                                        class="btn primary-bg-01 dropdown-toggle w-100"
+                                        href="#"
+                                        role="button"
+                                        data-bs-toggle="dropdown"
+                                        aria-expanded="false"
+                                    >
+                                        服務項目
+                                    </a>
+                                    <ul class="dropdown-menu">
+                                        <li>
+                                            <a class="dropdown-item" href="#"
+                                                >Action</a
+                                            >
+                                        </li>
+                                        <li>
+                                            <a class="dropdown-item" href="#"
+                                                >Another action</a
+                                            >
+                                        </li>
+                                        <li>
+                                            <a class="dropdown-item" href="#"
+                                                >Something else here</a
+                                            >
+                                        </li>
+                                    </ul>
+                                </div>
+
+                                <div class="dropdown flex-fill">
+                                    <a
+                                        class="btn primary-bg-01 dropdown-toggle w-100"
+                                        href="#"
+                                        role="button"
+                                        data-bs-toggle="dropdown"
+                                        aria-expanded="false"
+                                    >
+                                        預約時間
+                                    </a>
+                                    <ul class="dropdown-menu">
+                                        <li>
+                                            <a class="dropdown-item" href="#"
+                                                >Action</a
+                                            >
+                                        </li>
+                                        <li>
+                                            <a class="dropdown-item" href="#"
+                                                >Another action</a
+                                            >
+                                        </li>
+                                        <li>
+                                            <a class="dropdown-item" href="#"
+                                                >Something else here</a
+                                            >
+                                        </li>
+                                    </ul>
+                                </div>
+
+                                <div class="dropdown flex-fill">
+                                    <a
+                                        class="btn primary-bg-01 dropdown-toggle w-100"
+                                        href="#"
+                                        role="button"
+                                        data-bs-toggle="dropdown"
+                                        aria-expanded="false"
+                                    >
+                                        預約狀態
+                                    </a>
+                                    <ul class="dropdown-menu">
+                                        <li>
+                                            <a class="dropdown-item" href="#"
+                                                >Action</a
+                                            >
+                                        </li>
+                                        <li>
+                                            <a class="dropdown-item" href="#"
+                                                >Another action</a
+                                            >
+                                        </li>
+                                        <li>
+                                            <a class="dropdown-item" href="#"
+                                                >Something else here</a
+                                            >
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
