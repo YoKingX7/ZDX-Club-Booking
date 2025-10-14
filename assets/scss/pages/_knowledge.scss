@@ -205,8 +205,10 @@ body {
       text-decoration: none;
     }
     .article-nav-item:hover {
-      background: $neutral-200;
-      font-weight: 600;
+      // background: $neutral-200;
+      // font-weight: 600;
+      background-color: rgba($primary, 0.8);
+      color: $black-50;
     }
     .article-nav-item.active {
       color: #fafafa;

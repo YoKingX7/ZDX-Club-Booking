@@ -108,9 +108,9 @@ function updateTermContent(termName) {
     // 更新背景圖
     const contentElement = document.getElementById("solar-term-content");
     if (contentElement) {
-      contentElement.style.backgroundImage = `url('${
-        seasonImages[termData.season]
-      }')`;
+      // 添加除錯資訊
+      console.log('Setting background image:', seasonImages[termData.season]);
+      contentElement.style.backgroundImage = `url('${seasonImages[termData.season]}')`;
     }
   }
 }
