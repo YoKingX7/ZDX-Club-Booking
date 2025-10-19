@@ -8,6 +8,7 @@
       rel="stylesheet"
       href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css"
     />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
     <script type="module" crossorigin src="/ZDX-Club-Booking/assets/knowledge-NZ0MaFU1.js"></script>
     <link rel="modulepreload" crossorigin href="/ZDX-Club-Booking/assets/main-pOel9ezs.js">
     <link rel="stylesheet" crossorigin href="/ZDX-Club-Booking/assets/main-BOI4wE3P.css">
@@ -202,6 +203,18 @@
 
 
     <header class="km-header-bg py-80">
+      <dotlottie-wc
+        class="position-absolute"
+        src="https://lottie.host/08657889-c1e5-4d0b-8844-c01b6a963497/cPEKyYNdRW.lottie"
+        style="
+          width: 100%;
+          height: 100%;
+          top: 0;
+          opacity: 0.1;
+          filter: brightness(0.8);
+        "
+        autoplay
+      ></dotlottie-wc>
       <div class="container text-black-800">
         <h1
           class="fs-md-48 fs-2 text-md-start text-center mb-md-5 mb-32 fw-bold lh-sm text-black-800"
@@ -225,6 +238,8 @@
         </div>
         <div
           class="km-solar-terms row d-flex flex-md-row flex-column-reverse align-items-center"
+          data-aos="flip-up"
+          data-aos-anchor-placement="center-bottom"
         >
           <div
             class="content col-md-5 px-48 px-md-64 py-40 py-md-80"
@@ -468,7 +483,11 @@
                 嬰
               </p>
             </div>
-            <div class="timeline-card col col-md-5">
+            <div
+              class="timeline-card col col-md-5"
+              data-aos="fade-left"
+              data-aos-anchor-placement="bottom-bottom"
+            >
               <div
                 class="timeline-content py-3 py-md-36 ps-36 ps-md-48 pe-3 pe-md-4 d-flex justify-content-between align-items-center gap-md-3 gap-1"
               >
@@ -508,7 +527,7 @@
                 青
               </p>
             </div>
-            <div class="timeline-card col col-md-5">
+            <div class="timeline-card col col-md-5" data-aos="fade-right" data-aos-anchor-placement="bottom-bottom">
               <div
                 class="timeline-content py-3 py-md-36 ps-36 ps-md-48 pe-3 pe-md-4 d-flex justify-content-between align-items-center gap-md-3 gap-1"
               >
@@ -548,7 +567,7 @@
                 壯
               </p>
             </div>
-            <div class="timeline-card col col-md-5">
+            <div class="timeline-card col col-md-5" data-aos="fade-left" data-aos-anchor-placement="bottom-bottom">
               <div
                 class="timeline-content py-3 py-md-36 ps-36 ps-md-48 pe-3 pe-md-4 d-flex justify-content-between align-items-center gap-md-3 gap-1"
               >
@@ -588,7 +607,7 @@
                 成
               </p>
             </div>
-            <div class="timeline-card col col-md-5">
+            <div class="timeline-card col col-md-5" data-aos="fade-right" data-aos-anchor-placement="bottom-bottom">
               <div
                 class="timeline-content py-3 py-md-36 ps-36 ps-md-48 pe-3 pe-md-4 d-flex justify-content-between align-items-center gap-md-3 gap-1"
               >
@@ -628,7 +647,7 @@
                 晚
               </p>
             </div>
-            <div class="timeline-card col col-md-5">
+            <div class="timeline-card col col-md-5" data-aos="fade-left" data-aos-anchor-placement="bottom-bottom">
               <div
                 class="timeline-content py-3 py-md-36 ps-36 ps-md-48 pe-3 pe-md-4 d-flex justify-content-between align-items-center gap-md-3 gap-1"
               >
@@ -668,7 +687,7 @@
                 歸
               </p>
             </div>
-            <div class="timeline-card col col-md-5">
+            <div class="timeline-card col col-md-5" data-aos="fade-right" data-aos-anchor-placement="bottom-bottom">
               <div
                 class="timeline-content py-3 py-md-36 ps-36 ps-md-48 pe-3 pe-md-4 d-flex justify-content-between align-items-center gap-md-3 gap-1"
               >
@@ -966,6 +985,20 @@
     </div>
   </div>
 
-</footer>
+</footer>
+
+    <script
+      src="https://unpkg.com/@lottiefiles/dotlottie-wc@0.8.1/dist/dotlottie-wc.js"
+      type="module"
+    ></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+      AOS.init({
+        duration: 1000,
+        once: false, // 改為 false，讓動畫可以重複觸發
+        offset: 100,
+        mirror: true, // 加入這個屬性，讓元素離開視窗時也有動畫
+      });
+    </script>
   </body>
 </html>
