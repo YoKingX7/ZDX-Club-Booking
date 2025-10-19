@@ -80,12 +80,14 @@ const solarTermsData = {
   },
 };
 
-// 季節背景圖對應
+const basePath = window.location.pathname.split("/")[1]; // 取得 repo 名稱
+const imageBase = `/${basePath}/assets/images/knowledge/`;
+
 const seasonImages = {
-  1: "../assets/images/knowledge/season-1.png", // 春
-  2: "../assets/images/knowledge/season-2.png", // 夏
-  3: "../assets/images/knowledge/season-3.png", // 秋
-  4: "../assets/images/knowledge/season-4.png", // 冬
+  1: `${imageBase}season-1.png`,
+  2: `${imageBase}season-2.png`,
+  3: `${imageBase}season-3.png`,
+  4: `${imageBase}season-4.png`,
 };
 
 // 更新節氣內容的函數
@@ -109,8 +111,10 @@ function updateTermContent(termName) {
     const contentElement = document.getElementById("solar-term-content");
     if (contentElement) {
       // 添加除錯資訊
-      console.log('Setting background image:', seasonImages[termData.season]);
-      contentElement.style.backgroundImage = `url('${seasonImages[termData.season]}')`;
+      console.log("Setting background image:", seasonImages[termData.season]);
+      contentElement.style.backgroundImage = `url('${
+        seasonImages[termData.season]
+      }')`;
     }
   }
 }
