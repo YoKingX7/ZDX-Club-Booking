@@ -80,14 +80,11 @@ const solarTermsData = {
   },
 };
 
-const basePath = window.location.pathname.split("/")[1]; // 取得 repo 名稱
-const imageBase = `/${basePath}/assets/images/knowledge/`;
-
 const seasonImages = {
-  1: `${imageBase}season-1.png`,
-  2: `${imageBase}season-2.png`,
-  3: `${imageBase}season-3.png`,
-  4: `${imageBase}season-4.png`,
+  1: `https://github.com/YoKingX7/ZDX-Club-Booking/blob/main/assets/images/knowledge/season-1.png?raw=true`,
+  2: `https://github.com/YoKingX7/ZDX-Club-Booking/blob/main/assets/images/knowledge/season-2.png?raw=true`,
+  3: `https://github.com/YoKingX7/ZDX-Club-Booking/blob/main/assets/images/knowledge/season-3.png?raw=true`,
+  4: `https://github.com/YoKingX7/ZDX-Club-Booking/blob/main/assets/images/knowledge/season-4.png?raw=true`,
 };
 
 // 更新節氣內容的函數
