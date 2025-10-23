@@ -97,3 +97,49 @@ li {
     background-color: rgba($primary, 0.8);
     color: $black-50;
 }
+
+.card-title-bg {
+    background-color: rgba(#939393, 0.2);
+}
+
+.card-content-line {
+    border-bottom: 1px solid $black-300;
+}
+
+.calendar-yellow {
+    color: #a39044;
+}
+
+.calendar-green {
+    color: #5f994d;
+}
+
+.check-on {
+    width: 20px;
+    height: 20px;
+    display: inline-block;
+    background-color: currentColor;
+    -webkit-mask: url("../assets/images/appointment-management/check-on.png")
+        no-repeat center / contain;
+    mask: url("../assets/images/appointment-management/check-on.png") no-repeat
+        center / contain;
+}
+
+/* 51×31 客製尺寸 */
+.switch-51 .form-check-input {
+    width: 51px;
+    height: 31px;
+    border-radius: 31px; /* 膠囊外型 */
+    background-repeat: no-repeat;
+    background-position: left center; /* 未勾選時球在左邊 */
+    background-size: 31px 31px; /* 球的直徑 ≈ 高度 - 4px（扣掉邊線） */
+}
+
+.switch-51 .form-check-input {
+    background-color: $neutral-200; /* OFF 時底色 */
+    border-color: $black-50;
+}
+.switch-51 .form-check-input:checked {
+    background-color: $primary; /* ON 時底色 */
+    border-color: $black-50;
+}
