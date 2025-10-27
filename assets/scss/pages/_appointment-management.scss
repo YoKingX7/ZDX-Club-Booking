@@ -114,6 +114,10 @@ li {
     color: #5f994d;
 }
 
+.calendar-red {
+    color: #c24747;
+}
+
 .check-on {
     width: 20px;
     height: 20px;
@@ -125,21 +129,38 @@ li {
         center / contain;
 }
 
-/* 51×31 客製尺寸 */
 .switch-51 .form-check-input {
     width: 51px;
     height: 31px;
-    border-radius: 31px; /* 膠囊外型 */
-    background-repeat: no-repeat;
-    background-position: left center; /* 未勾選時球在左邊 */
-    background-size: 31px 31px; /* 球的直徑 ≈ 高度 - 4px（扣掉邊線） */
-}
+    border-radius: 31px; // 膠囊外型
+    background-color: $neutral-200; // OFF 底色
+    appearance: none; // 拿掉原生樣式
+    -webkit-appearance: none;
+    position: relative; // 給 ::before 定位
+    cursor: pointer;
+    background-image: none; // 不用 Bootstrap 內建球圖
+    transition: background-color 0.2s ease, border-color 0.2s ease;
 
-.switch-51 .form-check-input {
-    background-color: $neutral-200; /* OFF 時底色 */
-    border-color: $black-50;
-}
-.switch-51 .form-check-input:checked {
-    background-color: $primary; /* ON 時底色 */
-    border-color: $black-50;
+    /* 以高度 31px 設計：球直徑=31-4=27，左右內距各 2px */
+    &::before {
+        content: "";
+        position: absolute;
+        top: 2px;
+        left: 2px;
+        width: 27px;
+        height: 27px;
+        border-radius: 50%;
+        background-color: $black-50;
+        transition: transform 0.2s ease, background-color 0.2s ease,
+            box-shadow 0.2s ease;
+    }
+
+    &:checked {
+        background-color: $primary; // ON 底色
+
+        &::before {
+            transform: translateX(20px); // 51 - 27 - 4 = 20
+            background-color: $black-50;
+        }
+    }
 }
