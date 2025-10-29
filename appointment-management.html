@@ -5,8 +5,8 @@
         <meta http-equiv="X-UA-Compatible" content="IE=edge" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <title>appointment-management</title>
-      <script type="module" crossorigin src="/ZDX-Club-Booking/assets/main-zCgB0kaS.js"></script>
-      <link rel="stylesheet" crossorigin href="/ZDX-Club-Booking/assets/main-DK-sIBtZ.css">
+      <script type="module" crossorigin src="/ZDX-Club-Booking/assets/main-DnZ3oC9E.js"></script>
+      <link rel="stylesheet" crossorigin href="/ZDX-Club-Booking/assets/main-B0Hlwcx5.css">
     </head>
 
     <!-- appointment-management.html -->
@@ -199,92 +199,751 @@
 </script>
 
 
-        <div class="container py-80">
-            <div class="row">
-                <!-- administrator-functions -->
-                <div class="col-3">
-                    <h2 class="fs-2 fw-bold mt-32 mb-36">管理員功能</h2>
-                    <ul>
-                        <li class="mb-4">
-                            <button
-                                type="button"
-                                class="administrator-functions-border-outside btn rounded-0 fs-5 py-0 p-2"
-                            >
-                                <div
-                                    class="py-3 administrator-functions-border-inside"
+        <div class="container py-40 py-md-80">
+            <!-- PC -->
+            <div class="d-none d-md-block">
+                <div class="row">
+                    <!-- administrator-functions -->
+                    <div class="col-3">
+                        <h2 class="fs-2 fw-bold mt-32 mb-36">管理員功能</h2>
+                        <ul>
+                            <li class="mb-4">
+                                <button
+                                    type="button"
+                                    class="administrator-functions-border-outside btn rounded-0 fs-5 py-0 p-2"
                                 >
-                                    儀表版
-                                </div>
-                            </button>
-                        </li>
-                        <li class="mb-4">
-                            <button
-                                type="button"
-                                class="administrator-functions-border-outside btn rounded-0 fs-5 py-0 p-2 active"
-                            >
-                                <div
-                                    class="py-3 administrator-functions-border-inside"
+                                    <div
+                                        class="py-3 administrator-functions-border-inside"
+                                    >
+                                        儀表版
+                                    </div>
+                                </button>
+                            </li>
+                            <li class="mb-4">
+                                <button
+                                    type="button"
+                                    class="administrator-functions-border-outside btn rounded-0 fs-5 py-0 p-2 active"
                                 >
-                                    預約管理
-                                </div>
-                            </button>
-                        </li>
-                        <li class="mb-4">
-                            <button
-                                type="button"
-                                class="administrator-functions-border-outside btn rounded-0 fs-5 py-0 p-2"
-                            >
-                                <div
-                                    class="py-3 administrator-functions-border-inside"
+                                    <div
+                                        class="py-3 administrator-functions-border-inside"
+                                    >
+                                        預約管理
+                                    </div>
+                                </button>
+                            </li>
+                            <li class="mb-4">
+                                <button
+                                    type="button"
+                                    class="administrator-functions-border-outside btn rounded-0 fs-5 py-0 p-2"
                                 >
-                                    匯出資料
-                                </div>
-                            </button>
-                        </li>
-                        <li class="mb-4">
-                            <button
-                                type="button"
-                                class="administrator-functions-border-outside btn rounded-0 fs-5 py-0 p-2"
-                            >
-                                <div
-                                    class="py-3 administrator-functions-border-inside"
+                                    <div
+                                        class="py-3 administrator-functions-border-inside"
+                                    >
+                                        匯出資料
+                                    </div>
+                                </button>
+                            </li>
+                            <li class="mb-4">
+                                <button
+                                    type="button"
+                                    class="administrator-functions-border-outside btn rounded-0 fs-5 py-0 p-2"
                                 >
-                                    教學說明
-                                </div>
-                            </button>
-                        </li>
-                        <li class="mb-4">
-                            <button
-                                type="button"
-                                class="administrator-functions-border-outside-signout btn rounded-0 fs-5 py-0 p-2"
-                            >
-                                <div
-                                    class="py-3 administrator-functions-border-inside-signout"
+                                    <div
+                                        class="py-3 administrator-functions-border-inside"
+                                    >
+                                        教學說明
+                                    </div>
+                                </button>
+                            </li>
+                            <li class="mb-4">
+                                <button
+                                    type="button"
+                                    class="administrator-functions-border-outside-signout btn rounded-0 fs-5 py-0 p-2"
                                 >
-                                    登出
+                                    <div
+                                        class="py-3 administrator-functions-border-inside-signout"
+                                    >
+                                        登出
+                                    </div>
+                                </button>
+                            </li>
+                        </ul>
+                    </div>
+                    <!-- check-reservation-record -->
+                    <div class="col-9">
+                        <div class="pt-12 mb-40">
+                            <div class="position-relative pt-21">
+                                <img
+                                    class="position-absolute top-0"
+                                    src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADgAAAA4CAYAAACohjseAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAUiSURBVHgB3ZpPaFxFHMd/8+fN27fZbbZNTU1Qwcb20JOgJykiIkUPFiIkeCo1hyqIgqeABdmLxSL+QVGwSE4epAH/VFARhNxF8CRSKVZLG2uTbZLNvrfvz8w4v5fustlsks3uJtn3Pnt4b2dnl/fd38zvz8wQ6DHF4lPc+eeoI1SJLRcKIELFsN2SZaYCm9f6SUf42g/N+woIPqhVYHnTMzNl6DEEegCKEnceGhSluyQ4dFDjg2thXpEWlIJDI2W3+p7i1CcSAmURz/EAAg0MMgCaiXKO3ll9/eMffOiSrgR+9NpzdonZzkA1L1QQcsl0jmiVhy7QhJYJI4GWWuB1wFqe70ZoRwLRYoPXC7nlghl6bs6xtH9E4r/fQwg1ltXUZ+Z3FSdep0J3LPDCq2eG4rlDGd0NYa1AsXiVYC+cv/TF/I6+227HNedx/zA6Bxp6o1qBgD2EEZARUBfvc5mVv9u1ZlsCi+eezwqLOzokgio2CvtIPHSN2JxYvdaOyG2H14Uz40MCnJy0hMMifQT2GzMlmAQ/1GL45GNjq3O/Xg236r6lwLfPvTCiM7YNRA7SUA1Cn6AJCHxwRnhhO5GbCnz3lfFhTWyHKJkzscqBPkMDULQmBX7oycfHVjYTSVs14pwLNT8sGdX9KK4RakRaOnMcY3LLz5sbsKPQ2QcIYS7zw8OQAFCk6+eOX748sWFEbhBYCQdHMHWCSA5BgsCwdXVuo4dfJ/CDs2cLeOWRLEACYYEcxunV2LZOYMC9EbzudRDvJTi9Gt/XBWIKhjlf0oZmM5jsX5yaqif8dYFx+mUyeEgBklVGavexwItTp/PU5HmUtK7bkgZaseZRY4FKZIcCbmqwBM+9Zv78icchLhaIQ5OGuq8D+k4hZC21JJ8Zt1qiA8NJdy6tGDsFv9FF66AjqaklU8hfP+az3HaDODAGu16X7wdunkamePR5uuZfDWWcJg0zwDRLj/dsRNsyS0ngBputWyYdrDIoV9lUzj4E4zqFlJN+gRF1UxkDEVxepMQuRJBScLF4Ldk2uzyQQmIL4r6dpcCDFCLN5g0ly5FiIQkghYiIeDSfB9dLZaIG4B2ouvTlS9+5VjWd1cSJJ6xy7GS8AxkXd1YhRVAFq5OTs2te1FkpyXixN0VIJ1rAayxweuZK2Va+j3EDUgDuIb75ydeLeF9P1YJIEhaxRUgByopu1e7rAo8t2wtY/Cbdio3WQ+oCJ2dnpXTMME24FatQvdb4fl01gcqVbfm1Uw1Jgyo2XzRhb11bc6eKWlolkZ84KzJKl6ZnvrzV3L5BIP4D0mE+8OQMVbOm5Lmj6karz1ouV/z8yx/e048etTkVSmudgT4G91T8gWC++M5Xldafb8L5z6/cNtWipPcO3/Qja4eDvFLxw2+WNuuz5ZLF2KK8Ie3+DB34TKH259EQW/XbUiCGjuA+dV2buqqfclUcVe2IQ7ZdMpyb+12ePH1ihZVJgRPN9T4vVGEIqw4EN9/69Nu2nOCOThu+99KLD1a5HKJ7cMKwGVx+sMwoQm9ZLM62Hac7OE45PkRDvmenDXGuoTip/P/aGZLNdHggdkLY/7LR3dxTjFfEIgh85i8eO2UvYG0HHdDVkeb335hwggo80ktrEiNKZqjmgVd6+Fn7dqfC6r8HPQAPMeA+/04tig6DcLODF5rNHzO/dIRFt1vG+hR6RE8E1sCTDTe/D/OVbCavqzJrcRCN1q3NJ01ZGU/WY1sQ3vVOPJPxu7XUZvwPulpGkJDXl1cAAAAASUVORK5CYII="
+                                    alt="round-deco"
+                                />
+                                <h2 class="fs-2 fw-bold ps-32 mb-0">
+                                    查詢預約紀錄
+                                </h2>
+                            </div>
+                        </div>
+                        <div class="check-border-outside p-1 mb-40">
+                            <div class="check-border-inside px-72 py-48">
+                                <div
+                                    class="d-flex justify-content-between mb-4"
+                                >
+                                    <div class="width-726">
+                                        <form class="position-relative">
+                                            <input
+                                                type="search"
+                                                class="form-control ps-3 py-22 primary-bg-01 rounded-1"
+                                                id="moblie-search"
+                                                placeholder="年/月/日"
+                                            />
+                                            <img
+                                                src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAWCAYAAADAQbwGAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAADsSURBVHgB7ZVLEoIwDECT6sKlcgJYAD0e7tyhS1eON/AoHoPPAi7A2BNQkxlxGD62g13yZiBtSEKSTluAAXEcV1EUVWBgzm47VGitfbBgzg75RX9KSST07GEZChEfeZ4fMQzDG00ScMMFKbsXZyaECLIsq2mu+UtRFPjLs28npfTbtuV+KgGfMjkYS8qWZQ0G+nadL8caLQr1IQAL5uwEOAa7XrjCeYbfHppW1URXqfMMRwGn9qitbjLgv6DtzjCx9tBtDxUP+AiChfR8FWd4pkEKDqBr4b5pmubped6BzjdJuh0sg6u8lmV5egOAMmaT9eYIhgAAAABJRU5ErkJggg=="
+                                                alt="Vector"
+                                                class="align-bottom position-absolute top-50 end-0 translate-middle-y pe-3"
+                                            />
+                                        </form>
+                                    </div>
+                                    <button
+                                        type="button"
+                                        class="btn primary-bg-01 p-3 rounded-1"
+                                    >
+                                        <img
+                                            src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAACXBIWXMAAAsTAAALEwEAmpwYAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAD1SURBVHgB3VVbEYNADNzpVAASTgJSkBAH4KCtgtZBcVAJSEDCSUACPYa7IUAClKM/7Mz+hGM3uUcCnB2JIzl+HK1j61n7GCECmWPDRDVaxch6ingygcqxcDTse+pFeVW3iUaIq+KNF15DwcTeawbExFNsR4phOzuTRDMIJW/JXDIJ/9eSAWE4tL0wGJ9LexUWPfAbLMYX4HCMMsb8Cp8Afy3xgmMPiNAnRjw4zdhgP+ySQR1pkkPZ1mDQPe8S8a2CNIOAksW2tIycib+kBVJTumPe73lFxptXbJ0oDuiDgbB8hQO77DNEgNCPR94hLYaRmeDU+ALQtIO5l5M4cAAAAABJRU5ErkJggg=="
+                                            alt="refresh"
+                                            class="align-bottom"
+                                        />
+                                    </button>
                                 </div>
-                            </button>
-                        </li>
-                    </ul>
-                </div>
-                <!-- check-reservation-record -->
-                <div class="col-9">
-                    <div class="pt-12 mb-40">
-                        <div class="position-relative pt-21">
-                            <img
-                                class="position-absolute top-0"
-                                src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADgAAAA4CAYAAACohjseAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAUiSURBVHgB3ZpPaFxFHMd/8+fN27fZbbZNTU1Qwcb20JOgJykiIkUPFiIkeCo1hyqIgqeABdmLxSL+QVGwSE4epAH/VFARhNxF8CRSKVZLG2uTbZLNvrfvz8w4v5fustlsks3uJtn3Pnt4b2dnl/fd38zvz8wQ6DHF4lPc+eeoI1SJLRcKIELFsN2SZaYCm9f6SUf42g/N+woIPqhVYHnTMzNl6DEEegCKEnceGhSluyQ4dFDjg2thXpEWlIJDI2W3+p7i1CcSAmURz/EAAg0MMgCaiXKO3ll9/eMffOiSrgR+9NpzdonZzkA1L1QQcsl0jmiVhy7QhJYJI4GWWuB1wFqe70ZoRwLRYoPXC7nlghl6bs6xtH9E4r/fQwg1ltXUZ+Z3FSdep0J3LPDCq2eG4rlDGd0NYa1AsXiVYC+cv/TF/I6+227HNedx/zA6Bxp6o1qBgD2EEZARUBfvc5mVv9u1ZlsCi+eezwqLOzokgio2CvtIPHSN2JxYvdaOyG2H14Uz40MCnJy0hMMifQT2GzMlmAQ/1GL45GNjq3O/Xg236r6lwLfPvTCiM7YNRA7SUA1Cn6AJCHxwRnhhO5GbCnz3lfFhTWyHKJkzscqBPkMDULQmBX7oycfHVjYTSVs14pwLNT8sGdX9KK4RakRaOnMcY3LLz5sbsKPQ2QcIYS7zw8OQAFCk6+eOX748sWFEbhBYCQdHMHWCSA5BgsCwdXVuo4dfJ/CDs2cLeOWRLEACYYEcxunV2LZOYMC9EbzudRDvJTi9Gt/XBWIKhjlf0oZmM5jsX5yaqif8dYFx+mUyeEgBklVGavexwItTp/PU5HmUtK7bkgZaseZRY4FKZIcCbmqwBM+9Zv78icchLhaIQ5OGuq8D+k4hZC21JJ8Zt1qiA8NJdy6tGDsFv9FF66AjqaklU8hfP+az3HaDODAGu16X7wdunkamePR5uuZfDWWcJg0zwDRLj/dsRNsyS0ngBputWyYdrDIoV9lUzj4E4zqFlJN+gRF1UxkDEVxepMQuRJBScLF4Ldk2uzyQQmIL4r6dpcCDFCLN5g0ly5FiIQkghYiIeDSfB9dLZaIG4B2ouvTlS9+5VjWd1cSJJ6xy7GS8AxkXd1YhRVAFq5OTs2te1FkpyXixN0VIJ1rAayxweuZK2Va+j3EDUgDuIb75ydeLeF9P1YJIEhaxRUgByopu1e7rAo8t2wtY/Cbdio3WQ+oCJ2dnpXTMME24FatQvdb4fl01gcqVbfm1Uw1Jgyo2XzRhb11bc6eKWlolkZ84KzJKl6ZnvrzV3L5BIP4D0mE+8OQMVbOm5Lmj6karz1ouV/z8yx/e048etTkVSmudgT4G91T8gWC++M5Xldafb8L5z6/cNtWipPcO3/Qja4eDvFLxw2+WNuuz5ZLF2KK8Ie3+DB34TKH259EQW/XbUiCGjuA+dV2buqqfclUcVe2IQ7ZdMpyb+12ePH1ihZVJgRPN9T4vVGEIqw4EN9/69Nu2nOCOThu+99KLD1a5HKJ7cMKwGVx+sMwoQm9ZLM62Hac7OE45PkRDvmenDXGuoTip/P/aGZLNdHggdkLY/7LR3dxTjFfEIgh85i8eO2UvYG0HHdDVkeb335hwggo80ktrEiNKZqjmgVd6+Fn7dqfC6r8HPQAPMeA+/04tig6DcLODF5rNHzO/dIRFt1vG+hR6RE8E1sCTDTe/D/OVbCavqzJrcRCN1q3NJ01ZGU/WY1sQ3vVOPJPxu7XUZvwPulpGkJDXl1cAAAAASUVORK5CYII="
-                                alt="round-deco"
-                            />
-                            <h2 class="fs-2 fw-bold ps-32 mb-0">
-                                查詢預約紀錄
-                            </h2>
+                                <div
+                                    class="d-flex justify-content-between filter-group gap-4"
+                                >
+                                    <div class="dropdown flex-fill">
+                                        <button
+                                            class="btn primary-bg-01 w-100 ps-3 py-22 d-flex justify-content-between align-items-center"
+                                            type="button"
+                                            data-bs-toggle="dropdown"
+                                            aria-expanded="false"
+                                        >
+                                            服務項目
+                                            <img
+                                                src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAACXBIWXMAAAsTAAALEwEAmpwYAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAACvSURBVHgB7ZKxDQIhFIaBglDeCDQESle4DRzBDXQUR3AEN2CFKykZwRZIQF6MiQV47/r3JQTC+/N/FDBGEMQUa+3VOaf3cpCB7GwuJuW31tq91ur/SWDWcx6yxpgLWpBSevRt60vPJD/lMNtKKc9RF2cTtNaLlNL346mvKIRYQwhxVJ5zXmOMr0OCmQTuseW7gpGEc86w5SjBQMKw5WjBV6KUOvfXL/AJMOUEQXx4A71/cCOgDoL+AAAAAElFTkSuQmCC"
+                                                alt="angle-small-down"
+                                            />
+                                        </button>
+
+                                        <ul class="dropdown-menu">
+                                            <li>
+                                                <a
+                                                    class="dropdown-item"
+                                                    href="#"
+                                                    >新到舊</a
+                                                >
+                                            </li>
+                                            <li>
+                                                <a
+                                                    class="dropdown-item"
+                                                    href="#"
+                                                    >舊到新</a
+                                                >
+                                            </li>
+                                        </ul>
+                                    </div>
+
+                                    <div class="dropdown flex-fill">
+                                        <button
+                                            class="btn primary-bg-01 w-100 ps-3 py-22 d-flex justify-content-between align-items-center"
+                                            type="button"
+                                            data-bs-toggle="dropdown"
+                                            aria-expanded="false"
+                                        >
+                                            預約時間
+                                            <img
+                                                src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAACXBIWXMAAAsTAAALEwEAmpwYAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAACvSURBVHgB7ZKxDQIhFIaBglDeCDQESle4DRzBDXQUR3AEN2CFKykZwRZIQF6MiQV47/r3JQTC+/N/FDBGEMQUa+3VOaf3cpCB7GwuJuW31tq91ur/SWDWcx6yxpgLWpBSevRt60vPJD/lMNtKKc9RF2cTtNaLlNL346mvKIRYQwhxVJ5zXmOMr0OCmQTuseW7gpGEc86w5SjBQMKw5WjBV6KUOvfXL/AJMOUEQXx4A71/cCOgDoL+AAAAAElFTkSuQmCC"
+                                                alt="angle-small-down"
+                                            />
+                                        </button>
+
+                                        <ul class="dropdown-menu">
+                                            <li>
+                                                <a
+                                                    class="dropdown-item"
+                                                    href="#"
+                                                    >新到舊</a
+                                                >
+                                            </li>
+                                            <li>
+                                                <a
+                                                    class="dropdown-item"
+                                                    href="#"
+                                                    >舊到新</a
+                                                >
+                                            </li>
+                                        </ul>
+                                    </div>
+
+                                    <div class="dropdown flex-fill">
+                                        <button
+                                            class="btn primary-bg-01 w-100 ps-3 py-22 d-flex justify-content-between align-items-center"
+                                            type="button"
+                                            data-bs-toggle="dropdown"
+                                            aria-expanded="false"
+                                        >
+                                            預約裝態
+                                            <img
+                                                src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAACXBIWXMAAAsTAAALEwEAmpwYAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAACvSURBVHgB7ZKxDQIhFIaBglDeCDQESle4DRzBDXQUR3AEN2CFKykZwRZIQF6MiQV47/r3JQTC+/N/FDBGEMQUa+3VOaf3cpCB7GwuJuW31tq91ur/SWDWcx6yxpgLWpBSevRt60vPJD/lMNtKKc9RF2cTtNaLlNL346mvKIRYQwhxVJ5zXmOMr0OCmQTuseW7gpGEc86w5SjBQMKw5WjBV6KUOvfXL/AJMOUEQXx4A71/cCOgDoL+AAAAAElFTkSuQmCC"
+                                                alt="angle-small-down"
+                                            />
+                                        </button>
+
+                                        <ul class="dropdown-menu">
+                                            <li>
+                                                <a
+                                                    class="dropdown-item"
+                                                    href="#"
+                                                    >新到舊</a
+                                                >
+                                            </li>
+                                            <li>
+                                                <a
+                                                    class="dropdown-item"
+                                                    href="#"
+                                                    >舊到新</a
+                                                >
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- 顧客卡片 -->
+                        <div class="row row-cols-1 row-cols-md-3 g-4">
+                            <div class="col">
+                                <div
+                                    class="card h-100 rounded-0 border-black-400 bg-transparent"
+                                >
+                                    <div
+                                        class="card-header ps-4 py-4 card-title-bg"
+                                    >
+                                        <h3
+                                            class="mb-0 fs-4 fw-bold text-black-950"
+                                        >
+                                            劉一
+                                        </h3>
+                                    </div>
+                                    <div class="card-body p-4">
+                                        <div
+                                            class="text-black-600 pb-20 card-content-line"
+                                        >
+                                            <p class="mb-20">預約編號</p>
+                                            <p class="mb-20">服務項目</p>
+                                            <p class="mb-20">預約日期</p>
+                                            <p class="mb-20">聯絡電話</p>
+                                            <p class="mb-0">Email</p>
+                                        </div>
+                                        <div class="py-20 card-content-line">
+                                            <div
+                                                class="d-flex justify-content-between align-items-center mb-3"
+                                            >
+                                                <p
+                                                    class="mb-0 fw-bold calendar-yellow"
+                                                >
+                                                    待確認
+                                                </p>
+                                                <div class="d-flex">
+                                                    <button
+                                                        type="button"
+                                                        class="btn rounded-1 p-2 text-black-600 d-inline-flex align-items-center"
+                                                    >
+                                                        <img
+                                                            src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAACXBIWXMAAAsTAAALEwEAmpwYAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAGBSURBVHgB3VQ7boNAEF2ILaVMfAK74CPR+AjmBvENyA2cLp3TpopygtgnSG5gH8ENEp/CXACFGhDkTcRKG8TiBaVJnjRadph9b97CLmN/HZo4MU1zi2GDuJHUJ1EULfjEcZxlURQHTdN2YRg+dC3Q+YNhGC8YnnrIf4CTU31d1xs098b6HKDgk4p1XV8EQZCokqP7DwismsZ2cHjf6aApYEPJsTXr6XTqYp4hvLYTnQ2ASE5zdL60bXvu+/5JJqIs0CLfI06IeVVVBy4CR8emfDVIoE2OffbyPHdFEeoaju7IBdyslQW6yCmfJEkmiiC8htwlN0oCMnIOEmkEWBd5r8AlckLzMT0Zea9AWZbvY8gtyzrj3ZnXTWQC+GBzGod2ztdddCCDyraMFhhKTpgokNatlDI5QeoApzLpSA8iJ0gd4BJbsF+A6IAODaN7hY2EsDbjOdHBK2KLe4X+YzYGWPs94lfd89wVf0jT9DibzW6x9zam12wcqPPnOI4f2b/BF+oe7Xdv8HMxAAAAAElFTkSuQmCC"
+                                                            alt="u-edit"
+                                                            width="16"
+                                                            height="16"
+                                                            class="me-2"
+                                                        />
+                                                        編輯
+                                                    </button>
+                                                </div>
+                                            </div>
+                                            <p class="mb-0 text-black-950">
+                                                備註
+                                            </p>
+                                        </div>
+                                        <div
+                                            class="pt-20 d-flex justify-content-between align-items-center me-1"
+                                        >
+                                            <div>
+                                                <p class="mb-3">提醒狀態</p>
+                                                <div
+                                                    class="d-flex align-items-center"
+                                                >
+                                                    <p
+                                                        class="mb-0 me-2 calendar-green"
+                                                    >
+                                                        已設定
+                                                    </p>
+                                                    <span
+                                                        class="check-on calendar-green"
+                                                        aria-hidden="true"
+                                                    ></span>
+                                                </div>
+                                            </div>
+                                            <div
+                                                class="form-check form-switch switch-51"
+                                            >
+                                                <input
+                                                    class="form-check-input"
+                                                    type="checkbox"
+                                                    id="reminderSwitch"
+                                                    checked
+                                                />
+                                                <label
+                                                    class="form-check-label"
+                                                    for="reminderSwitch"
+                                                ></label>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col">
+                                <div
+                                    class="card h-100 rounded-0 border-black-400 bg-transparent"
+                                >
+                                    <div
+                                        class="card-header ps-4 py-4 card-title-bg"
+                                    >
+                                        <h3
+                                            class="mb-0 fs-4 fw-bold text-black-950"
+                                        >
+                                            陳二
+                                        </h3>
+                                    </div>
+                                    <div class="card-body p-4">
+                                        <div
+                                            class="text-black-600 pb-20 card-content-line"
+                                        >
+                                            <p class="mb-20">預約編號</p>
+                                            <p class="mb-20">服務項目</p>
+                                            <p class="mb-20">預約日期</p>
+                                            <p class="mb-20">聯絡電話</p>
+                                            <p class="mb-0">Email</p>
+                                        </div>
+                                        <div class="py-20 card-content-line">
+                                            <div
+                                                class="d-flex justify-content-between align-items-center mb-3"
+                                            >
+                                                <p
+                                                    class="mb-0 fw-bold calendar-green"
+                                                >
+                                                    已完成
+                                                </p>
+                                                <div class="d-flex">
+                                                    <button
+                                                        type="button"
+                                                        class="btn rounded-1 p-2 text-black-600 d-inline-flex align-items-center"
+                                                    >
+                                                        <img
+                                                            src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAACXBIWXMAAAsTAAALEwEAmpwYAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAGBSURBVHgB3VQ7boNAEF2ILaVMfAK74CPR+AjmBvENyA2cLp3TpopygtgnSG5gH8ENEp/CXACFGhDkTcRKG8TiBaVJnjRadph9b97CLmN/HZo4MU1zi2GDuJHUJ1EULfjEcZxlURQHTdN2YRg+dC3Q+YNhGC8YnnrIf4CTU31d1xs098b6HKDgk4p1XV8EQZCokqP7DwismsZ2cHjf6aApYEPJsTXr6XTqYp4hvLYTnQ2ASE5zdL60bXvu+/5JJqIs0CLfI06IeVVVBy4CR8emfDVIoE2OffbyPHdFEeoaju7IBdyslQW6yCmfJEkmiiC8htwlN0oCMnIOEmkEWBd5r8AlckLzMT0Zea9AWZbvY8gtyzrj3ZnXTWQC+GBzGod2ztdddCCDyraMFhhKTpgokNatlDI5QeoApzLpSA8iJ0gd4BJbsF+A6IAODaN7hY2EsDbjOdHBK2KLe4X+YzYGWPs94lfd89wVf0jT9DibzW6x9zam12wcqPPnOI4f2b/BF+oe7Xdv8HMxAAAAAElFTkSuQmCC"
+                                                            alt="u-edit"
+                                                            width="16"
+                                                            height="16"
+                                                            class="me-2"
+                                                        />
+                                                        編輯
+                                                    </button>
+                                                </div>
+                                            </div>
+                                            <p class="mb-0 text-black-950">
+                                                備註
+                                            </p>
+                                        </div>
+                                        <div
+                                            class="pt-20 d-flex justify-content-between align-items-center me-1"
+                                        >
+                                            <div>
+                                                <p class="mb-3">提醒狀態</p>
+                                                <div
+                                                    class="d-flex align-items-center"
+                                                >
+                                                    <p
+                                                        class="mb-0 me-2 calendar-red"
+                                                    >
+                                                        未設定
+                                                    </p>
+                                                    <span
+                                                        class="check-on calendar-red"
+                                                        aria-hidden="true"
+                                                    ></span>
+                                                </div>
+                                            </div>
+                                            <div
+                                                class="form-check form-switch switch-51"
+                                            >
+                                                <input
+                                                    class="form-check-input"
+                                                    type="checkbox"
+                                                    id="reminderSwitch"
+                                                />
+                                                <label
+                                                    class="form-check-label"
+                                                    for="reminderSwitch"
+                                                ></label>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col">
+                                <div
+                                    class="card h-100 rounded-0 border-black-400 bg-transparent"
+                                >
+                                    <div
+                                        class="card-header ps-4 py-4 card-title-bg"
+                                    >
+                                        <h3
+                                            class="mb-0 fs-4 fw-bold text-black-950"
+                                        >
+                                            張三
+                                        </h3>
+                                    </div>
+                                    <div class="card-body p-4">
+                                        <div
+                                            class="text-black-600 pb-20 card-content-line"
+                                        >
+                                            <p class="mb-20">預約編號</p>
+                                            <p class="mb-20">服務項目</p>
+                                            <p class="mb-20">預約日期</p>
+                                            <p class="mb-20">聯絡電話</p>
+                                            <p class="mb-0">Email</p>
+                                        </div>
+                                        <div class="py-20 card-content-line">
+                                            <div
+                                                class="d-flex justify-content-between align-items-center mb-3"
+                                            >
+                                                <p
+                                                    class="mb-0 fw-bold calendar-red"
+                                                >
+                                                    已取消
+                                                </p>
+                                                <div class="d-flex">
+                                                    <button
+                                                        type="button"
+                                                        class="btn rounded-1 p-2 text-black-600 d-inline-flex align-items-center"
+                                                    >
+                                                        <img
+                                                            src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAACXBIWXMAAAsTAAALEwEAmpwYAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAGBSURBVHgB3VQ7boNAEF2ILaVMfAK74CPR+AjmBvENyA2cLp3TpopygtgnSG5gH8ENEp/CXACFGhDkTcRKG8TiBaVJnjRadph9b97CLmN/HZo4MU1zi2GDuJHUJ1EULfjEcZxlURQHTdN2YRg+dC3Q+YNhGC8YnnrIf4CTU31d1xs098b6HKDgk4p1XV8EQZCokqP7DwismsZ2cHjf6aApYEPJsTXr6XTqYp4hvLYTnQ2ASE5zdL60bXvu+/5JJqIs0CLfI06IeVVVBy4CR8emfDVIoE2OffbyPHdFEeoaju7IBdyslQW6yCmfJEkmiiC8htwlN0oCMnIOEmkEWBd5r8AlckLzMT0Zea9AWZbvY8gtyzrj3ZnXTWQC+GBzGod2ztdddCCDyraMFhhKTpgokNatlDI5QeoApzLpSA8iJ0gd4BJbsF+A6IAODaN7hY2EsDbjOdHBK2KLe4X+YzYGWPs94lfd89wVf0jT9DibzW6x9zam12wcqPPnOI4f2b/BF+oe7Xdv8HMxAAAAAElFTkSuQmCC"
+                                                            alt="u-edit"
+                                                            width="16"
+                                                            height="16"
+                                                            class="me-2"
+                                                        />
+                                                        編輯
+                                                    </button>
+                                                </div>
+                                            </div>
+                                            <p class="mb-0 text-black-950">
+                                                備註
+                                            </p>
+                                        </div>
+                                        <div
+                                            class="pt-20 d-flex justify-content-between align-items-center me-1"
+                                        >
+                                            <div>
+                                                <p class="mb-3">提醒狀態</p>
+                                                <div
+                                                    class="d-flex align-items-center"
+                                                >
+                                                    <p
+                                                        class="mb-0 me-2 calendar-green"
+                                                    >
+                                                        已設定
+                                                    </p>
+                                                    <span
+                                                        class="check-on calendar-green"
+                                                        aria-hidden="true"
+                                                    ></span>
+                                                </div>
+                                            </div>
+                                            <div
+                                                class="form-check form-switch switch-51"
+                                            >
+                                                <input
+                                                    class="form-check-input"
+                                                    type="checkbox"
+                                                    id="reminderSwitch"
+                                                    checked
+                                                />
+                                                <label
+                                                    class="form-check-label"
+                                                    for="reminderSwitch"
+                                                ></label>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col">
+                                <div
+                                    class="card h-100 rounded-0 border-black-400 bg-transparent"
+                                >
+                                    <div
+                                        class="card-header ps-4 py-4 card-title-bg"
+                                    >
+                                        <h3
+                                            class="mb-0 fs-4 fw-bold text-black-950"
+                                        >
+                                            李四
+                                        </h3>
+                                    </div>
+                                    <div class="card-body p-4">
+                                        <div
+                                            class="text-black-600 pb-20 card-content-line"
+                                        >
+                                            <p class="mb-20">預約編號</p>
+                                            <p class="mb-20">服務項目</p>
+                                            <p class="mb-20">預約日期</p>
+                                            <p class="mb-20">聯絡電話</p>
+                                            <p class="mb-0">Email</p>
+                                        </div>
+                                        <div class="py-20 card-content-line">
+                                            <div
+                                                class="d-flex justify-content-between align-items-center mb-3"
+                                            >
+                                                <p
+                                                    class="mb-0 fw-bold calendar-red"
+                                                >
+                                                    未出席
+                                                </p>
+                                                <div class="d-flex">
+                                                    <button
+                                                        type="button"
+                                                        class="btn p-2 text-black-600 d-inline-flex align-items-center"
+                                                    >
+                                                        <img
+                                                            src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAACXBIWXMAAAsTAAALEwEAmpwYAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAGBSURBVHgB3VQ7boNAEF2ILaVMfAK74CPR+AjmBvENyA2cLp3TpopygtgnSG5gH8ENEp/CXACFGhDkTcRKG8TiBaVJnjRadph9b97CLmN/HZo4MU1zi2GDuJHUJ1EULfjEcZxlURQHTdN2YRg+dC3Q+YNhGC8YnnrIf4CTU31d1xs098b6HKDgk4p1XV8EQZCokqP7DwismsZ2cHjf6aApYEPJsTXr6XTqYp4hvLYTnQ2ASE5zdL60bXvu+/5JJqIs0CLfI06IeVVVBy4CR8emfDVIoE2OffbyPHdFEeoaju7IBdyslQW6yCmfJEkmiiC8htwlN0oCMnIOEmkEWBd5r8AlckLzMT0Zea9AWZbvY8gtyzrj3ZnXTWQC+GBzGod2ztdddCCDyraMFhhKTpgokNatlDI5QeoApzLpSA8iJ0gd4BJbsF+A6IAODaN7hY2EsDbjOdHBK2KLe4X+YzYGWPs94lfd89wVf0jT9DibzW6x9zam12wcqPPnOI4f2b/BF+oe7Xdv8HMxAAAAAElFTkSuQmCC"
+                                                            alt="u-edit"
+                                                            width="16"
+                                                            height="16"
+                                                            class="me-2"
+                                                        />
+                                                        編輯
+                                                    </button>
+                                                </div>
+                                            </div>
+                                            <p class="mb-0 text-black-950">
+                                                備註
+                                            </p>
+                                        </div>
+                                        <div
+                                            class="pt-20 d-flex justify-content-between align-items-center me-1"
+                                        >
+                                            <div>
+                                                <p class="mb-3">提醒狀態</p>
+                                                <div
+                                                    class="d-flex align-items-center"
+                                                >
+                                                    <p
+                                                        class="mb-0 me-2 calendar-red"
+                                                    >
+                                                        未設定
+                                                    </p>
+                                                    <span
+                                                        class="check-on calendar-red"
+                                                        aria-hidden="true"
+                                                    ></span>
+                                                </div>
+                                            </div>
+                                            <div
+                                                class="form-check form-switch switch-51"
+                                            >
+                                                <input
+                                                    class="form-check-input"
+                                                    type="checkbox"
+                                                    id="reminderSwitch"
+                                                />
+                                                <label
+                                                    class="form-check-label"
+                                                    for="reminderSwitch"
+                                                ></label>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col">
+                                <div
+                                    class="card h-100 rounded-0 border-black-400 bg-transparent"
+                                >
+                                    <div
+                                        class="card-header ps-4 py-4 card-title-bg"
+                                    >
+                                        <h3
+                                            class="mb-0 fs-4 fw-bold text-black-950"
+                                        >
+                                            王五
+                                        </h3>
+                                    </div>
+                                    <div class="card-body p-4">
+                                        <div
+                                            class="text-black-600 pb-20 card-content-line"
+                                        >
+                                            <div
+                                                class="d-flex justify-content-between"
+                                            >
+                                                <p class="mb-20">預約編號</p>
+                                                <p class="mb-20 text-primary">
+                                                    5
+                                                </p>
+                                            </div>
+                                            <div
+                                                class="d-flex justify-content-between"
+                                            >
+                                                <p class="mb-20">服務項目</p>
+                                                <p class="mb-20 text-primary">
+                                                    結婚擇日
+                                                </p>
+                                            </div>
+                                            <div
+                                                class="d-flex justify-content-between"
+                                            >
+                                                <p class="mb-20">預約日期</p>
+                                                <p class="mb-20 text-primary">
+                                                    2025年11月2日
+                                                </p>
+                                            </div>
+                                            <div
+                                                class="d-flex justify-content-between"
+                                            >
+                                                <p class="mb-20">聯絡電話</p>
+                                                <p class="mb-20 text-primary">
+                                                    0912345678
+                                                </p>
+                                            </div>
+                                            <div
+                                                class="d-flex justify-content-between"
+                                            >
+                                                <p class="mb-0">Email</p>
+                                                <p class="mb-0 text-primary">
+                                                    wangwu666@gmail.com
+                                                </p>
+                                            </div>
+                                        </div>
+                                        <div class="py-20 card-content-line">
+                                            <div
+                                                class="d-flex justify-content-between align-items-center mb-3"
+                                            >
+                                                <p
+                                                    class="mb-0 fw-bold calendar-yellow"
+                                                >
+                                                    待確認
+                                                </p>
+                                                <div class="d-flex">
+                                                    <button
+                                                        type="button"
+                                                        class="btn rounded-1 p-2 text-black-600 d-inline-flex align-items-center"
+                                                    >
+                                                        <img
+                                                            src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAACXBIWXMAAAsTAAALEwEAmpwYAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAGBSURBVHgB3VQ7boNAEF2ILaVMfAK74CPR+AjmBvENyA2cLp3TpopygtgnSG5gH8ENEp/CXACFGhDkTcRKG8TiBaVJnjRadph9b97CLmN/HZo4MU1zi2GDuJHUJ1EULfjEcZxlURQHTdN2YRg+dC3Q+YNhGC8YnnrIf4CTU31d1xs098b6HKDgk4p1XV8EQZCokqP7DwismsZ2cHjf6aApYEPJsTXr6XTqYp4hvLYTnQ2ASE5zdL60bXvu+/5JJqIs0CLfI06IeVVVBy4CR8emfDVIoE2OffbyPHdFEeoaju7IBdyslQW6yCmfJEkmiiC8htwlN0oCMnIOEmkEWBd5r8AlckLzMT0Zea9AWZbvY8gtyzrj3ZnXTWQC+GBzGod2ztdddCCDyraMFhhKTpgokNatlDI5QeoApzLpSA8iJ0gd4BJbsF+A6IAODaN7hY2EsDbjOdHBK2KLe4X+YzYGWPs94lfd89wVf0jT9DibzW6x9zam12wcqPPnOI4f2b/BF+oe7Xdv8HMxAAAAAElFTkSuQmCC"
+                                                            alt="u-edit"
+                                                            width="16"
+                                                            height="16"
+                                                            class="me-2"
+                                                        />
+                                                        編輯
+                                                    </button>
+                                                </div>
+                                            </div>
+                                            <p class="mb-0 text-black-950">
+                                                備註
+                                            </p>
+                                        </div>
+                                        <div
+                                            class="pt-20 d-flex justify-content-between align-items-center me-1"
+                                        >
+                                            <div>
+                                                <p class="mb-3">提醒狀態</p>
+                                                <div
+                                                    class="d-flex align-items-center"
+                                                >
+                                                    <p
+                                                        class="mb-0 me-2 calendar-green"
+                                                    >
+                                                        已設定
+                                                    </p>
+                                                    <span
+                                                        class="check-on calendar-green"
+                                                        aria-hidden="true"
+                                                    ></span>
+                                                </div>
+                                            </div>
+                                            <div
+                                                class="form-check form-switch switch-51"
+                                            >
+                                                <input
+                                                    class="form-check-input"
+                                                    type="checkbox"
+                                                    id="reminderSwitch"
+                                                    checked
+                                                />
+                                                <label
+                                                    class="form-check-label"
+                                                    for="reminderSwitch"
+                                                ></label>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
                         </div>
                     </div>
-                    <div class="check-border-outside p-1 mb-40">
-                        <div class="check-border-inside px-72 py-48">
-                            <div class="d-flex justify-content-between mb-4">
-                                <div class="width-726">
+                </div>
+            </div>
+
+            <!-- Phone -->
+            <div class="d-block d-md-none">
+                <!-- administrator-functions -->
+                <div class="mb-3">
+                    <div class="dropdown flex-fill">
+                        <button
+                            class="btn administrator-functions-border-outside-rwd rounded-0 w-100 d-flex justify-content-between align-items-center py-0 p-2 bg-background-beige"
+                            type="button"
+                            data-bs-toggle="dropdown"
+                            aria-expanded="false"
+                        >
+                            <div
+                                class="py-20 px-4 administrator-functions-border-inside d-flex justify-content-between align-items-center"
+                            >
+                                <p class="mb-0 fs-5 text-black-800">預約管理</p>
+                                <img
+                                    src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAACXBIWXMAAAsTAAALEwEAmpwYAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAACvSURBVHgB7ZKxDQIhFIaBglDeCDQESle4DRzBDXQUR3AEN2CFKykZwRZIQF6MiQV47/r3JQTC+/N/FDBGEMQUa+3VOaf3cpCB7GwuJuW31tq91ur/SWDWcx6yxpgLWpBSevRt60vPJD/lMNtKKc9RF2cTtNaLlNL346mvKIRYQwhxVJ5zXmOMr0OCmQTuseW7gpGEc86w5SjBQMKw5WjBV6KUOvfXL/AJMOUEQXx4A71/cCOgDoL+AAAAAElFTkSuQmCC"
+                                    alt="angle-small-down"
+                                />
+                            </div>
+                        </button>
+
+                        <ul class="dropdown-menu dropdown-menu-dark">
+                            <li>
+                                <a class="dropdown-item" href="#">儀表板</a>
+                            </li>
+                            <li>
+                                <a class="dropdown-item" href="#">匯出資料</a>
+                            </li>
+                            <li>
+                                <a class="dropdown-item" href="#">教學說明</a>
+                            </li>
+                            <li>
+                                <a class="dropdown-item" href="#">登出</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <!-- check-reservation-record -->
+                <div>
+                    <div class="check-border-outside p-1 mb-3">
+                        <div class="check-border-inside p-3">
+                            <div class="d-flex justify-content-between mb-2">
+                                <div class="w-100 me-2">
                                     <form class="position-relative">
                                         <input
                                             type="search"
@@ -310,9 +969,7 @@
                                     />
                                 </button>
                             </div>
-                            <div
-                                class="d-flex justify-content-between filter-group gap-4"
-                            >
+                            <div class="d-flex flex-column gap-2">
                                 <div class="dropdown flex-fill">
                                     <button
                                         class="btn primary-bg-01 w-100 ps-3 py-22 d-flex justify-content-between align-items-center"
@@ -498,7 +1155,7 @@
                                     <h3
                                         class="mb-0 fs-4 fw-bold text-black-950"
                                     >
-                                        劉一
+                                        陳二
                                     </h3>
                                 </div>
                                 <div class="card-body p-4">
@@ -516,9 +1173,95 @@
                                             class="d-flex justify-content-between align-items-center mb-3"
                                         >
                                             <p
-                                                class="mb-0 fw-bold calendar-yellow"
+                                                class="mb-0 fw-bold calendar-green"
                                             >
-                                                待確認
+                                                已完成
+                                            </p>
+                                            <div class="d-flex">
+                                                <button
+                                                    type="button"
+                                                    class="btn rounded-1 p-2 text-black-600 d-inline-flex align-items-center"
+                                                >
+                                                    <img
+                                                        src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAACXBIWXMAAAsTAAALEwEAmpwYAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAGBSURBVHgB3VQ7boNAEF2ILaVMfAK74CPR+AjmBvENyA2cLp3TpopygtgnSG5gH8ENEp/CXACFGhDkTcRKG8TiBaVJnjRadph9b97CLmN/HZo4MU1zi2GDuJHUJ1EULfjEcZxlURQHTdN2YRg+dC3Q+YNhGC8YnnrIf4CTU31d1xs098b6HKDgk4p1XV8EQZCokqP7DwismsZ2cHjf6aApYEPJsTXr6XTqYp4hvLYTnQ2ASE5zdL60bXvu+/5JJqIs0CLfI06IeVVVBy4CR8emfDVIoE2OffbyPHdFEeoaju7IBdyslQW6yCmfJEkmiiC8htwlN0oCMnIOEmkEWBd5r8AlckLzMT0Zea9AWZbvY8gtyzrj3ZnXTWQC+GBzGod2ztdddCCDyraMFhhKTpgokNatlDI5QeoApzLpSA8iJ0gd4BJbsF+A6IAODaN7hY2EsDbjOdHBK2KLe4X+YzYGWPs94lfd89wVf0jT9DibzW6x9zam12wcqPPnOI4f2b/BF+oe7Xdv8HMxAAAAAElFTkSuQmCC"
+                                                        alt="u-edit"
+                                                        width="16"
+                                                        height="16"
+                                                        class="me-2"
+                                                    />
+                                                    編輯
+                                                </button>
+                                            </div>
+                                        </div>
+                                        <p class="mb-0 text-black-950">備註</p>
+                                    </div>
+                                    <div
+                                        class="pt-20 d-flex justify-content-between align-items-center me-1"
+                                    >
+                                        <div>
+                                            <p class="mb-3">提醒狀態</p>
+                                            <div
+                                                class="d-flex align-items-center"
+                                            >
+                                                <p
+                                                    class="mb-0 me-2 calendar-red"
+                                                >
+                                                    未設定
+                                                </p>
+                                                <span
+                                                    class="check-on calendar-red"
+                                                    aria-hidden="true"
+                                                ></span>
+                                            </div>
+                                        </div>
+                                        <div
+                                            class="form-check form-switch switch-51"
+                                        >
+                                            <input
+                                                class="form-check-input"
+                                                type="checkbox"
+                                                id="reminderSwitch"
+                                            />
+                                            <label
+                                                class="form-check-label"
+                                                for="reminderSwitch"
+                                            ></label>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col">
+                            <div
+                                class="card h-100 rounded-0 border-black-400 bg-transparent"
+                            >
+                                <div
+                                    class="card-header ps-4 py-4 card-title-bg"
+                                >
+                                    <h3
+                                        class="mb-0 fs-4 fw-bold text-black-950"
+                                    >
+                                        張三
+                                    </h3>
+                                </div>
+                                <div class="card-body p-4">
+                                    <div
+                                        class="text-black-600 pb-20 card-content-line"
+                                    >
+                                        <p class="mb-20">預約編號</p>
+                                        <p class="mb-20">服務項目</p>
+                                        <p class="mb-20">預約日期</p>
+                                        <p class="mb-20">聯絡電話</p>
+                                        <p class="mb-0">Email</p>
+                                    </div>
+                                    <div class="py-20 card-content-line">
+                                        <div
+                                            class="d-flex justify-content-between align-items-center mb-3"
+                                        >
+                                            <p
+                                                class="mb-0 fw-bold calendar-red"
+                                            >
+                                                已取消
                                             </p>
                                             <div class="d-flex">
                                                 <button
@@ -585,7 +1328,7 @@
                                     <h3
                                         class="mb-0 fs-4 fw-bold text-black-950"
                                     >
-                                        劉一
+                                        李四
                                     </h3>
                                 </div>
                                 <div class="card-body p-4">
@@ -603,14 +1346,14 @@
                                             class="d-flex justify-content-between align-items-center mb-3"
                                         >
                                             <p
-                                                class="mb-0 fw-bold calendar-yellow"
+                                                class="mb-0 fw-bold calendar-red"
                                             >
-                                                待確認
+                                                未出席
                                             </p>
                                             <div class="d-flex">
                                                 <button
                                                     type="button"
-                                                    class="btn rounded-1 p-2 text-black-600 d-inline-flex align-items-center"
+                                                    class="btn p-2 text-black-600 d-inline-flex align-items-center"
                                                 >
                                                     <img
                                                         src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAACXBIWXMAAAsTAAALEwEAmpwYAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAGBSURBVHgB3VQ7boNAEF2ILaVMfAK74CPR+AjmBvENyA2cLp3TpopygtgnSG5gH8ENEp/CXACFGhDkTcRKG8TiBaVJnjRadph9b97CLmN/HZo4MU1zi2GDuJHUJ1EULfjEcZxlURQHTdN2YRg+dC3Q+YNhGC8YnnrIf4CTU31d1xs098b6HKDgk4p1XV8EQZCokqP7DwismsZ2cHjf6aApYEPJsTXr6XTqYp4hvLYTnQ2ASE5zdL60bXvu+/5JJqIs0CLfI06IeVVVBy4CR8emfDVIoE2OffbyPHdFEeoaju7IBdyslQW6yCmfJEkmiiC8htwlN0oCMnIOEmkEWBd5r8AlckLzMT0Zea9AWZbvY8gtyzrj3ZnXTWQC+GBzGod2ztdddCCDyraMFhhKTpgokNatlDI5QeoApzLpSA8iJ0gd4BJbsF+A6IAODaN7hY2EsDbjOdHBK2KLe4X+YzYGWPs94lfd89wVf0jT9DibzW6x9zam12wcqPPnOI4f2b/BF+oe7Xdv8HMxAAAAAElFTkSuQmCC"
@@ -634,12 +1377,12 @@
                                                 class="d-flex align-items-center"
                                             >
                                                 <p
-                                                    class="mb-0 me-2 calendar-green"
+                                                    class="mb-0 me-2 calendar-red"
                                                 >
-                                                    已設定
+                                                    未設定
                                                 </p>
                                                 <span
-                                                    class="check-on calendar-green"
+                                                    class="check-on calendar-red"
                                                     aria-hidden="true"
                                                 ></span>
                                             </div>
@@ -651,7 +1394,6 @@
                                                 class="form-check-input"
                                                 type="checkbox"
                                                 id="reminderSwitch"
-                                                checked
                                             />
                                             <label
                                                 class="form-check-label"
@@ -672,105 +1414,51 @@
                                     <h3
                                         class="mb-0 fs-4 fw-bold text-black-950"
                                     >
-                                        劉一
+                                        王五
                                     </h3>
                                 </div>
                                 <div class="card-body p-4">
                                     <div
                                         class="text-black-600 pb-20 card-content-line"
                                     >
-                                        <p class="mb-20">預約編號</p>
-                                        <p class="mb-20">服務項目</p>
-                                        <p class="mb-20">預約日期</p>
-                                        <p class="mb-20">聯絡電話</p>
-                                        <p class="mb-0">Email</p>
-                                    </div>
-                                    <div class="py-20 card-content-line">
                                         <div
-                                            class="d-flex justify-content-between align-items-center mb-3"
+                                            class="d-flex justify-content-between"
                                         >
-                                            <p
-                                                class="mb-0 fw-bold calendar-yellow"
-                                            >
-                                                待確認
+                                            <p class="mb-20">預約編號</p>
+                                            <p class="mb-20 text-primary">5</p>
+                                        </div>
+                                        <div
+                                            class="d-flex justify-content-between"
+                                        >
+                                            <p class="mb-20">服務項目</p>
+                                            <p class="mb-20 text-primary">
+                                                結婚擇日
                                             </p>
-                                            <div class="d-flex">
-                                                <button
-                                                    type="button"
-                                                    class="btn rounded-1 p-2 text-black-600 d-inline-flex align-items-center"
-                                                >
-                                                    <img
-                                                        src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAACXBIWXMAAAsTAAALEwEAmpwYAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAGBSURBVHgB3VQ7boNAEF2ILaVMfAK74CPR+AjmBvENyA2cLp3TpopygtgnSG5gH8ENEp/CXACFGhDkTcRKG8TiBaVJnjRadph9b97CLmN/HZo4MU1zi2GDuJHUJ1EULfjEcZxlURQHTdN2YRg+dC3Q+YNhGC8YnnrIf4CTU31d1xs098b6HKDgk4p1XV8EQZCokqP7DwismsZ2cHjf6aApYEPJsTXr6XTqYp4hvLYTnQ2ASE5zdL60bXvu+/5JJqIs0CLfI06IeVVVBy4CR8emfDVIoE2OffbyPHdFEeoaju7IBdyslQW6yCmfJEkmiiC8htwlN0oCMnIOEmkEWBd5r8AlckLzMT0Zea9AWZbvY8gtyzrj3ZnXTWQC+GBzGod2ztdddCCDyraMFhhKTpgokNatlDI5QeoApzLpSA8iJ0gd4BJbsF+A6IAODaN7hY2EsDbjOdHBK2KLe4X+YzYGWPs94lfd89wVf0jT9DibzW6x9zam12wcqPPnOI4f2b/BF+oe7Xdv8HMxAAAAAElFTkSuQmCC"
-                                                        alt="u-edit"
-                                                        width="16"
-                                                        height="16"
-                                                        class="me-2"
-                                                    />
-                                                    編輯
-                                                </button>
-                                            </div>
-                                        </div>
-                                        <p class="mb-0 text-black-950">備註</p>
-                                    </div>
-                                    <div
-                                        class="pt-20 d-flex justify-content-between align-items-center me-1"
-                                    >
-                                        <div>
-                                            <p class="mb-3">提醒狀態</p>
-                                            <div
-                                                class="d-flex align-items-center"
-                                            >
-                                                <p
-                                                    class="mb-0 me-2 calendar-green"
-                                                >
-                                                    已設定
-                                                </p>
-                                                <span
-                                                    class="check-on calendar-green"
-                                                    aria-hidden="true"
-                                                ></span>
-                                            </div>
                                         </div>
                                         <div
-                                            class="form-check form-switch switch-51"
+                                            class="d-flex justify-content-between"
                                         >
-                                            <input
-                                                class="form-check-input"
-                                                type="checkbox"
-                                                id="reminderSwitch"
-                                                checked
-                                            />
-                                            <label
-                                                class="form-check-label"
-                                                for="reminderSwitch"
-                                            ></label>
+                                            <p class="mb-20">預約日期</p>
+                                            <p class="mb-20 text-primary">
+                                                2025年11月2日
+                                            </p>
                                         </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col">
-                            <div
-                                class="card h-100 rounded-0 border-black-400 bg-transparent"
-                            >
-                                <div
-                                    class="card-header ps-4 py-4 card-title-bg"
-                                >
-                                    <h3
-                                        class="mb-0 fs-4 fw-bold text-black-950"
-                                    >
-                                        劉一
-                                    </h3>
-                                </div>
-                                <div class="card-body p-4">
-                                    <div
-                                        class="text-black-600 pb-20 card-content-line"
-                                    >
-                                        <p class="mb-20">預約編號</p>
-                                        <p class="mb-20">服務項目</p>
-                                        <p class="mb-20">預約日期</p>
-                                        <p class="mb-20">聯絡電話</p>
-                                        <p class="mb-0">Email</p>
+                                        <div
+                                            class="d-flex justify-content-between"
+                                        >
+                                            <p class="mb-20">聯絡電話</p>
+                                            <p class="mb-20 text-primary">
+                                                0912345678
+                                            </p>
+                                        </div>
+                                        <div
+                                            class="d-flex justify-content-between"
+                                        >
+                                            <p class="mb-0">Email</p>
+                                            <p class="mb-0 text-primary">
+                                                wangwu666@gmail.com
+                                            </p>
+                                        </div>
                                     </div>
                                     <div class="py-20 card-content-line">
                                         <div
@@ -959,6 +1647,6 @@
   </div>
 
 </footer>
-
+
     </body>
 </html>
