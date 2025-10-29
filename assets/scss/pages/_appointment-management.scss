@@ -145,8 +145,8 @@ li {
     &::before {
         content: "";
         position: absolute;
-        top: 2px;
-        left: 2px;
+        top: 1px;
+        left: 1px;
         width: 27px;
         height: 27px;
         border-radius: 50%;
@@ -163,4 +163,25 @@ li {
             background-color: $black-50;
         }
     }
+}
+
+.administrator-functions-border-outside-rwd {
+    display: block;
+    width: 100%;
+    text-align: center;
+    border: solid $neutral-950;
+    border-width: 1px 4px;
+}
+
+.administrator-functions-border-outside-rwd.btn:hover {
+    border: solid $neutral-950;
+    border-width: 1px 4px;
+    background-color: rgba($primary, 0.8);
+    color: $black-50;
+}
+
+.administrator-functions-border-outside-rwd.active {
+    background-color: rgba($primary, 0.8);
+    color: $black-50;
+    border-color: $neutral-950;
 }
