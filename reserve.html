@@ -1,0 +1,555 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>預約諮詢</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css" rel="stylesheet">
+  <script type="module" crossorigin src="/ZDX-Club-Booking/assets/main-CWnADSPt.js"></script>
+  <link rel="stylesheet" crossorigin href="/ZDX-Club-Booking/assets/main-7WnVDJVq.css">
+</head>
+
+<body style="background-image: url(/ZDX-Club-Booking/assets/nav-bg-CDBBRjb5.png)">
+  <nav class="nav navbar position-relative py-0">
+  <div class="container border-bottom border-black-400 py-md-40 py-3">
+    <div class="d-flex d-md-none justify-content-between px-12 w-100">
+      <a href="index.html">
+        <img class="logo-mb d-block" src="/ZDX-Club-Booking/assets/logo-mb-crvVyaac.png" alt="pig logo" />
+      </a>
+
+      <button class="border-0 p-2" type="button" data-bs-toggle="collapse" href="#collapseExample" role="button"
+        aria-expanded="false" aria-controls="collapseExample"
+        style="background-image: url(/ZDX-Club-Booking/assets/nav-bg-CDBBRjb5.png)" id="nav-toggle" onclick="switchBtn('show')">
+        <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAACXBIWXMAAAsTAAALEwEAmpwYAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAA5SURBVHgB7dIxEQAgEAPBgBKo3r+dNOAkDAUKoOEnW52AAyy9ciIihqSGNybJvqPC0vNFds8X2QcWBOkYCmEMl4sAAAAASUVORK5CYII=" alt="menu button" />
+      </button>
+      <button class="border-0 p-2" type="button" data-bs-toggle="collapse" href="#collapseExample" role="button"
+        aria-expanded="false" aria-controls="collapseExample"
+        style="background-image: url(/ZDX-Club-Booking/assets/nav-bg-CDBBRjb5.png)" id="nav-close" onclick="switchBtn('close')">
+        <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAACLSURBVHgBrVPJEcAgCAQq8adtWLlt+AuVaMRJPiYKGbMzfoBdLkHv/VFrBSKKOWcGA0IIrnFS5102V0pJ4vhA7rGEiLE9togMZJaqceYY25nFoBag+VDLIvZVdaj12eYDq9YeAi8iMCMLCDZBSnbWVvzfELfWuPWRLOSVCFnJgp5xuJ17C2w950EETp0EDLQAbp7jAAAAAElFTkSuQmCC" alt="menu button" />
+      </button>
+    </div>
+
+    <ul class="list-unstyled d-md-flex d-none px-106 align-items-center justify-content-between w-100">
+      <li class="py-3 px-4">
+        <a href="knowledge.html" class="text-dark text-decoration-none">
+          命理知識
+        </a>
+      </li>
+      <li class="py-3 px-4">
+        <a href="about.html" class="text-dark text-decoration-none">
+          命理師介紹
+        </a>
+      </li>
+      <li>
+        <a href="index.html">
+          <img src="/ZDX-Club-Booking/assets/logo-Mj0upPJP.png" alt="pig logo" />
+        </a>
+      </li>
+      <li class="py-3 px-4">
+        <a href="reserve.html" class="text-dark text-decoration-none"> 立即預約 </a>
+      </li>
+      <li class="py-3 px-4 d-block">
+        <a href="appointment-management.html" class="text-dark text-decoration-none">
+          登入/註冊
+        </a>
+      </li>
+      <li class="dropdown d-none">
+        <button type="button" class="py-3 px-4 border-0 bg-transparent text-decoration-none" id="dropdownMenuButton1"
+          data-bs-toggle="dropdown" aria-expanded="false">
+          <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAADuSURBVHgBxVLBDYJAELwDC7gSfAEJH0uwBDogVqBUYqjAWAFSgSXgk5+WcA0AzhA05FhziT6cZAO3uzc7u7daCUiSZD0Mwwm2wdForS+wom3bh5sbSJf7vm/GYBAUvIjfDX2MKR+iKKpgd9cfx/GV5lUAZKhauk74zlNLXgILudZ14rLBx3gJUOmG3nO1xB6x2nWuBIIdB8Y5sBWYRfWcCkB8WOQLlV7PeIRlbImqSCw948/QbuWu69irkZKhyIZhWM6VvIeYpum4LOgzUx/AGHOYuwhiaA0WpVIeuAs1f0YqqH0E00JtJYKv8H+CJ18TZuVeExFmAAAAAElFTkSuQmCC" alt="icon-user" />
+          <span>使用者姓名</span>
+          <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAB9SURBVHgB7ZDRCYAgFEWNRhBHUPxsBDfLNnGTcgz9agBdQXtCwSMqDPz0wAXxeq+PR0inPVJK9ccb7w9SSiullMQYLfaEEHPO2TDGbAhhfywoBoQHOGpcUsLlDrQ458zrBAUIbbgEpK6w916TWuBXDcqn6oMYzvn0tdROIw4ahi85C4ZPTgAAAABJRU5ErkJggg==" alt="angle-small-down" />
+        </button>
+        <ul class="dropdown-menu member-menu mt-0 py-0 border-0" aria-labelledby="dropdownMenuButton1">
+          <li>
+            <a class="dropdown-item py-3 text-center" href="#">預約查詢</a>
+          </li>
+          <li>
+            <a class="dropdown-item py-3 text-center" href="#">會員中心</a>
+          </li>
+          <li>
+            <a class="dropdown-item py-3 text-center" href="#">修改密碼</a>
+          </li>
+        </ul>
+      </li>
+    </ul>
+  </div>
+  <div class="nav-collapse collapse w-100 py-4 shadow position-absolute left-0 border-top border-black-400"
+    id="collapseExample" style="background-image: url(/ZDX-Club-Booking/assets/nav-bg-CDBBRjb5.png)">
+    <div class="card card-body p-0 border-0" style="background-image: url(/ZDX-Club-Booking/assets/nav-bg-CDBBRjb5.png)">
+      <ul class="list-unstyled text-center">
+        <li class="py-3">
+          <a href="knowledge.html" class="text-dark text-decoration-none">
+            命理知識
+          </a>
+        </li>
+        <li class="py-3">
+          <a href="../pages/about.html" class="text-dark text-decoration-none">
+            命理師介紹
+          </a>
+        </li>
+        <li class="py-3">
+          <a href="reserve.html" class="text-dark text-decoration-none"> 立即預約 </a>
+        </li>
+        <li class="py-3 d-block">
+          <a href="appointment-management.html" class="text-dark text-decoration-none">
+            登入/註冊
+          </a>
+        </li>
+        <li class="dropdown d-none">
+          <button type="button" class="py-3 px-4 border-0 bg-transparent text-decoration-none" id="dropdownMenuButton1"
+            data-bs-toggle="dropdown" aria-expanded="false">
+            <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAADuSURBVHgBxVLBDYJAELwDC7gSfAEJH0uwBDogVqBUYqjAWAFSgSXgk5+WcA0AzhA05FhziT6cZAO3uzc7u7daCUiSZD0Mwwm2wdForS+wom3bh5sbSJf7vm/GYBAUvIjfDX2MKR+iKKpgd9cfx/GV5lUAZKhauk74zlNLXgILudZ14rLBx3gJUOmG3nO1xB6x2nWuBIIdB8Y5sBWYRfWcCkB8WOQLlV7PeIRlbImqSCw948/QbuWu69irkZKhyIZhWM6VvIeYpum4LOgzUx/AGHOYuwhiaA0WpVIeuAs1f0YqqH0E00JtJYKv8H+CJ18TZuVeExFmAAAAAElFTkSuQmCC" alt="icon-user" />
+            <span>使用者姓名</span>
+            <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAB9SURBVHgB7ZDRCYAgFEWNRhBHUPxsBDfLNnGTcgz9agBdQXtCwSMqDPz0wAXxeq+PR0inPVJK9ccb7w9SSiullMQYLfaEEHPO2TDGbAhhfywoBoQHOGpcUsLlDrQ458zrBAUIbbgEpK6w916TWuBXDcqn6oMYzvn0tdROIw4ahi85C4ZPTgAAAABJRU5ErkJggg==" alt="angle-small-down" />
+          </button>
+          <ul class="dropdown-menu member-menu mt-0 py-0 border-0 w-100 px-4"
+            style="background-image: url('/ZDX-Club-Booking/assets/nav-bg-CDBBRjb5.png')" aria-labelledby="dropdownMenuButton1">
+            <li class="border-top border-1 border-black-400">
+              <a class="dropdown-item py-3 text-center" href="#">預約查詢</a>
+            </li>
+            <li>
+              <a class="dropdown-item py-3 text-center" href="#">會員中心</a>
+            </li>
+            <li>
+              <a class="dropdown-item py-3 text-center" href="#">修改密碼</a>
+            </li>
+          </ul>
+        </li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+<script>
+  const navToggle = document.getElementById('nav-toggle')
+  const closeBtn = document.getElementById('nav-close')
+  closeBtn.style.display = 'none'
+  function switchBtn(item) {
+    if (item === 'show') {
+      navToggle.style.display = 'none'
+      closeBtn.style.display = 'block'
+    } else {
+      navToggle.style.display = 'block'
+      closeBtn.style.display = 'none'
+    }
+  }
+</script>
+    <header class="pt-md-80">
+      <div class="container ps-md-80 py-40">
+        <div class="row align-items-center">
+          <div class="col-md-6  col-12">
+            <div class=" mx-24 position-relative  py-55">
+              <img class="position-absolute align-items-center" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADgAAAA4CAYAAACohjseAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAUiSURBVHgB3ZpPaFxFHMd/8+fN27fZbbZNTU1Qwcb20JOgJykiIkUPFiIkeCo1hyqIgqeABdmLxSL+QVGwSE4epAH/VFARhNxF8CRSKVZLG2uTbZLNvrfvz8w4v5fustlsks3uJtn3Pnt4b2dnl/fd38zvz8wQ6DHF4lPc+eeoI1SJLRcKIELFsN2SZaYCm9f6SUf42g/N+woIPqhVYHnTMzNl6DEEegCKEnceGhSluyQ4dFDjg2thXpEWlIJDI2W3+p7i1CcSAmURz/EAAg0MMgCaiXKO3ll9/eMffOiSrgR+9NpzdonZzkA1L1QQcsl0jmiVhy7QhJYJI4GWWuB1wFqe70ZoRwLRYoPXC7nlghl6bs6xtH9E4r/fQwg1ltXUZ+Z3FSdep0J3LPDCq2eG4rlDGd0NYa1AsXiVYC+cv/TF/I6+227HNedx/zA6Bxp6o1qBgD2EEZARUBfvc5mVv9u1ZlsCi+eezwqLOzokgio2CvtIPHSN2JxYvdaOyG2H14Uz40MCnJy0hMMifQT2GzMlmAQ/1GL45GNjq3O/Xg236r6lwLfPvTCiM7YNRA7SUA1Cn6AJCHxwRnhhO5GbCnz3lfFhTWyHKJkzscqBPkMDULQmBX7oycfHVjYTSVs14pwLNT8sGdX9KK4RakRaOnMcY3LLz5sbsKPQ2QcIYS7zw8OQAFCk6+eOX748sWFEbhBYCQdHMHWCSA5BgsCwdXVuo4dfJ/CDs2cLeOWRLEACYYEcxunV2LZOYMC9EbzudRDvJTi9Gt/XBWIKhjlf0oZmM5jsX5yaqif8dYFx+mUyeEgBklVGavexwItTp/PU5HmUtK7bkgZaseZRY4FKZIcCbmqwBM+9Zv78icchLhaIQ5OGuq8D+k4hZC21JJ8Zt1qiA8NJdy6tGDsFv9FF66AjqaklU8hfP+az3HaDODAGu16X7wdunkamePR5uuZfDWWcJg0zwDRLj/dsRNsyS0ngBputWyYdrDIoV9lUzj4E4zqFlJN+gRF1UxkDEVxepMQuRJBScLF4Ldk2uzyQQmIL4r6dpcCDFCLN5g0ly5FiIQkghYiIeDSfB9dLZaIG4B2ouvTlS9+5VjWd1cSJJ6xy7GS8AxkXd1YhRVAFq5OTs2te1FkpyXixN0VIJ1rAayxweuZK2Va+j3EDUgDuIb75ydeLeF9P1YJIEhaxRUgByopu1e7rAo8t2wtY/Cbdio3WQ+oCJ2dnpXTMME24FatQvdb4fl01gcqVbfm1Uw1Jgyo2XzRhb11bc6eKWlolkZ84KzJKl6ZnvrzV3L5BIP4D0mE+8OQMVbOm5Lmj6karz1ouV/z8yx/e048etTkVSmudgT4G91T8gWC++M5Xldafb8L5z6/cNtWipPcO3/Qja4eDvFLxw2+WNuuz5ZLF2KK8Ie3+DB34TKH259EQW/XbUiCGjuA+dV2buqqfclUcVe2IQ7ZdMpyb+12ePH1ihZVJgRPN9T4vVGEIqw4EN9/69Nu2nOCOThu+99KLD1a5HKJ7cMKwGVx+sMwoQm9ZLM62Hac7OE45PkRDvmenDXGuoTip/P/aGZLNdHggdkLY/7LR3dxTjFfEIgh85i8eO2UvYG0HHdDVkeb335hwggo80ktrEiNKZqjmgVd6+Fn7dqfC6r8HPQAPMeA+/04tig6DcLODF5rNHzO/dIRFt1vG+hR6RE8E1sCTDTe/D/OVbCavqzJrcRCN1q3NJ01ZGU/WY1sQ3vVOPJPxu7XUZvwPulpGkJDXl1cAAAAASUVORK5CYII="
+                alt="reserve-dot" />
+              <h1 class="text-black-950 px-4 pt-33 pb-64 fs-2 lh-sm fw-bold ">預約諮詢</h1>
+              <div class="reserve-section px-64">
+                <p class="reserve-text text-primary-500 fs-3 lh-sm fw-bold pb-4">豬大仙</p>
+                <p class="pb-12 text-black-600">
+                  紫微命盤、開運、運勢分析、姻緣感情
+                </p>
+                <p class="pb-40">擅長結合心理學解釋命盤，語氣溫和實用</p>
+                <p class="fs-4 black-600">嗨囉！很高興為您服務~</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-6 col-12">
+            <div class=" d-flex">
+              <img class="img-fluid" src="/ZDX-Club-Booking/assets/pig-7ve_aqO2.png" alt="豬大仙" />
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>
+    <section class="container  py-40 py-md-80">
+      <div class="outside-border">
+        <div class="inside-border py-md-72 py-36">
+          <div class="row service-list ">
+            <div class="col-md-6 p-md-5">
+              <h2 class="fs-4 text-black-600 pb-4">選擇服務類型 :</h2>
+              <div class="row ">
+                <div class="mb-4 col-6 col-md-12 ">
+                  <input type="radio" name="service" id="card1">
+                  <label for="card1" class="card-option py-36 flex-column flex-md-row">
+                    <div class="radio-icon-wrapper position-relative">
+                      <i class="bi bi-circle bi-radio-icon icon-unchecked"></i>
+                      <i class="bi bi-check-circle-fill bi-radio-icon icon-checked"></i>
+                    </div>
+                    <img src="/ZDX-Club-Booking/assets/service-B834qpCf.png" class="service-img" alt="紫微命盤">
+                    <div class="service-info d-flex flex-column ">
+                      <span class="title">紫微命盤</span>
+                      <span class="price">$6,666</span>
+                    </div>
+                  </label>
+                </div>
+                <div class="mb-4 col-6 col-md-12">
+                  <input type="radio" name="service" id="card2">
+                  <label for="card2" class="card-option py-36 flex-column flex-md-row">
+                    <div class="radio-icon-wrapper position-relative">
+                      <i class="bi bi-circle bi-radio-icon icon-unchecked"></i>
+                      <i class="bi bi-check-circle-fill bi-radio-icon icon-checked"></i>
+                    </div>
+                    <img src="/ZDX-Club-Booking/assets/service2-BotZUdUe.png" class="service-img" alt="擇日開運">
+                    <div class="service-info d-flex flex-column">
+                      <span class="title ">擇日開運</span>
+                      <span class="price">$6,666</span>
+                    </div>
+                  </label>
+                </div>
+                <div class="mb-4 col-6 col-md-12">
+                  <input type="radio" name="service" id="card3">
+                  <label for="card3" class="card-option py-36 flex-column flex-md-row">
+                    <div class="radio-icon-wrapper position-relative">
+                      <i class="bi bi-circle bi-radio-icon icon-unchecked"></i>
+                      <i class="bi bi-check-circle-fill bi-radio-icon icon-checked"></i>
+                    </div>
+                    <img src="/ZDX-Club-Booking/assets/service3-42iThc0r.jpg" class="service-img" alt="小流年運勢分析">
+                    <div class="service-info d-flex flex-column">
+                      <span class="title">小流年運勢分析</span>
+                      <span class="price">$6,666</span>
+                    </div>
+                  </label>
+                </div>
+                <div class="mb-4  col-6 col-md-12">
+                  <input type="radio" name="service" id="card4">
+                  <label for="card4" class="card-option py-36 flex-column flex-md-row">
+                    <div class="radio-icon-wrapper position-relative">
+                      <i class="bi bi-circle bi-radio-icon icon-unchecked"></i>
+                      <i class="bi bi-check-circle-fill bi-radio-icon icon-checked"></i>
+                    </div>
+                    <img src="/ZDX-Club-Booking/assets/service4-B_830GcI.png" class="service-img" alt="因緣與感情合盤">
+                    <div class="service-info d-flex flex-column">
+                      <span class="title">因緣與感情合盤</span>
+                      <span class="price">$6,666</span>
+                    </div>
+                  </label>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-6 col-12 p-md-5 p-3">
+              <ul>
+                <li class=" mb-4 W-540">
+                  <label for="date" class="form-label mb-12 fs-6 pe-4">選擇日期<span
+                      class="fs-6 text-danger">*必填</span></label>
+                  <div class="position-relative">
+                    <input type="date" id="date" class="form-control pe-5" placeholder="請選擇日期">
+                    <i class="bi bi-calendar4-week position-absolute top-50 end-0 translate-middle-y me-3 text-muted"
+                      onclick="document.getElementById('date').showPicker()"></i>
+                  </div>
+                </li>
+                <li class=" mb-4 W-540">
+                  <label class="form-label mb-12 fs-6 pe-4">預約時段<span class="fs-6 text-danger">*必填</span></label>
+                  <div class="position-relative">
+                    <select class="form-control" aria-label="Default select example">
+                      <option selected>請選擇時段</option>
+                      <option value="1">上午9:00</option>
+                      <option value="2">上午10:00</option>
+                      <option value="3">上午11:00</option>
+                      <option value="4">下午15:00</option>
+                      <option value="5">下午16:00</option>
+                      <option value="6">下午17:00</option>
+                      <option value="7">晚上19:00</option>
+                      <option value="8">晚上20:00</option>
+                      <option value="9">晚上21:00</option>
+                    </select>
+                    <i
+                      class="bi bi-chevron-down position-absolute top-50 end-0 translate-middle-y me-3 text-muted pointer-events-none"></i>
+                  </div>
+                </li>
+                <li class=" mb-4 W-540">
+                  <label for="name" class="form-label mb-12 fs-6 pe-4">姓名<span
+                      class="fs-6 text-danger">*必填</span></label>
+                  <div class="position-relative">
+                    <input type="text" id="name" class="form-control " placeholder="請輸入姓名">
+                    <i
+                      class="bi bi-person position-absolute top-50 end-0 translate-middle-y me-3 text-muted pointer-events-none"></i>
+                  </div>
+                </li>
+                <li class=" mb-4 W-540">
+                  <label for="tel" class="form-label mb-12 fs-6 pe-4">聯絡電話<span
+                      class="fs-6 text-danger">*必填</span></label>
+                  <div class="position-relative">
+                    <input type="tel" id="tel" class="form-control " placeholder="請輸入方便聯絡之電話">
+                    <i
+                      class="bi bi-phone position-absolute top-50 end-0 translate-middle-y me-3 text-muted pointer-events-none"></i>
+                  </div>
+                </li>
+                <li class=" mb-4 W-540">
+                  <label for="email" class="form-label mb-12 fs-6 pe-4">電子郵件<span
+                      class="fs-6 text-danger">*必填</span></label>
+                  <div class="position-relative">
+                    <input type="email" id="email" class="form-control " placeholder="example@gmail.com ">
+                    <i
+                      class="bi bi-envelope position-absolute top-50 end-0 translate-middle-y me-3 text-muted pointer-events-none"></i>
+                  </div>
+                </li>
+                <li class=" mb-4 W-540">
+                  <label for="comment" class="mb-12">想告訴豬大仙...</label>
+                  <div><textarea name="comment" id="comment" class="form-control mb-4" rows="4"
+                      placeholder="年/月/日"></textarea>
+                  </div>
+                </li>
+                <div class="d-flex align-items-center ">
+                  <p class="">我同意</p>
+                  <!-- Button trigger modal -->
+                  <button type="button" class="btn btn-primary btn-modals " data-bs-toggle="modal"
+                    data-bs-target="#exampleModal">
+                    隱私權條款
+                  </button>
+
+                  <!-- Modal -->
+                  <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel"
+                    aria-hidden="true">
+                    <div class="modal-dialog modal-dialog-centered">
+                      <div class="modal-content">
+                        <div class="modal-header">
+                          <h5 class="modal-title" id="exampleModalLabel">隱私權條款</h5>
+                          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                        </div>
+                        <div class="modal-body">
+                          <p class="fw-bold">
+                            為保障您的個人資料與隱私權，本網站依據個人資料保護法及相關法規訂定本隱私權條款，說明我們如何收集、使用、儲存及保護您的個人資料。請您詳細閱讀以下內容：
+                          </p>
+                          <p class="fw-bold">一、資料的收集範圍
+                            本網站於您進行預約、註冊帳號、聯繫客服或參與活動時，可能會請您提供個人資料，包括但不限於姓名、聯絡電話、電子郵件、地址及其他必要資訊。
+                          </p>
+                          <p class="fw-bold">二、資料的使用目的 您所提供的個人資料僅用於以下目的：
+                            處理預約或訂單相關事宜
+                            提供客戶服務與售後支援
+                            傳送與服務有關的通知（如行程提醒、變更通知等）
+                            改善本網站服務品質</p>
+                          <p class="fw-bold">三、資料保護措施 本網站採取合理的技術與管理措施來保護您的個人資料，防止資料遺失、竄改、洩漏或遭不當使用。</p>
+                          <p class="fw-bold">四、資料提供與第三方共用 除非經您同意或依法律規定，本網站不會將您的個人資料提供給任何第三方或用於收集目的以外的用途。</p>
+                          <p class="fw-bold">五、使用者權利 您有權隨時查詢、閱覽、請求複製、更正、停止使用或刪除您的個人資料。如有需要，請與我們的客服聯繫。</p>
+                          <p class="fw-bold">六、條款修訂 本網站有權隨時修改本條款。修改後的條款將公告於網站上，不另行個別通知。建議您定期查閱。
+                            若您使用本網站，即表示您已閱讀、瞭解並同意本隱私權條款之所有內容。</p>
+                        </div>
+                        <div class="modal-footer">
+                          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <p>與</p>
+                  <!-- Button trigger modal -->
+                  <button type="button" class="btn btn-primary btn-modals" data-bs-toggle="modal"
+                    data-bs-target="#exampleModal2">
+                    預約須知
+                  </button>
+
+                  <!-- Modal -->
+                  <div class="modal fade" id="exampleModal2" tabindex="-1" aria-labelledby="exampleModalLabel"
+                    aria-hidden="true">
+                    <div class="modal-dialog modal-dialog-centered">
+                      <div class="modal-content">
+                        <div class="modal-header">
+                          <h5 class="modal-title" id="exampleModalLabel">預約須知</h5>
+                          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                        </div>
+                        <div class="modal-body">
+                          <p class="fw-bold">為確保您獲得最完整、準確的命理分析，請您在預約前詳讀以下說明，並確認您已瞭解並同意本預約須知內容。</p>
+                          <p class="fw-bold">一、預約方式與資料準備
+                            本命理服務採線上預約制，請提前預約並提供必要資訊。
+                            為進行準確分析，您需於預約時提供下列資訊（部分服務項目適用）：
+                            姓名（本名）
+                            性別
+                            出生年月日（國曆或農曆）
+                            出生時間（精確至分鐘，如不詳請備註）
+                            出生地點</p>
+                          <p class="fw-bold">二、預約確認與諮詢方式
+                            完成預約後，系統將寄發確認通知至您的電子郵件或LINE。
+                            命理諮詢可選擇實體面談、LINE 通話、Zoom、或其他線上形式，請於預約時備註。
+                            若您預約的是錄音分析或文字報告服務，將依照約定時間寄送報告內容。</p>
+                          <p class="fw-bold">三、取消與更改預約規定
+                            請於諮詢日前至少 48 小時 通知取消或更改預約。
+                            若臨時取消或未出席，將視為一次服務已完成，恕不退費。
+                            若遇不可抗力之情形（如重大事故、天災），可另行協調補約。</p>
+                          <p class="fw-bold">四、付款方式與退款說明
+                            本服務採預付制，請於預約後三日內完成付款，方完成預約流程。
+                            繳費後如欲取消，將酌收 30% 手續費，並於七日內退還餘額。
+                            若已開始分析作業，恕不接受退款。</p>
+                          <p class="fw-bold">五、其他注意事項
+                            諮詢期間請保持安靜環境，避免干擾或第三者旁聽（除非經雙方同意）。
+                            本命理分析僅供參考與建議，無法保證特定結果，請自行判斷並負責後續決定。
+                            本服務將嚴格保密您的個人資料與諮詢內容。</p>
+                          <p class="fw-bold">若您完成預約，即表示您已閱讀並同意以上預約須知條款。如有其他問題，歡迎聯繫我們。</p>
+                        </div>
+                        <div class="modal-footer">
+                          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+
+                </div>
+              </ul>
+            </div>
+          </div>
+          <div class="d-flex flex-column flex-md-row justify-content-md-center align-items-center">
+            <button class="me-md-36 mb-md-0 mb-3 btn-outside bg-transparent">
+              <div class="btn-inside">回上一步</div>
+            </button>
+            <button class="btn-outside">
+              <div class="btn-inside send-btn-bg">送出預約</div>
+            </button>
+          </div>
+        </div>
+      </div>
+      </div>
+      </div>
+    </section>
+    <section class="container py-40">
+      <div class="row flex-md-nowrap">
+        <!-- 注意事項 -->
+        <div class="col-12 col-md-8  image-bg p-md-5 me-lg-3 mb-4 mb-md-0">
+          <img class="list-bg img-fluid d-none d-md-block " src="/ZDX-Club-Booking/assets/memo-bg1-gG9b-2Py.png" alt="memo-bg1">
+          <div class="content ">
+            <div class="position-relative pt-4 mb-40">
+              <img class="position-absolute top-0 " src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADgAAAA4CAYAAACohjseAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAUiSURBVHgB3ZpPaFxFHMd/8+fN27fZbbZNTU1Qwcb20JOgJykiIkUPFiIkeCo1hyqIgqeABdmLxSL+QVGwSE4epAH/VFARhNxF8CRSKVZLG2uTbZLNvrfvz8w4v5fustlsks3uJtn3Pnt4b2dnl/fd38zvz8wQ6DHF4lPc+eeoI1SJLRcKIELFsN2SZaYCm9f6SUf42g/N+woIPqhVYHnTMzNl6DEEegCKEnceGhSluyQ4dFDjg2thXpEWlIJDI2W3+p7i1CcSAmURz/EAAg0MMgCaiXKO3ll9/eMffOiSrgR+9NpzdonZzkA1L1QQcsl0jmiVhy7QhJYJI4GWWuB1wFqe70ZoRwLRYoPXC7nlghl6bs6xtH9E4r/fQwg1ltXUZ+Z3FSdep0J3LPDCq2eG4rlDGd0NYa1AsXiVYC+cv/TF/I6+227HNedx/zA6Bxp6o1qBgD2EEZARUBfvc5mVv9u1ZlsCi+eezwqLOzokgio2CvtIPHSN2JxYvdaOyG2H14Uz40MCnJy0hMMifQT2GzMlmAQ/1GL45GNjq3O/Xg236r6lwLfPvTCiM7YNRA7SUA1Cn6AJCHxwRnhhO5GbCnz3lfFhTWyHKJkzscqBPkMDULQmBX7oycfHVjYTSVs14pwLNT8sGdX9KK4RakRaOnMcY3LLz5sbsKPQ2QcIYS7zw8OQAFCk6+eOX748sWFEbhBYCQdHMHWCSA5BgsCwdXVuo4dfJ/CDs2cLeOWRLEACYYEcxunV2LZOYMC9EbzudRDvJTi9Gt/XBWIKhjlf0oZmM5jsX5yaqif8dYFx+mUyeEgBklVGavexwItTp/PU5HmUtK7bkgZaseZRY4FKZIcCbmqwBM+9Zv78icchLhaIQ5OGuq8D+k4hZC21JJ8Zt1qiA8NJdy6tGDsFv9FF66AjqaklU8hfP+az3HaDODAGu16X7wdunkamePR5uuZfDWWcJg0zwDRLj/dsRNsyS0ngBputWyYdrDIoV9lUzj4E4zqFlJN+gRF1UxkDEVxepMQuRJBScLF4Ldk2uzyQQmIL4r6dpcCDFCLN5g0ly5FiIQkghYiIeDSfB9dLZaIG4B2ouvTlS9+5VjWd1cSJJ6xy7GS8AxkXd1YhRVAFq5OTs2te1FkpyXixN0VIJ1rAayxweuZK2Va+j3EDUgDuIb75ydeLeF9P1YJIEhaxRUgByopu1e7rAo8t2wtY/Cbdio3WQ+oCJ2dnpXTMME24FatQvdb4fl01gcqVbfm1Uw1Jgyo2XzRhb11bc6eKWlolkZ84KzJKl6ZnvrzV3L5BIP4D0mE+8OQMVbOm5Lmj6karz1ouV/z8yx/e048etTkVSmudgT4G91T8gWC++M5Xldafb8L5z6/cNtWipPcO3/Qja4eDvFLxw2+WNuuz5ZLF2KK8Ie3+DB34TKH259EQW/XbUiCGjuA+dV2buqqfclUcVe2IQ7ZdMpyb+12ePH1ihZVJgRPN9T4vVGEIqw4EN9/69Nu2nOCOThu+99KLD1a5HKJ7cMKwGVx+sMwoQm9ZLM62Hac7OE45PkRDvmenDXGuoTip/P/aGZLNdHggdkLY/7LR3dxTjFfEIgh85i8eO2UvYG0HHdDVkeb335hwggo80ktrEiNKZqjmgVd6+Fn7dqfC6r8HPQAPMeA+/04tig6DcLODF5rNHzO/dIRFt1vG+hR6RE8E1sCTDTe/D/OVbCavqzJrcRCN1q3NJ01ZGU/WY1sQ3vVOPJPxu7XUZvwPulpGkJDXl1cAAAAASUVORK5CYII=" alt="title-deco">
+              <h2 class="fs-2 fw-bold ps-32 mb-0">注意事項</h2>
+            </div>
+            <ul class="mb-0 ps-3 ps-md-5">
+              <li class="mb-28 fs-4 list-style ">所有資料僅供本次命理諮詢使用，嚴格保密不外洩。</li>
+              <li class="mb-28 fs-4 list-style">若您臨時需更改或取消預約，請提前一天通知。</li>
+              <li class="mb-28 fs-4 list-style">預約成功後會發送確認通知，請妥善留意相關訊息。</li>
+              <li class=" fs-4 list-style">如有任何疑問或未收到回覆，可主動聯繫客服協助處理。</li>
+            </ul>
+          </div>
+        </div>
+        <!-- 需要協助 -->
+        <div class="col-12 col-md-4  image-bg p-md-5">
+          <img class="list-bg img-fluid d-none d-md-block" src="/ZDX-Club-Booking/assets/memo-bg2-Cs8rLNd1.png" alt="memo-bg2">
+          <div class="content ">
+            <div class="position-relative mb-80 pt-4">
+              <img class="position-absolute top-0 " src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADgAAAA4CAYAAACohjseAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAUiSURBVHgB3ZpPaFxFHMd/8+fN27fZbbZNTU1Qwcb20JOgJykiIkUPFiIkeCo1hyqIgqeABdmLxSL+QVGwSE4epAH/VFARhNxF8CRSKVZLG2uTbZLNvrfvz8w4v5fustlsks3uJtn3Pnt4b2dnl/fd38zvz8wQ6DHF4lPc+eeoI1SJLRcKIELFsN2SZaYCm9f6SUf42g/N+woIPqhVYHnTMzNl6DEEegCKEnceGhSluyQ4dFDjg2thXpEWlIJDI2W3+p7i1CcSAmURz/EAAg0MMgCaiXKO3ll9/eMffOiSrgR+9NpzdonZzkA1L1QQcsl0jmiVhy7QhJYJI4GWWuB1wFqe70ZoRwLRYoPXC7nlghl6bs6xtH9E4r/fQwg1ltXUZ+Z3FSdep0J3LPDCq2eG4rlDGd0NYa1AsXiVYC+cv/TF/I6+227HNedx/zA6Bxp6o1qBgD2EEZARUBfvc5mVv9u1ZlsCi+eezwqLOzokgio2CvtIPHSN2JxYvdaOyG2H14Uz40MCnJy0hMMifQT2GzMlmAQ/1GL45GNjq3O/Xg236r6lwLfPvTCiM7YNRA7SUA1Cn6AJCHxwRnhhO5GbCnz3lfFhTWyHKJkzscqBPkMDULQmBX7oycfHVjYTSVs14pwLNT8sGdX9KK4RakRaOnMcY3LLz5sbsKPQ2QcIYS7zw8OQAFCk6+eOX748sWFEbhBYCQdHMHWCSA5BgsCwdXVuo4dfJ/CDs2cLeOWRLEACYYEcxunV2LZOYMC9EbzudRDvJTi9Gt/XBWIKhjlf0oZmM5jsX5yaqif8dYFx+mUyeEgBklVGavexwItTp/PU5HmUtK7bkgZaseZRY4FKZIcCbmqwBM+9Zv78icchLhaIQ5OGuq8D+k4hZC21JJ8Zt1qiA8NJdy6tGDsFv9FF66AjqaklU8hfP+az3HaDODAGu16X7wdunkamePR5uuZfDWWcJg0zwDRLj/dsRNsyS0ngBputWyYdrDIoV9lUzj4E4zqFlJN+gRF1UxkDEVxepMQuRJBScLF4Ldk2uzyQQmIL4r6dpcCDFCLN5g0ly5FiIQkghYiIeDSfB9dLZaIG4B2ouvTlS9+5VjWd1cSJJ6xy7GS8AxkXd1YhRVAFq5OTs2te1FkpyXixN0VIJ1rAayxweuZK2Va+j3EDUgDuIb75ydeLeF9P1YJIEhaxRUgByopu1e7rAo8t2wtY/Cbdio3WQ+oCJ2dnpXTMME24FatQvdb4fl01gcqVbfm1Uw1Jgyo2XzRhb11bc6eKWlolkZ84KzJKl6ZnvrzV3L5BIP4D0mE+8OQMVbOm5Lmj6karz1ouV/z8yx/e048etTkVSmudgT4G91T8gWC++M5Xldafb8L5z6/cNtWipPcO3/Qja4eDvFLxw2+WNuuz5ZLF2KK8Ie3+DB34TKH259EQW/XbUiCGjuA+dV2buqqfclUcVe2IQ7ZdMpyb+12ePH1ihZVJgRPN9T4vVGEIqw4EN9/69Nu2nOCOThu+99KLD1a5HKJ7cMKwGVx+sMwoQm9ZLM62Hac7OE45PkRDvmenDXGuoTip/P/aGZLNdHggdkLY/7LR3dxTjFfEIgh85i8eO2UvYG0HHdDVkeb335hwggo80ktrEiNKZqjmgVd6+Fn7dqfC6r8HPQAPMeA+/04tig6DcLODF5rNHzO/dIRFt1vG+hR6RE8E1sCTDTe/D/OVbCavqzJrcRCN1q3NJ01ZGU/WY1sQ3vVOPJPxu7XUZvwPulpGkJDXl1cAAAAASUVORK5CYII=" alt="title-deco">
+              <h2 class="fs-2 fw-bold ps-32 mb-0">需要協助</h2>
+            </div>
+            <button class="btn-outside  bg-transparent w-100 w-md-auto">
+              <div class="btn-inside">看更多常見問題</div>
+            </button>
+          </div>
+        </div>
+      </div>
+    </section>
+    <footer class="footer">
+  <div class="container px-0 px-md-12">
+    <div class="py-md-40 pt-40 pb-4 border-bottom  d-flex  align-items-center gap-4 px-md-4 border-black-400">
+      <div class="footer-border-up-1 border border-black-400 d-none d-md-block"></div>
+      <picture class="mx-auto">
+        <source class="footer-logo" class="logo-mb" srcset="/ZDX-Club-Booking/assets/logo-Mj0upPJP.png" media="(min-width: 768px)">
+        <img class="logo-mb  d-block" src="/ZDX-Club-Booking/assets/logo-mb-crvVyaac.png" alt="pig-logo">
+      </picture>
+      <div class="footer-border-up-2 border border-black-400 d-none d-md-block"></div>
+    </div>
+    <div class="d-flex flex-md-row flex-column py-md-40 pt-4 column-gap-4 ">
+      <div class="footer-item  d-flex justify-content-center mb-4">
+        <div class="w-50">
+          <h5 class="fw-bold mb-md-28 mb-3 text-center">關於我們</h5>
+          <ul class="list-unstyled mb-0">
+            <li class="text-center mb-md-20 mb-3">FAQ</li>
+            <li class="text-center mb-md-20 mb-3">顧客服務</li>
+            <li class="text-center ">聯絡我們</li>
+          </ul>
+        </div>
+        <div class="w-50">
+          <h5 class="fw-bold   mb-md-28 mb-3 text-center">其它</h5>
+          <ul class="list-unstyled mb-0">
+            <li class="text-center mb-md-20 mb-3">預約服務流程</li>
+            <li class="text-center mb-md-20 mb-3">網站地圖</li>
+            <li class="text-center ">預約查詢</li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-center">
+        <p class="text-center text-primary fw-bold mb-12">
+          尋找答案的你，值得一場溫暖的命理對話。
+        </p>
+        <p class="text-center text-primary fw-bold mb-32">立即預約，給自己新的視野。</p>
+        <p class="text-center  fs-7 mb-12">09:00~22:00 / Mon-Sun (每月15號公休)</p>
+        <p class="text-center fs-7 mb-md-32 mb-0">service@pigdaxian-service.com</p>
+        <h6 class="fs-7 mb-2 text-center fw-normal d-none d-md-block">付款方式</h6>
+        <img class="d-none d-md-block mx-auto" src="/ZDX-Club-Booking/assets/pay-Cyt9To5R.png" alt="pay">
+      </div>
+      <div class="px-36 flex-fill d-none d-md-block">
+        <p class="text-primary mb-12">訂閱電子報</p>
+        <div class="d-flex align-items-center mb-2">
+          <div class=" border-end-0 p-11 ps-2 border border-primary">
+            <img class="ic-mail" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAACXBIWXMAAAsTAAALEwEAmpwYAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAHPSURBVHgB7ZW9UsJAEMd3zzhqh2+gnVqJNpbIE8AYZiyhINoBHR8FafiwEjtMA3bOEAaeQHgBh85WHiGVhULWvQAjE0WC6Rx+M5fL3SX/u9v95wKwZgk4u6loapEI0twTAD8QWAKhmTXMjGxuyEtZU2+5yrL4NviFNQjgLHx6hE/PL31l2h13xgSc5+pmH3xQ1i4irNTh0KS4qYtpvxMWsqEnQwV/pJqMpaT4vKbifoi3p3PIIiiUaK7+OAQPVK4v94BGDZso5B4TLvkoIg755pjs0aCUjMXBw6ppPBqwQULA78owL5wgb7S7gBvygQcuAURqVK5iDWeFLvR0JFDVYh0bqSadJwC77zsfQXcOhftFGZa8YcZRYIKbFhHFyR73JsmDaUjU0Nbb5sAGkn0Wl0zWaEX1Wtdy633LwddErSavvM+h4qTRsUxeVVNrNjhmSMtsIUIfUEn8lquFE8x2w1WwpKk6267I4um54Uzu3qzBEgR4oGCYOrtq3zEAF4UwyGFcKi5RwCPT3ezDinjagR/+zwSOf3/6oFZlTsPRdJLM58+dtCF7/pXPIfADa0xqJHkaTP4H8twOnxzusg0PuOn3n2Dxgm8KRjsLa7zwCW7Rq2P2aVlQAAAAAElFTkSuQmCC" alt="icon mail">
+          </div>
+          <input class="input-email border border-start-0 border-primary w-100 bg-transparent py-12 " type="email"
+            placeholder="Enter Email">
+        </div>
+        <button type="button" class="btn btn-primary rounded-0 mb-36">
+          立即探索您專屬的服務
+        </button>
+        <ul class="list-unstyled d-flex gap-20">
+          <li class="p-2 footer-icon ">
+            <a href="#">
+              <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAUCAYAAACNiR0NAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAEiSURBVHgB7ZM9TgMxEIXf2CsSUZkbcITlBuEGkQg9FIQWSkKzNEGigRJSUSKRghuw3ABOwN6ANEgBOTt4ghyZHxE2sZQmT1rN7OzsZ489Q6f7rXtmNBBBRMhVLJhIWAqRVRnIwMn7ql3r9PokDye0EX5PUE2Hx73+RRhQpR4w7AxAoqJzdTuBZQdNUxvWDWDXMcsOCfw0ge00zcpr8sxkzfe8CmdIL96r1ZPUrWB+y4p+y1NLJqZdaC4AXfjY29A+ul1uis8lUmfO/w2E1vnR5U0RhrLru4Ezufjd9paRE/aau2QGpeE7ddst/usHmU+xJePB9WAm/tnedjpSPC5zXHJwQVNL9rOuXB/62EizcaDG54pf8xc/y0vgT6BvixgS1gdGHVMfPc976QAAAABJRU5ErkJggg==" alt="icon fb">
+            </a>
+          </li>
+          <li class="p-2 footer-icon ">
+            <a href="#">
+              <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAUCAYAAACNiR0NAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAHsSURBVHgBpVSxTgJBEJ3Z2yBq4fkH9wVKY4+JvRg1sVMbpdMWLTwbKcWOaAGliRTwAUZKCxMt7MU/2Mqox944c2rw4ACBl5CdW96+7LyZWQRGMb/lAbUrFEIGEFwYBQQGFdYBndNC+bqFkVho7wjIg4mALVTOsgKyJ5OLRVeNstRElOtHQYQmETSQ0Mh3iOQ5gIshJJ9hbkbz2uMZIV0E09b3S3WTdFBsCm1wiIgHXX+5eLa3QTExgNPjy5oP/0Axv7lDIVX+7qlxxQSF8k1Vzvzd0zF1pauynu2t5z5nbFNSlhhJuR+zQT315mQ1qVaAlEMAc3RZKwWf7VIqpSV1N3ZDKYD00c9Xbuo97YpXkU+KttNv+kT2rYIDKQznE3H9auRzIzHlQbBEyJ6sSsxRBlGtQuc2cz2CzPdiCtxTUskoBDRBYH2eCPPN5RYieu1wO30cqzIqWC6Ua00YArHiI/1uxONifiPLI3uXKPg7Ph0vhwt3j22Xh+QREyLiGGIJgr+i7Zfi/mZF0kkW4zRt+zHpDeiZlCRwwXaPr26qEjP/nJfDflxpbKncwDcQkdwf80UsM4BqNDf0E7dBFgbjnMWGgoegrgD1LgctmBSiwa+2c/vwbFaWFhpA4Txve/xLw2gwnOU9ol6TdvsCuALv5baSBdAAAAAASUVORK5CYII=" alt="icon fb">
+            </a>
+          </li>
+          <li class="p-2 footer-icon ">
+            <a href="#">
+              <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABYAAAAQCAYAAAAS7Y8mAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAFhSURBVHgBrZS9UsJAEIB37wJEq6OzxNbKGRs7f56AAnssZOyQDmxMJXbETqmkhoInUF7AGStbeQPTOBMguXMvkBnNMPmBfDO5293Z2ST7h7AG66YqSq4p/lu9ij45Q8eX3AmtM9N1LHvsRGNgKHQbtTtS6wpUBTbjgwFM2v1RK/gAfdw3aj262vQI2Jw9BXB8fnSAr++fE7Yy1iEnKAXN4LbqVVEsGt+QI/Ndr8xKppnw+zhFhpeIOIWU6MKzsNpxdJ6GL53n4T6JrTQv4MwXDDJw2x/ZgPyMxEGcny9VtsAa3bdUoK8kP0NSw6NUkIaHq4um/FGWwuS2NBhNkQIv1ql7XTtVEnoS1CGkwpgaM9d1qN1inFSFgr5BBlbpCiZP9/E2U/cXh4pcDopHGX6EnKB2HOs7yMFi7tmFAhdkPCE1ZR4jAWmQqAaD+c7CXupriK5N7vvC50osZVqbPHlt/gJ7xngW58BjpAAAAABJRU5ErkJggg==" alt="icon fb">
+            </a>
+          </li>
+          <li class="p-2 footer-icon ">
+            <a href="#">
+              <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAUCAYAAACNiR0NAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAIGSURBVHgBpVRNbtpAFH5vcFNl5yOkJyg9AeQEjVXoNnQR6K7KpirJImUDVTdpN1VIFzFrqKAngBuEG5QjeFe1jOflGxsZG2OUnydZmnk/3/vej4e/ntTLmmRKTC49SXjhOOQ5IdMYtyeCWZEDrWnqCA5FLoysuTASdwcB18mBMM2A1GlfjWa0Q3rva1U2/MGQHKX1GUBFPPnUH3q9k3rjS6s+FqEy5RkGSBqYkAfnP+Hbqk3hV00IdZs1SdAdfhUuqSwsN7RDENBRTBVjeKBKshBD0zWptQQffwznpOSYNlrAwu9wPMU3sH5KOT5QZ0rJ0WZrUoAcxOn5IGECoHZ/dEhggdvi7HrUgLojRv8By8+wv4wiU8NLM6QsM/bRIx8tuY1L4rE9A/RbNLgCKQQUMb+7zTd2gunBlO10Cb0rinOKAZVrs2FAWb0RFyXSgxkqRZV/y+UEpS8SJdP87PrXBFGVBwOKSGNvf+91uz98gZtnJ/1/Xx92m2+PrW3lFQ1y9fdsAsZKAYtEFRq/16rfMMq31+d/n10SGT8hjAVfHRPA3GJrLVUcL+keIgr7qWjOWm63METukC6itYBjtNDYr61fvDan51dDv6TpIo2RYRiXwX6pRN+jv2aHFD0OOcB1PYRHgIOtJkG/Cx5ku4c2KG9EQHp6G7btghVTrMjL7NrjJXAMeXdaK9/d6LmwzAAAAABJRU5ErkJggg==" alt="icon fb">
+            </a>
+          </li>
+
+        </ul>
+
+      </div>
+    </div>
+    <div class="p-md-4 py-4 ">
+      <div class="border border-black-400"></div>
+    </div>
+    <div
+      class="d-flex flex-md-row flex-column flex-column-reverse p-md-4 px-12 mb-40 align-items-center justify-content-between">
+      <p class="mb-0">豬大仙的命理探險家俱樂部 版權所有</p>
+
+      <div class="w-100 mb-4 d-md-none">
+        <div class="d-flex w-100 align-items-center">
+          <div class="py-3 text-center w-50 me-2">隱私權保護政策</div>
+          <div class=" border border-primary footer-deco-mb"></div>
+          <div class="ms-2 py-3 text-center w-50">免責聲明</div>
+        </div>
+        <div class="d-flex w-100 align-items-center">
+          <div class="py-3 text-center w-50 me-2">網站使用條款</div>
+          <div class=" border border-primary footer-deco-mb"></div>
+          <div class="ms-2 py-3 text-center w-50">防詐騙聲明</div>
+        </div>
+      </div>
+
+
+      <ul class="d-none mb-0 d-md-flex list-unstyled align-items-center">
+        <li class="px-2 py-1">隱私權保護政策</li>
+        <li class="d-flex px-2">
+          <div class=" border border-primary footer-deco"></div>
+        </li>
+        <li class="px-2 py-1">免責聲明</li>
+        <li class="d-flex px-2">
+          <div class=" border border-primary footer-deco"></div>
+        </li>
+        <li class="px-2 py-1">網站使用條款</li>
+        <li class="d-flex px-2">
+          <div class=" border border-primary footer-deco"></div>
+        </li>
+        <li class="px-2 py-1">防詐騙聲明</li>
+      </ul>
+
+    </div>
+  </div>
+
+</footer>
+</body>
+
+</html>
