@@ -145,9 +145,19 @@ label.card-option {
   border-radius: 4px;
   padding: 22px 16px;
 }
-input[type="date"]::-webkit-calendar-picker-indicator {
-  opacity: 0;
-  display: none;
+input[type="date"] {
+  cursor: pointer;
+
+  // 關鍵：讓整個 input 都可以點擊
+  &::-webkit-calendar-picker-indicator {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    opacity: 0; // 透明但保持可點擊
+    cursor: pointer;
+  }
 }
 
 .pointer-events-none {
